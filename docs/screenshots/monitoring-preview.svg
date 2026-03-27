@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" fill="none">
+  <rect width="1200" height="700" rx="24" fill="#F8FAFC"/>
+  <rect x="24" y="24" width="1152" height="70" rx="18" fill="#FFFFFF" stroke="#D8E3F0"/>
+  <text x="48" y="67" fill="#0F172A" font-family="Arial, sans-serif" font-size="30" font-weight="700">Monitoring and Readiness Preview</text>
+  <rect x="24" y="118" width="560" height="250" rx="22" fill="#FFFFFF" stroke="#D8E3F0"/>
+  <rect x="608" y="118" width="568" height="250" rx="22" fill="#FFFFFF" stroke="#D8E3F0"/>
+  <rect x="24" y="392" width="1152" height="284" rx="22" fill="#FFFFFF" stroke="#D8E3F0"/>
+  <text x="48" y="154" fill="#0F172A" font-family="Arial, sans-serif" font-size="18" font-weight="700">Water Levels</text>
+  <text x="632" y="154" fill="#0F172A" font-family="Arial, sans-serif" font-size="18" font-weight="700">Readiness Summary</text>
+  <text x="48" y="428" fill="#0F172A" font-family="Arial, sans-serif" font-size="18" font-weight="700">Operational Table</text>
+  <text x="48" y="230" fill="#0F172A" font-family="Arial, sans-serif" font-size="56" font-weight="800">203.4m</text>
+  <text x="48" y="270" fill="#475569" font-family="Arial, sans-serif" font-size="18">Current level with next 24h peak tracking</text>
+  <rect x="632" y="186" width="220" height="120" rx="20" fill="#F8FAFC" stroke="#FCA5A5"/>
+  <rect x="876" y="186" width="220" height="120" rx="20" fill="#F8FAFC" stroke="#86EFAC"/>
+  <text x="656" y="220" fill="#EF4444" font-family="Arial, sans-serif" font-size="14" font-weight="700">CRITICAL UNITS</text>
+  <text x="900" y="220" fill="#16A34A" font-family="Arial, sans-serif" font-size="14" font-weight="700">PREPARED UNITS</text>
+  <text x="656" y="274" fill="#0F172A" font-family="Arial, sans-serif" font-size="42" font-weight="800">4</text>
+  <text x="900" y="274" fill="#0F172A" font-family="Arial, sans-serif" font-size="42" font-weight="800">7</text>
+  <rect x="48" y="462" width="1104" height="42" rx="12" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <rect x="48" y="520" width="1104" height="42" rx="12" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <rect x="48" y="578" width="1104" height="42" rx="12" fill="#F8FAFC" stroke="#E2E8F0"/>
+</svg>

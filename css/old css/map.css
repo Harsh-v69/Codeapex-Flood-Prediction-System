@@ -1,0 +1,138 @@
+/* ============================================================
+   DFIS — Delhi Flood Intelligence System
+   css/map.css — Map Container, SVG, Overlays, Legend
+   ============================================================ */
+
+/* ── Map Wrapper ── */
+.map-wrap {
+  position: relative;
+  background: var(--abyss);
+  border-radius: 0 0 var(--r-lg) var(--r-lg);
+  overflow: hidden;
+  min-height: 480px;
+}
+
+.map-svg {
+  width: 100%;
+  height: 480px;
+  display: block;
+}
+
+/* ── SVG Elements ── */
+.district-boundary {
+  stroke: rgba(23,35,56,0.9);
+  stroke-width: 1;
+  transition: fill 0.3s;
+}
+.district-boundary:hover { stroke: rgba(249,115,22,0.4); }
+
+.yamuna-line {
+  stroke: var(--yamuna);
+  stroke-width: 4;
+  fill: none;
+  stroke-dasharray: 8 4;
+  animation: yamuna-flow 2s linear infinite;
+}
+
+.map-hotspot {
+  animation: hotspot-pulse 2s ease-in-out infinite;
+  cursor: pointer;
+  transition: r 0.2s;
+}
+.map-hotspot:hover { r: 10; }
+
+/* ── Overlay Controls ── */
+.map-overlay-controls {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.map-ctrl-btn {
+  width: 30px; height: 30px;
+  background: rgba(8,13,26,0.8);
+  border: 1px solid var(--rim);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--muted);
+  font-size: 14px;
+  transition: all 0.2s;
+  backdrop-filter: blur(8px);
+}
+.map-ctrl-btn:hover { color: var(--accent); border-color: var(--accent); }
+
+/* ── Map Legend ── */
+.map-legend {
+  position: absolute;
+  bottom: 14px;
+  left: 14px;
+  background: rgba(8,13,26,0.88);
+  border: 1px solid var(--rim);
+  border-radius: var(--r-md);
+  padding: 12px 14px;
+  backdrop-filter: blur(8px);
+  min-width: 130px;
+}
+.legend-title  { font-family: var(--font-mono); font-size: 9px; letter-spacing: 2px; color: var(--muted); text-transform: uppercase; margin-bottom: 8px; }
+.legend-row    { display: flex; align-items: center; gap: 8px; margin-bottom: 5px; font-size: 11px; color: var(--muted); }
+.legend-row:last-child { margin-bottom: 0; }
+.ldot          { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+.legend-line   { width: 24px; height: 3px; border-radius: 2px; }
+
+/* ── Map Info Panel ── */
+.map-info-panel {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: rgba(8,13,26,0.92);
+  border: 1px solid var(--rim);
+  border-radius: var(--r-md);
+  padding: 14px 16px;
+  backdrop-filter: blur(8px);
+  min-width: 200px;
+}
+.mip-title { font-family: var(--font-mono); font-size: 9px; color: var(--accent); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; }
+.mip-row   { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; font-size: 11px; }
+.mip-row:last-child { margin-bottom: 0; }
+.mip-key   { color: var(--muted); }
+.mip-val   { font-family: var(--font-mono); color: var(--text); }
+
+/* ── Yamuna Chart ── */
+.yamuna-chart-wrap {
+  height: 180px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  gap: 3px;
+  padding-bottom: 24px;
+  overflow: hidden;
+}
+.yamuna-bar-col { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; height: 100%; }
+.yamuna-bar-fill { width: 100%; border-radius: 2px 2px 0 0; min-height: 2px; transition: height 0.5s; }
+.yamuna-danger-line {
+  position: absolute;
+  left: 0; right: 0;
+  height: 1px;
+  background: var(--danger);
+  opacity: 0.6;
+  pointer-events: none;
+}
+.yamuna-warn-line {
+  position: absolute;
+  left: 0; right: 0;
+  height: 1px;
+  background: var(--warn);
+  opacity: 0.5;
+  pointer-events: none;
+  border-style: dashed;
+}
+
+/* ── Pipeline Row ── */
+.pipeline-row { display: flex; align-items: center; gap: 0; overflow-x: auto; padding: 6px 0; flex-wrap: nowrap; }
+.pipeline-step { background: var(--abyss); border-radius: var(--r-md); padding: 10px 12px; text-align: center; min-width: 80px; flex-shrink: 0; }
+.pipeline-arrow { color: var(--dim); padding: 0 3px; font-size: 16px; flex-shrink: 0; }

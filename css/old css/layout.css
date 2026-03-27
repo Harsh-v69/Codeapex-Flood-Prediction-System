@@ -1,0 +1,149 @@
+/* ============================================================
+   DFIS — Delhi Flood Intelligence System
+   css/layout.css — Topbar, Nav, Grid System, Footer
+   ============================================================ */
+
+/* ── Topbar ── */
+.topbar {
+  position: relative;
+  z-index: 100;
+  background: rgba(8,13,26,0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--rim);
+  padding: 0 var(--sp-10);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 58px;
+  gap: 20px;
+}
+
+.logo-area { display: flex; align-items: center; gap: 14px; }
+.logo-icon  { width: 38px; height: 38px; background: linear-gradient(135deg, var(--accent), #c2410c); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; box-shadow: 0 0 20px rgba(249,115,22,0.3); }
+.logo-text  { font-family: var(--font-display); font-weight: 800; font-size: 15px; color: #fff; letter-spacing: 0.5px; }
+.logo-sub   { font-family: var(--font-mono); font-size: 9px; color: var(--accent); letter-spacing: 2px; text-transform: uppercase; margin-top: 1px; }
+
+.topbar-center {
+  flex: 1;
+  max-width: 500px;
+  background: var(--surface);
+  border: 1px solid var(--rim);
+  border-radius: 6px;
+  padding: 6px 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow: hidden;
+}
+.ticker-live { font-size: 10px; color: var(--accent); flex-shrink: 0; }
+.ticker      { font-family: var(--font-mono); font-size: 10px; color: var(--muted); white-space: nowrap; overflow: hidden; flex: 1; }
+.ticker-inner { display: inline-block; animation: ticker 25s linear infinite; }
+
+.topbar-right { display: flex; align-items: center; gap: 16px; }
+.live-badge   { display: flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: 10px; color: var(--safe); letter-spacing: 1px; }
+.live-dot     { width: 7px; height: 7px; border-radius: 50%; background: var(--safe); box-shadow: 0 0 8px var(--safe); animation: blink 1.2s infinite; }
+.monsoon-badge { padding: 4px 12px; background: rgba(244,63,94,0.15); border: 1px solid rgba(244,63,94,0.35); border-radius: 4px; font-family: var(--font-mono); font-size: 9px; color: var(--danger); letter-spacing: 1.5px; text-transform: uppercase; }
+.clock { font-family: var(--font-mono); font-size: 11px; color: var(--muted); }
+
+/* ── Alert Strip ── */
+.alert-strip {
+  position: relative;
+  z-index: 100;
+  background: linear-gradient(90deg, rgba(244,63,94,0.18) 0%, rgba(244,63,94,0.06) 100%);
+  border-bottom: 1px solid rgba(244,63,94,0.3);
+  padding: 8px var(--sp-10);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  overflow: hidden;
+}
+.alert-icon    { font-size: 14px; animation: shake 2s infinite; flex-shrink: 0; }
+.alert-label   { font-family: var(--font-mono); font-size: 10px; color: var(--danger); letter-spacing: 2px; font-weight: 700; flex-shrink: 0; }
+.alert-divider { width: 1px; height: 14px; background: rgba(244,63,94,0.3); flex-shrink: 0; }
+.alert-msg     { font-family: var(--font-mono); font-size: 10px; color: rgba(221,232,245,0.6); overflow: hidden; flex: 1; }
+.alert-msg-inner { display: inline-block; white-space: nowrap; animation: ticker 30s linear infinite; }
+
+/* ── Navigation Tabs ── */
+.nav {
+  position: relative;
+  z-index: 100;
+  background: var(--abyss);
+  border-bottom: 1px solid var(--rim);
+  display: flex;
+  padding: 0 var(--sp-10);
+  gap: 2px;
+  overflow-x: auto;
+}
+.nav::-webkit-scrollbar { display: none; }
+.ntab {
+  padding: 13px 18px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--muted);
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+  white-space: nowrap;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  letter-spacing: 0.3px;
+}
+.ntab:hover { color: var(--text); background: rgba(255,255,255,0.02); }
+.ntab.on    { color: var(--accent); border-bottom-color: var(--accent); }
+
+/* ── Main Content Area ── */
+.main {
+  position: relative;
+  z-index: 10;
+  padding: 28px var(--sp-10) var(--sp-10);
+  max-width: 1700px;
+  margin: 0 auto;
+}
+
+/* Page sections */
+.page     { display: none; }
+.page.on  { display: block; }
+
+/* ── Page Header ── */
+.pg-header { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 24px; gap: 16px; flex-wrap: wrap; }
+.pg-eyebrow { font-family: var(--font-mono); font-size: 10px; color: var(--accent); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 4px; }
+.pg-title   { font-family: var(--font-display); font-size: 26px; font-weight: 800; color: #fff; letter-spacing: -0.5px; }
+.pg-desc    { font-size: 12px; color: var(--muted); margin-top: 4px; }
+
+/* ── Grid Utilities ── */
+.stats-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 14px; margin-bottom: 22px; }
+.g2        { display: grid; grid-template-columns: 1fr 1fr;    gap: 18px; margin-bottom: 18px; }
+.g3        { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 18px; margin-bottom: 18px; }
+.g-main    { display: grid; grid-template-columns: 3fr 2fr;    gap: 18px; margin-bottom: 18px; }
+.g-wide    { display: grid; grid-template-columns: 5fr 3fr;    gap: 18px; margin-bottom: 18px; }
+.col-stack { display: flex; flex-direction: column; gap: 16px; }
+
+/* ── Footer ── */
+.footer {
+  position: relative;
+  z-index: 10;
+  background: var(--abyss);
+  border-top: 1px solid var(--rim);
+  padding: 16px var(--sp-10);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+.footer-l { font-size: 11px; color: var(--muted); }
+.footer-r { display: flex; gap: 20px; font-family: var(--font-mono); font-size: 10px; color: var(--muted); }
+
+/* ── Responsive ── */
+@media (max-width: 1000px) {
+  .g2, .g3, .g-main, .g-wide { grid-template-columns: 1fr; }
+}
+@media (max-width: 768px) {
+  .main, .topbar, .nav, .alert-strip, .footer { padding-left: 16px; padding-right: 16px; }
+  .topbar { height: auto; padding-top: 10px; padding-bottom: 10px; flex-wrap: wrap; }
+  .topbar-center { display: none; }
+  .pg-title { font-size: 20px; }
+}

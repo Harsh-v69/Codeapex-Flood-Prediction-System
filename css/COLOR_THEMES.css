@@ -1,0 +1,210 @@
+/* ============================================================
+   DFIS COLOR THEME OPTIONS
+   Copy the CSS variables from your preferred theme into base.css
+   ============================================================ */
+
+/* ════════════════════════════════════════════════════════════
+   OPTION 1: CYAN/BLUE (Cool & Professional)
+   ════════════════════════════════════════════════════════════ */
+
+:root.theme-cyan {
+  --void:     #0a0e1f;
+  --abyss:    #0f1430;
+  --surface:  #131a35;
+  --raised:   #1a2247;
+  --rim:      #2a3659;
+  --dim:      #3d4a6b;
+  --muted:    #6b7fa8;
+  --text:     #e0e8f5;
+  
+  --accent:   #00d9ff;
+  --accent2:  #00a8cc;
+  --danger:   #ff3860;
+  --warn:     #ffc107;
+  --safe:     #00ff88;
+  --info:     #00b4ff;
+  --yamuna:   #0099ff;
+  --purple:   #b366ff;
+}
+
+/* ════════════════════════════════════════════════════════════
+   OPTION 2: PURPLE/VIOLET (Modern & Bold)
+   ════════════════════════════════════════════════════════════ */
+
+:root.theme-purple {
+  --void:     #0f0a1a;
+  --abyss:    #140f28;
+  --surface:  #1a1436;
+  --raised:   #241e47;
+  --rim:      #3a3159;
+  --dim:      #4d3f73;
+  --muted:    #8b75b3;
+  --text:     #e8dff5;
+  
+  --accent:   #b366ff;
+  --accent2:  #9644e8;
+  --danger:   #ff4081;
+  --warn:     #ffd54f;
+  --safe:     #66ff99;
+  --info:     #64b5f6;
+  --yamuna:   #7c3aed;
+  --purple:   #d99eff;
+}
+
+/* ════════════════════════════════════════════════════════════
+   OPTION 3: GREEN/TEAL (Nature-Inspired)
+   ════════════════════════════════════════════════════════════ */
+
+:root.theme-green {
+  --void:     #0a1515;
+  --abyss:    #0f1d24;
+  --surface:  #132a35;
+  --raised:   #1a3a47;
+  --rim:      #2a4a59;
+  --dim:      #3d5f6b;
+  --muted:    #6b8fa8;
+  --text:     #e0f5f8;
+  
+  --accent:   #1bdb9a;
+  --accent2:  #00b88a;
+  --danger:   #ff5e78;
+  --warn:     #ffb800;
+  --safe:     #00ff99;
+  --info:     #00d9ff;
+  --yamuna:   #00c9a7;
+  --purple:   #80deea;
+}
+
+/* ════════════════════════════════════════════════════════════
+   OPTION 4: RED/CRIMSON (Warning/Urgent)
+   ════════════════════════════════════════════════════════════ */
+
+:root.theme-red {
+  --void:     #1a0a0a;
+  --abyss:    #240f0f;
+  --surface:  #331515;
+  --raised:   #441d1d;
+  --rim:      #5a2f2f;
+  --dim:      #734242;
+  --muted:    #a87a7a;
+  --text:     #f5e8e8;
+  
+  --accent:   #ff4466;
+  --accent2:  #ff1744;
+  --danger:   #ff3860;
+  --warn:     #ffb300;
+  --safe:     #66ff66;
+  --info:     #66d9ff;
+  --yamuna:   #ff5577;
+  --purple:   #ff99cc;
+}
+
+/* ════════════════════════════════════════════════════════════
+   OPTION 5: INDIGO/NAVY (Deep & Sophisticated)
+   ════════════════════════════════════════════════════════════ */
+
+:root.theme-indigo {
+  --void:     #0a0f1a;
+  --abyss:    #0f152a;
+  --surface:  #141a35;
+  --raised:   #1a2247;
+  --rim:      #2a3659;
+  --dim:      #3d4a6b;
+  --muted:    #6b7fa8;
+  --text:     #e0e8f5;
+  
+  --accent:   #5e6cff;
+  --accent2:  #3d5eff;
+  --danger:   #ff5e78;
+  --warn:     #ffc107;
+  --safe:     #00ff88;
+  --info:     #6fa3ff;
+  --yamuna:   #4d79ff;
+  --purple:   #9d7fff;
+}
+
+/* ════════════════════════════════════════════════════════════
+   OPTION 6: NEON CYBERPUNK (High Contrast)
+   ════════════════════════════════════════════════════════════ */
+
+:root.theme-neon {
+  --void:     #000000;
+  --abyss:    #0a0a1a;
+  --surface:  #0f0f2a;
+  --raised:   #15153f;
+  --rim:      #1f1f5a;
+  --dim:      #2a2a7a;
+  --muted:    #6666ff;
+  --text:     #ffff00;
+  
+  --accent:   #00ffff;
+  --accent2:  #00ff88;
+  --danger:   #ff0055;
+  --warn:     #ffaa00;
+  --safe:     #00ff44;
+  --info:     #00ffff;
+  --yamuna:   #ff00ff;
+  --purple:   #ff00ff;
+}
+
+/* ════════════════════════════════════════════════════════════
+   OPTION 7: COOL SLATE (Minimal & Elegant)
+   ════════════════════════════════════════════════════════════ */
+
+:root.theme-slate {
+  --void:     #0f1117;
+  --abyss:    #161b22;
+  --surface:  #1c2128;
+  --raised:   #262c36;
+  --rim:      #30363d;
+  --dim:      #444c56;
+  --muted:    #8b949e;
+  --text:     #e6edf3;
+  
+  --accent:   #58a6ff;
+  --accent2:  #1f6feb;
+  --danger:   #f85149;
+  --warn:     #d29922;
+  --safe:     #3fb950;
+  --info:     #79c0ff;
+  --yamuna:   #1f6feb;
+  --purple:   #bc8ef3;
+}
+
+/* ════════════════════════════════════════════════════════════
+   OPTION 8: AMBER/WARM (Desert Vibes)
+   ════════════════════════════════════════════════════════════ */
+
+:root.theme-amber {
+  --void:     #1a1410;
+  --abyss:    #251d15;
+  --surface:  #312a1f;
+  --raised:   #3d352a;
+  --rim:      #4d4038;
+  --dim:      #6b5d54;
+  --muted:    #9b8c82;
+  --text:     #f5ead8;
+  
+  --accent:   #ffb800;
+  --accent2:  #ff9500;
+  --danger:   #ff6b6b;
+  --warn:     #ffa500;
+  --safe:     #95d500;
+  --info:     #4dd0ff;
+  --yamuna:   #ff8c00;
+  --purple:   #e8a2ff;
+}
+
+/* ════════════════════════════════════════════════════════════
+   HOW TO USE:
+   
+   Option 1: Add class to <html> tag
+   ────────────────────────────────
+   <html class="theme-cyan">
+   
+   Option 2: Directly replace :root colors in base.css
+   ────────────────────────────────
+   Just copy the variable values from your chosen theme
+   and paste them into the :root section of base.css
+   
+   ════════════════════════════════════════════════════════════ */

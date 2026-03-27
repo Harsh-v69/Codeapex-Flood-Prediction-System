@@ -1,0 +1,26 @@
+{
+  "features": [
+    "rainfall_mm",
+    "rainfall_max_mm",
+    "rainfall_intensity",
+    "rainfall_3day",
+    "rainfall_7day",
+    "rainfall_15day",
+    "soil_saturation",
+    "is_monsoon",
+    "monsoon_day",
+    "yamuna_level_m",
+    "yamuna_level_change",
+    "yamuna_discharge",
+    "elevation_m",
+    "slope_deg",
+    "flow_accumulation",
+    "drain_capacity_pct",
+    "impervious_pct",
+    "drain_blockage_idx",
+    "yamuna_proximity_m"
+  ],
+  "best_threshold": 0.9997755885124207,
+  "auc": 1.0,
+  "rows": 6940
+}

@@ -1,0 +1,1211 @@
+< !DOCTYPE html >
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+            <title>DFIS – Send Alerts</title>
+            <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+            <style>
+/* =====================================================
+                DFIS DESIGN TOKENS — matches your existing UI exactly
+                ===================================================== */
+                :root {
+                    --bg:           #f0f4f8;
+                --surface:      #ffffff;
+                --surface-alt:  #f8fafc;
+                --border:       #e2e8f0;
+                --border-med:   #cbd5e1;
+                --nav-bg:       #0d1117;
+                --text-1:       #0f172a;
+                --text-2:       #475569;
+                --text-3:       #94a3b8;
+                --teal:         #0891b2;
+                --teal-dark:    #0e7490;
+                --teal-bg:      #e0f2fe;
+                --teal-border:  #7dd3fc;
+
+                --low:          #059669;
+                --low-bg:       #d1fae5;
+                --low-border:   #6ee7b7;
+                --med:          #d97706;
+                --med-bg:       #fef3c7;
+                --med-border:   #fcd34d;
+                --crit:         #dc2626;
+                --crit-bg:      #fee2e2;
+                --crit-border:  #fca5a5;
+
+                --radius:       10px;
+                --radius-sm:    7px;
+                --shadow-sm:    0 1px 3px rgba(15,23,42,.07), 0 1px 2px rgba(15,23,42,.04);
+                --shadow:       0 4px 16px rgba(15,23,42,.09);
+                --shadow-lg:    0 10px 40px rgba(15,23,42,.14);
+}
+
+                *, *::before, *::after {box - sizing: border-box; margin: 0; padding: 0; }
+                html, body {height: 100%; }
+                body {
+                    font - family: 'Space Grotesk', sans-serif;
+                background: var(--bg);
+                color: var(--text-1);
+                font-size: 14px;
+                line-height: 1.5;
+}
+
+                /* =====================================================
+                   TOPBAR — exact clone of your DFIS header
+                   ===================================================== */
+                .topbar {
+                    background: var(--nav-bg);
+                height: 56px;
+                display: flex;
+                align-items: center;
+                padding: 0 22px;
+                gap: 14px;
+                position: sticky;
+                top: 0;
+                z-index: 200;
+                border-bottom: 1px solid rgba(255,255,255,.06);
+}
+                .tb-logo {
+                    display: flex; align-items: center; gap: 10px;
+}
+                .tb-logo-icon {
+                    width: 34px; height: 34px;
+                background: var(--teal);
+                border-radius: 8px;
+                display: flex; align-items: center; justify-content: center;
+                font-size: 17px;
+}
+                .tb-logo-text strong {
+                    display: block; font-size: 13.5px; font-weight: 700;
+                color: #fff; letter-spacing: -0.2px;
+}
+                .tb-logo-text small {
+                    font - size: 10px; color: #64748b;
+                font-family: 'JetBrains Mono', monospace;
+                letter-spacing: 0.6px;
+}
+                .tb-search {
+                    flex: 1; max-width: 440px; margin: 0 16px;
+                background: rgba(255,255,255,.05);
+                border: 1px solid rgba(255,255,255,.08);
+                border-radius: 6px; height: 33px;
+                display: flex; align-items: center; gap: 8px;
+                padding: 0 12px; color: #64748b; font-size: 13px;
+}
+                .tb-right {
+                    margin - left: auto;
+                display: flex; align-items: center; gap: 12px;
+}
+                .tb-badge {
+                    display: flex; align-items: center; gap: 6px;
+                font-size: 11.5px; font-weight: 600;
+                font-family: 'JetBrains Mono', monospace;
+}
+                .tb-badge .dot {
+                    width: 7px; height: 7px; border-radius: 50%;
+                animation: pulse 1.8s ease-in-out infinite;
+}
+                .tb-badge.live {color: #4ade80; }
+                .tb-badge.live .dot {background: #4ade80; }
+                .tb-alert-pill {
+                    display: flex; align-items: center; gap: 6px;
+                background: rgba(220,38,38,.18);
+                border: 1px solid rgba(220,38,38,.35);
+                padding: 4px 11px; border-radius: 5px;
+                font-size: 11px; font-weight: 600;
+                font-family: 'JetBrains Mono', monospace;
+                color: #fca5a5;
+}
+                .tb-alert-pill .dot {background: #f87171; }
+                .tb-time {
+                    font - size: 11.5px; font-family: 'JetBrains Mono', monospace;
+                color: #64748b;
+}
+                @keyframes pulse {0 %, 100 % { opacity: 1 }50%{opacity:.35} }
+
+                /* =====================================================
+                   PRIORITY BANNER
+                   ===================================================== */
+                .priority-banner {
+                    background: #fffbeb;
+                border-bottom: 1px solid #fde68a;
+                padding: 9px 24px;
+                display: flex; align-items: center; gap: 10px;
+                font-size: 13px;
+}
+                .priority-banner .label {
+                    font - size: 10.5px; font-weight: 700;
+                font-family: 'JetBrains Mono', monospace;
+                text-transform: uppercase; letter-spacing: 1px;
+                color: #92400e;
+}
+                .priority-banner span {color: #78350f; }
+
+                /* =====================================================
+                   NAV TABS — exact match to your nav
+                   ===================================================== */
+                .nav-tabs {
+                    background: #fff;
+                border-bottom: 2px solid var(--border);
+                display: flex; padding: 0 22px; gap: 0;
+                overflow-x: auto;
+}
+                .nav-tabs::-webkit-scrollbar {display: none; }
+                .nav-tab {
+                    display: flex; align-items: center; gap: 6px;
+                padding: 14px 18px 12px;
+                font-size: 13px; font-weight: 500;
+                color: var(--text-2);
+                border: none; background: none;
+                border-bottom: 2.5px solid transparent;
+                margin-bottom: -2px;
+                white-space: nowrap; cursor: pointer;
+                transition: color .18s, border-color .18s;
+}
+                .nav-tab:hover {color: var(--text-1); }
+                .nav-tab.active {
+                    color: var(--teal-dark);
+                border-bottom-color: var(--teal);
+                font-weight: 700;
+}
+
+                /* =====================================================
+                   PAGE WRAPPER
+                   ===================================================== */
+                .page {
+                    max - width: 1320px;
+                margin: 0 auto;
+                padding: 30px 24px 72px;
+}
+
+                /* =====================================================
+                   PAGE HEADER
+                   ===================================================== */
+                .page-breadcrumb {
+                    font - size: 11px; font-weight: 700;
+                font-family: 'JetBrains Mono', monospace;
+                text-transform: uppercase; letter-spacing: 1.4px;
+                color: var(--teal); margin-bottom: 8px;
+}
+                .page-breadcrumb .sep {color: var(--text-3); }
+                .page-header-row {
+                    display: flex; align-items: flex-end;
+                justify-content: space-between;
+                flex-wrap: wrap; gap: 14px;
+                margin-bottom: 28px;
+}
+                .page-title {
+                    font - size: 33px; font-weight: 700;
+                letter-spacing: -0.8px; color: var(--text-1);
+                margin-bottom: 5px; line-height: 1.1;
+}
+                .page-sub {font - size: 13px; color: var(--text-3); }
+
+                /* Status pill */
+                .status-pill {
+                    display: inline-flex; align-items: center; gap: 7px;
+                padding: 7px 15px; border-radius: 20px;
+                font-size: 11.5px; font-weight: 600;
+                font-family: 'JetBrains Mono', monospace;
+                border: 1px solid; transition: all .25s;
+                white-space: nowrap;
+}
+                .status-pill .sdot {
+                    width: 7px; height: 7px; border-radius: 50%;
+                background: currentColor;
+}
+                .sdot-blink {animation: pulse 1.5s ease-in-out infinite; }
+                .pill-ready   {background: var(--low-bg);  border-color: var(--low-border); color: var(--low); }
+                .pill-sending {background: var(--teal-bg); border-color: var(--teal-border); color: #0369a1; }
+                .pill-sent    {background: var(--low-bg);  border-color: var(--low-border); color: var(--low); }
+                .pill-error   {background: var(--crit-bg); border-color: var(--crit-border); color: var(--crit); }
+
+                /* =====================================================
+                   STAT CARDS ROW — cloned from Resource Deploy cards
+                   ===================================================== */
+                .stats-row {
+                    display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                gap: 14px; margin-bottom: 28px;
+}
+                @media(max-width:1100px){ .stats - row{grid - template - columns: repeat(3,1fr); } }
+                @media(max-width:680px) { .stats - row{grid - template - columns: repeat(2,1fr); } }
+
+                .stat-card {
+                    background: var(--surface);
+                border: 1px solid var(--border);
+                border-radius: var(--radius);
+                padding: 20px 16px 16px;
+                text-align: center;
+                box-shadow: var(--shadow-sm);
+                transition: box-shadow .2s, transform .15s;
+}
+                .stat-card:hover {
+                    box - shadow: var(--shadow);
+                transform: translateY(-2px);
+}
+                .stat-icon {font - size: 30px; line-height: 1; margin-bottom: 8px; }
+                .stat-num {
+                    font - size: 24px; font-weight: 700;
+                letter-spacing: -0.5px;
+}
+                .stat-num .denom {font - size: 16px; font-weight: 500; color: var(--text-3); }
+                .stat-num.c-green  {color: var(--low); }
+                .stat-num.c-orange {color: var(--med); }
+                .stat-num.c-red    {color: var(--crit); }
+                .stat-num.c-teal   {color: var(--teal); }
+                .stat-label {font - size: 11.5px; color: var(--text-3); margin-top: 5px; line-height: 1.4; }
+
+                /* =====================================================
+                   MAIN GRID
+                   ===================================================== */
+                .main-grid {
+                    display: grid;
+                grid-template-columns: 1fr 380px;
+                gap: 20px; align-items: start;
+}
+                @media(max-width:1060px) { .main - grid {grid - template - columns: 1fr; } }
+                .col {display: flex; flex-direction: column; gap: 18px; }
+
+                /* =====================================================
+                   CARD — same card pattern as your dashboard
+                   ===================================================== */
+                .card {
+                    background: var(--surface);
+                border: 1px solid var(--border);
+                border-radius: var(--radius);
+                box-shadow: var(--shadow-sm);
+                overflow: hidden;
+}
+                .card-head {
+                    padding: 15px 20px;
+                border-bottom: 1px solid var(--border);
+                display: flex; align-items: center;
+                justify-content: space-between; gap: 10px;
+}
+                .card-head-left {display: flex; align-items: center; gap: 10px; }
+                .card-head-icon {
+                    width: 32px; height: 32px;
+                background: var(--teal-bg);
+                border-radius: 8px;
+                display: flex; align-items: center;
+                justify-content: center; font-size: 15px;
+                flex-shrink: 0;
+}
+                .card-head-icon.icon-warn {background: var(--crit-bg); }
+                .card-title {font - size: 14px; font-weight: 700; color: var(--text-1); }
+                .card-sub   {font - size: 11.5px; color: var(--text-3); margin-top: 1px; }
+                .card-tag {
+                    font - size: 10px; font-weight: 600;
+                font-family: 'JetBrains Mono', monospace;
+                padding: 3px 10px; border-radius: 4px;
+                text-transform: uppercase; letter-spacing: 0.5px;
+                background: var(--teal-bg); color: #0369a1;
+                border: 1px solid var(--teal-border);
+}
+                .card-body {padding: 20px; }
+
+                /* =====================================================
+                   FORM
+                   ===================================================== */
+                .form-row {display: grid; grid-template-columns:1fr 1fr; gap:16px; }
+                @media(max-width:560px){ .form - row {grid - template - columns:1fr; } }
+
+                .form-group {display:flex; flex-direction:column; gap:7px; margin-bottom:18px; }
+                .form-group:last-child {margin - bottom:0; }
+
+                .f-label {
+                    font - size: 11px; font-weight: 700;
+                text-transform: uppercase; letter-spacing: 1.1px;
+                color: var(--text-2);
+                font-family: 'JetBrains Mono', monospace;
+                display: flex; align-items: center; gap: 6px;
+}
+                .f-label-note {
+                    font - size: 10px; text-transform: none;
+                letter-spacing: 0; font-weight: 400;
+                color: var(--text-3);
+}
+
+                .f-select, .f-textarea {
+                    width: 100%;
+                background: var(--surface-alt);
+                border: 1px solid var(--border-med);
+                border-radius: var(--radius-sm);
+                color: var(--text-1);
+                font-family: 'Space Grotesk', sans-serif;
+                font-size: 13.5px; padding: 9px 12px;
+                outline: none;
+                transition: border-color .2s, box-shadow .2s, background .15s;
+}
+                .f-select {
+                    appearance:none; -webkit-appearance:none;
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7' fill='none'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%2394a3b8' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+                background-repeat: no-repeat;
+                background-position: right 12px center;
+                padding-right: 34px; cursor: pointer;
+}
+                .f-select option {background: #fff; }
+                .f-textarea {resize: vertical; min-height: 105px; line-height: 1.7; }
+                .f-select:focus, .f-textarea:focus {
+                    border - color: var(--teal);
+                background: #fff;
+                box-shadow: 0 0 0 3px rgba(8,145,178,.12);
+}
+
+                /* Region cards grid */
+                .region-grid {
+                    display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 8px;
+}
+                @media(max-width:560px){ .region - grid {grid - template - columns: repeat(2,1fr); } }
+
+                .region-btn {
+                    padding: 10px 8px;
+                border: 1.5px solid var(--border-med);
+                border-radius: var(--radius-sm);
+                background: var(--surface-alt);
+                color: var(--text-2);
+                font-family: 'Space Grotesk', sans-serif;
+                font-size: 12.5px; font-weight: 500;
+                cursor: pointer; text-align: center;
+                transition: all .18s; line-height: 1.3;
+}
+                .region-btn:hover {border - color: var(--teal); color: var(--text-1); background: var(--teal-bg); }
+                .region-btn.active {
+                    border - color: var(--teal); background: var(--teal-bg);
+                color: var(--teal-dark); font-weight: 700;
+                box-shadow: 0 0 0 2px rgba(8,145,178,.15);
+}
+
+                /* Severity row */
+                .sev-row {display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
+                .sev-btn {
+                    padding: 10px 6px;
+                border: 1.5px solid var(--border-med);
+                border-radius: var(--radius-sm);
+                background: var(--surface-alt);
+                color: var(--text-3);
+                font-family: 'Space Grotesk', sans-serif;
+                font-size: 12.5px; font-weight: 600;
+                cursor: pointer; text-align: center;
+                transition: all .18s;
+}
+                .sev-btn:hover {border - color: var(--text-3); color: var(--text-1); background: #fff; }
+                .sev-btn.sev-low  {background: var(--low-bg);  border-color: var(--low-border);  color: var(--low); }
+                .sev-btn.sev-med  {background: var(--med-bg);  border-color: var(--med-border);  color: var(--med); }
+                .sev-btn.sev-crit {background: var(--crit-bg); border-color: var(--crit-border); color: var(--crit); }
+
+                /* Char count */
+                .char-row {
+                    display: flex; justify-content: flex-end;
+                margin-top: 5px; gap: 4px;
+                font-size: 11px; color: var(--text-3);
+                font-family: 'JetBrains Mono', monospace;
+}
+
+                /* =====================================================
+                   PHONE CONTACTS
+                   ===================================================== */
+                .contacts-toolbar {
+                    display: flex; justify-content: space-between;
+                align-items: center; margin-bottom: 10px;
+}
+                .contacts-info {font - size: 12px; color: var(--text-3); }
+                .link-btn {
+                    background: none; border: none;
+                color: var(--teal); font-size: 12px; font-weight: 600;
+                cursor: pointer; text-decoration: underline;
+                font-family: inherit; padding: 0;
+}
+                .contacts-list {display: flex; flex-direction: column; gap: 9px; }
+
+                .contact-item {
+                    display: flex; align-items: center; gap: 12px;
+                padding: 11px 14px;
+                border: 1.5px solid var(--border);
+                border-radius: var(--radius-sm);
+                background: var(--surface-alt);
+                cursor: pointer;
+                transition: border-color .18s, background .18s, box-shadow .18s;
+                user-select: none;
+}
+                .contact-item:hover  {border - color: var(--teal); background: var(--teal-bg); }
+                .contact-item.picked {border - color: var(--teal); background: var(--teal-bg); box-shadow: 0 0 0 2.5px rgba(8,145,178,.12); }
+                .contact-item input[type=checkbox] {
+                    width: 15px; height: 15px;
+                accent-color: var(--teal); cursor: pointer; flex-shrink: 0;
+}
+                .c-avatar {
+                    width: 34px; height: 34px; border-radius: 50%;
+                background: var(--teal-bg); border: 1.5px solid var(--teal-border);
+                display: flex; align-items: center; justify-content: center;
+                font-size: 12px; font-weight: 700; flex-shrink: 0;
+                color: #0369a1; font-family: 'JetBrains Mono', monospace;
+}
+                .c-info {flex: 1; min-width: 0; }
+                .c-name {font - size: 13px; font-weight: 600; color: var(--text-1); }
+                .c-num  {font - size: 11px; color: var(--text-3); font-family: 'JetBrains Mono', monospace; margin-top: 1px; }
+                .c-role {
+                    font - size: 10px; font-weight: 600;
+                font-family: 'JetBrains Mono', monospace;
+                padding: 2px 8px; border-radius: 10px;
+                background: var(--border); color: var(--text-3);
+                text-transform: uppercase; letter-spacing: 0.4px;
+                white-space: nowrap; flex-shrink: 0;
+}
+                .contact-item.picked .c-role {background: #bae6fd; color: #0369a1; }
+
+                /* badge on title */
+                .count-badge {
+                    display: inline-flex; align-items: center; justify-content: center;
+                min-width: 18px; height: 18px; border-radius: 9px;
+                background: var(--teal); color: #fff;
+                font-size: 10px; font-weight: 700; padding: 0 5px;
+                font-family: 'JetBrains Mono', monospace;
+                margin-left: 6px; vertical-align: middle;
+                transition: background .2s;
+}
+
+                /* =====================================================
+                   SEND BUTTON
+                   ===================================================== */
+                .send-btn {
+                    width: 100%; padding: 13px 20px;
+                border: none; border-radius: var(--radius-sm);
+                background: var(--teal); color: #fff;
+                font-family: 'Space Grotesk', sans-serif;
+                font-size: 14.5px; font-weight: 700;
+                cursor: pointer;
+                display: flex; align-items: center; justify-content: center; gap: 9px;
+                transition: background .18s, transform .12s, box-shadow .18s, opacity .18s;
+                box-shadow: 0 4px 16px rgba(8,145,178,.30);
+                margin-top: 20px; letter-spacing: 0.1px;
+}
+                .send-btn:hover:not(:disabled)  {background: var(--teal-dark); transform: translateY(-1px); box-shadow: 0 6px 22px rgba(8,145,178,.40); }
+                .send-btn:active:not(:disabled) {transform: none; }
+                .send-btn:disabled {opacity: .5; cursor: not-allowed; transform: none; }
+                .send-btn.btn-med  {background: var(--med);  box-shadow: 0 4px 16px rgba(217,119,6,.28); }
+                .send-btn.btn-med:hover:not(:disabled)  {background: #b45309; }
+                .send-btn.btn-crit {background: var(--crit); box-shadow: 0 4px 16px rgba(220,38,38,.28); }
+                .send-btn.btn-crit:hover:not(:disabled) {background: #b91c1c; }
+
+                /* =====================================================
+                   PREVIEW
+                   ===================================================== */
+                .preview-box {
+                    border - radius: var(--radius-sm);
+                padding: 16px; border: 1.5px solid;
+                transition: all .25s;
+}
+                .preview-box.p-low  {background: var(--low-bg);  border-color: var(--low-border); }
+                .preview-box.p-med  {background: var(--med-bg);  border-color: var(--med-border); }
+                .preview-box.p-crit {background: var(--crit-bg); border-color: var(--crit-border); }
+
+                .preview-top {
+                    display: flex; justify-content: space-between;
+                align-items: center; margin-bottom: 10px;
+}
+                .preview-sev-label {
+                    font - size: 10px; font-weight: 700;
+                text-transform: uppercase; letter-spacing: 1.1px;
+                font-family: 'JetBrains Mono', monospace;
+}
+                .preview-box.p-low  .preview-sev-label {color: var(--low); }
+                .preview-box.p-med  .preview-sev-label {color: var(--med); }
+                .preview-box.p-crit .preview-sev-label {color: var(--crit); }
+
+                .preview-msg {font - size: 13px; line-height: 1.7; color: var(--text-1); word-break: break-word; }
+                .preview-footer {
+                    display: flex; gap: 14px; flex-wrap: wrap;
+                margin-top: 12px; padding-top: 12px;
+                border-top: 1px solid rgba(15,23,42,.08);
+}
+                .pf-item {font - size: 11px; font-family: 'JetBrains Mono', monospace; color: var(--text-3); }
+                .pf-item strong {display: block; color: var(--text-1); font-size: 12px; margin-bottom: 1px; }
+
+                /* =====================================================
+                   HISTORY
+                   ===================================================== */
+                .history-list {display: flex; flex-direction: column; gap: 10px; }
+                .history-item {
+                    display: flex; gap: 12px; padding: 12px 14px;
+                border: 1px solid var(--border);
+                border-radius: var(--radius-sm);
+                background: var(--surface-alt);
+                transition: border-color .18s, background .18s;
+}
+                .history-item:hover {border - color: var(--border-med); background: #fff; }
+                .h-icon {
+                    width: 34px; height: 34px; border-radius: 8px;
+                display: flex; align-items: center; justify-content: center;
+                font-size: 16px; flex-shrink: 0;
+}
+                .h-icon.i-low  {background: var(--low-bg); }
+                .h-icon.i-med  {background: var(--med-bg); }
+                .h-icon.i-crit {background: var(--crit-bg); }
+                .h-body {flex: 1; min-width: 0; }
+                .h-top {display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+                .h-title {font - size: 13px; font-weight: 600; color: var(--text-1); }
+                .h-time  {font - size: 10px; color: var(--text-3); font-family: 'JetBrains Mono', monospace; white-space: nowrap; flex-shrink: 0; }
+                .h-msg   {font - size: 12px; color: var(--text-3); margin-top: 3px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+                .h-tags  {display: flex; gap: 5px; margin-top: 7px; flex-wrap: wrap; }
+                .htag {
+                    font - size: 10px; font-weight: 600;
+                font-family: 'JetBrains Mono', monospace;
+                padding: 2px 7px; border-radius: 10px;
+                text-transform: uppercase; letter-spacing: 0.4px;
+}
+                .htag.t-low  {background: var(--low-bg);  color: var(--low);  border: 1px solid var(--low-border); }
+                .htag.t-med  {background: var(--med-bg);  color: var(--med);  border: 1px solid var(--med-border); }
+                .htag.t-crit {background: var(--crit-bg); color: var(--crit); border: 1px solid var(--crit-border); }
+                .htag.t-info {background: var(--teal-bg); color: #0369a1;     border: 1px solid var(--teal-border); }
+                .history-empty {
+                    text - align: center; padding: 28px 0;
+                border: 1px dashed var(--border-med);
+                border-radius: var(--radius-sm);
+                color: var(--text-3); font-size: 13px;
+}
+                .history-empty .ei {font - size: 26px; display: block; margin-bottom: 7px; }
+
+                /* =====================================================
+                   TOAST
+                   ===================================================== */
+                #toast {
+                    position: fixed; bottom: 22px; right: 22px;
+                padding: 12px 18px; border-radius: var(--radius-sm);
+                font-size: 13px; font-weight: 600;
+                display: flex; align-items: center; gap: 9px;
+                box-shadow: var(--shadow-lg);
+                transform: translateY(16px); opacity: 0;
+                transition: all .3s cubic-bezier(.34,1.56,.64,1);
+                pointer-events: none; z-index: 9999;
+                max-width: 340px; border: 1px solid;
+}
+                #toast.show {transform: translateY(0); opacity: 1; }
+                #toast.ok  {background: #fff; border-color: var(--low-border);  color: var(--low); }
+                #toast.err {background: #fff; border-color: var(--crit-border); color: var(--crit); }
+
+                @media(max-width:600px) {
+  .page {padding: 18px 14px 52px; }
+                .page-title {font - size: 25px; }
+                .tb-logo-text, .tb-search {display: none; }
+}
+            </style>
+        </head>
+        <body>
+
+            <!-- ==================== TOPBAR ==================== -->
+            <div class="topbar">
+                <div class="tb-logo">
+                    <div class="tb-logo-icon">🌊</div>
+                    <div class="tb-logo-text">
+                        <strong>DFIS – Delhi Flood Intelligence System</strong>
+                        <small>GIS · HYDROLOGY · AI · OPEN-METEO LIVE</small>
+                    </div>
+                </div>
+                <div class="tb-search">⚡ LIVE</div>
+                <div class="tb-right">
+                    <div class="tb-badge live"><span class="dot"></span> SYSTEM LIVE</div>
+                    <div class="tb-alert-pill tb-badge"><span class="dot"></span> PRE-MONSOON ALERT</div>
+                    <div class="tb-time" id="clock">IST 00:00:00</div>
+                </div>
+            </div>
+
+            <!-- ==================== PRIORITY BANNER ==================== -->
+            <div class="priority-banner">
+                ⚠️ <span class="label">Priority Alert</span>
+                <span>83% probability heavy rain today — issue ward-level alerts</span>
+            </div>
+
+            <!-- ==================== NAV TABS ==================== -->
+            <nav class="nav-tabs">
+                <button class="nav-tab">🗂️ Dashboard</button>
+                <button class="nav-tab">📍 Micro-Hotspots</button>
+                <button class="nav-tab">📊 Ward Readiness</button>
+                <button class="nav-tab">💧 Yamuna Monitor</button>
+                <button class="nav-tab">🎯 Scenario Sim</button>
+                <button class="nav-tab">🚀 Resource Deploy</button>
+                <button class="nav-tab active">📢 Send Alerts</button>
+                <button class="nav-tab">✨ Features</button>
+            </nav>
+
+            <!-- ==================== PAGE ==================== -->
+            <main class="page">
+
+                <!-- Header -->
+                <div class="page-breadcrumb">
+                    DELHI <span class="sep">·</span> DDMA <span class="sep">·</span> ALERT DISPATCH
+                </div>
+                <div class="page-header-row">
+                    <div>
+                        <h1 class="page-title">Send Alerts</h1>
+                        <p class="page-sub">Dispatch region-based disaster alerts to emergency contacts via SMS</p>
+                    </div>
+                    <div class="status-pill pill-ready" id="statusPill">
+                        <span class="sdot sdot-blink"></span>
+                        <span id="statusText">Ready to Send</span>
+                    </div>
+                </div>
+
+                <!-- Stats row — mirrors Resource Deploy resource counters -->
+                <div class="stats-row">
+                    <div class="stat-card">
+                        <div class="stat-icon">📡</div>
+                        <div class="stat-num c-teal">1.2M</div>
+                        <div class="stat-label">Alerts Sent (SMS/App)</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🏙️</div>
+                        <div class="stat-num c-green">8<span class="denom">/12</span></div>
+                        <div class="stat-label">Regions on Active Watch</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">📱</div>
+                        <div class="stat-num c-orange">5</div>
+                        <div class="stat-label">Emergency Contacts</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">✅</div>
+                        <div class="stat-num c-green" id="sentCount">0</div>
+                        <div class="stat-label">Sent This Session</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">⏱️</div>
+                        <div class="stat-num c-teal" id="lastSentEl">—</div>
+                        <div class="stat-label">Last Dispatch</div>
+                    </div>
+                </div>
+
+                <!-- Main grid -->
+                <div class="main-grid">
+
+                    <!-- ======= LEFT COLUMN ======= -->
+                    <div class="col">
+
+                        <!-- STEP 1: Select Region -->
+                        <div class="card">
+                            <div class="card-head">
+                                <div class="card-head-left">
+                                    <div class="card-head-icon">📍</div>
+                                    <div>
+                                        <div class="card-title">Step 1 — Select Region</div>
+                                        <div class="card-sub">Choose the affected Delhi region</div>
+                                    </div>
+                                </div>
+                                <span class="card-tag">REQUIRED</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="region-grid" id="regionGrid">
+                                    <!-- Rendered by JS -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- STEP 2: Compose Alert -->
+                        <div class="card">
+                            <div class="card-head">
+                                <div class="card-head-left">
+                                    <div class="card-head-icon">⚙️</div>
+                                    <div>
+                                        <div class="card-title">Step 2 — Compose Alert</div>
+                                        <div class="card-sub">Set type, severity and message</div>
+                                    </div>
+                                </div>
+                                <span class="card-tag">SMS-READY</span>
+                            </div>
+                            <div class="card-body">
+
+                                <!-- Disaster type -->
+                                <div class="form-group">
+                                    <label class="f-label">Disaster Type</label>
+                                    <select class="f-select" id="disasterType" onchange="onFormChange()">
+                                        <option value="">— Choose disaster type —</option>
+                                        <option value="Flood">🌊 Flood</option>
+                                        <option value="Earthquake">🪨 Earthquake</option>
+                                        <option value="Heatwave">🌡️ Heatwave</option>
+                                        <option value="Storm">⛈️ Storm</option>
+                                        <option value="Landslide">⛰️ Landslide</option>
+                                    </select>
+                                </div>
+
+                                <!-- Severity -->
+                                <div class="form-group">
+                                    <label class="f-label">Severity Level</label>
+                                    <div class="sev-row">
+                                        <button class="sev-btn sev-low" data-sev="low" onclick="setSev('low')">🟢 Low</button>
+                                        <button class="sev-btn" data-sev="med" onclick="setSev('med')">🟡 Medium</button>
+                                        <button class="sev-btn" data-sev="crit" onclick="setSev('crit')">🔴 Critical</button>
+                                    </div>
+                                </div>
+
+                                <!-- Alert message -->
+                                <div class="form-group">
+                                    <label class="f-label">
+                                        Alert Message
+                                        <span class="f-label-note">— auto-generated, editable</span>
+                                    </label>
+                                    <textarea class="f-textarea" id="alertMsg"
+                                        placeholder="Select region + disaster type to auto-generate…"
+                                        oninput="updatePreview()"></textarea>
+                                    <div class="char-row">
+                                        <span id="charCount">0</span>&nbsp;chars
+                                        &nbsp;·&nbsp;
+                                        <span id="smsCount">1</span>&nbsp;SMS segment(s)
+                                    </div>
+                                </div>
+
+                                <!-- Send button -->
+                                <button class="send-btn" id="sendBtn" onclick="sendAlert()">
+                                    <span>📤</span> Send Alert
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- STEP 3: Recipients -->
+                        <div class="card">
+                            <div class="card-head">
+                                <div class="card-head-left">
+                                    <div class="card-head-icon">📱</div>
+                                    <div>
+                                        <div class="card-title">
+                                            Step 3 — Recipients
+                                            <span class="count-badge" id="recipBadge">0</span>
+                                        </div>
+                                        <div class="card-sub">Choose who receives this alert</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="contacts-toolbar">
+                                    <span class="contacts-info" id="recipInfo">0 of 5 selected</span>
+                                    <button class="link-btn" onclick="toggleAll()">Select / Deselect All</button>
+                                </div>
+                                <div class="contacts-list" id="contactsList">
+                                    <!-- Rendered by JS -->
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- /left col -->
+
+                    <!-- ======= RIGHT COLUMN ======= -->
+                    <div class="col">
+
+                        <!-- Live Preview -->
+                        <div class="card">
+                            <div class="card-head">
+                                <div class="card-head-left">
+                                    <div class="card-head-icon">👁️</div>
+                                    <div>
+                                        <div class="card-title">Live Alert Preview</div>
+                                        <div class="card-sub">Exactly what recipients will receive</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="preview-box p-low" id="previewBox">
+                                    <div class="preview-top">
+                                        <span class="preview-sev-label" id="prevSevLabel">🟢 LOW SEVERITY</span>
+                                        <span style="font-size:14px;opacity:.5;">📨</span>
+                                    </div>
+                                    <div class="preview-msg" id="prevMsg">
+                                        <em style="color:#94a3b8;">Select a region and disaster type to preview your alert message here.</em>
+                                    </div>
+                                    <div class="preview-footer">
+                                        <div class="pf-item"><strong id="pfRegion">—</strong>Region</div>
+                                        <div class="pf-item"><strong id="pfType">—</strong>Type</div>
+                                        <div class="pf-item"><strong id="pfRecip">0</strong>Recipients</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Alert History -->
+                        <div class="card">
+                            <div class="card-head">
+                                <div class="card-head-left">
+                                    <div class="card-head-icon">📋</div>
+                                    <div>
+                                        <div class="card-title">Alert History</div>
+                                        <div class="card-sub">Last 3 dispatched alerts this session</div>
+                                    </div>
+                                </div>
+                                <button class="link-btn" style="font-size:11px;" onclick="clearHistory()">Clear</button>
+                            </div>
+                            <div class="card-body">
+                                <div class="history-list" id="historyList">
+                                    <div class="history-empty">
+                                        <span class="ei">📭</span>
+                                        No alerts dispatched yet this session.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Quick-send tip card -->
+                        <div class="card" style="border-color:#bae6fd;background:#f0f9ff;">
+                            <div class="card-body" style="padding:16px 18px;">
+                                <div style="font-size:12px;font-weight:700;color:#0369a1;font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:.8px;margin-bottom:8px;">💡 How It Works</div>
+                                <ol style="font-size:12.5px;color:#0369a1;padding-left:16px;line-height:1.9;">
+                                    <li>Select the <strong>affected region</strong> in Delhi</li>
+                                    <li>Pick <strong>disaster type</strong> and <strong>severity</strong></li>
+                                    <li>Review the auto-generated <strong>SMS message</strong></li>
+                                    <li>Choose <strong>recipients</strong> to notify</li>
+                                    <li>Hit <strong>Send Alert</strong> 📤</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                    </div><!-- /right col -->
+                </div>
+            </main>
+
+            <div id="toast"></div>
+
+            <!-- ==================== JAVASCRIPT ==================== -->
+            <script>
+/* =====================================================
+                CONFIGURATION
+                ===================================================== */
+
+                // Edit regions here — these appear as clickable buttons
+                const REGIONS = [
+                'Saket', 'Shahdara', 'Rohini', 'Narela', 'Dwarka',
+                'Yamuna Vihar', 'Mustafabad', 'Burari', 'Wazirabad',
+                'Yamuna Pushta Colony', 'Rohini Sec 11', 'Karawal Nagar'
+                ];
+
+                // Edit phone numbers here
+                const CONTACTS = [
+                {id:'c1', name:'Rajiv Kumar',   num:'+91-98110-00001', role:'District Collector', init:'RK' },
+                {id:'c2', name:'Priya Sharma',  num:'+91-98110-00002', role:'NDRF Coordinator',   init:'PS' },
+                {id:'c3', name:'Anil Verma',    num:'+91-98110-00003', role:'Fire Dept. Chief',   init:'AV' },
+                {id:'c4', name:'Sunita Rao',    num:'+91-98110-00004', role:'Medical Response',   init:'SR' },
+                {id:'c5', name:'Deepak Mishra', num:'+91-98110-00005', role:'PWD Engineer',       init:'DM' },
+                ];
+
+                // Auto-message templates per disaster
+                const TEMPLATES = {
+                    Flood:      (r, s) => `⚠️ ${s.toUpperCase()} FLOOD ALERT: Rising water levels detected in ${r}. Evacuate low-lying areas immediately. Move to nearest relief camp. Do NOT cross waterlogged roads. DDMA Helpline: 1077.`,
+  Earthquake: (r, s) => `⚠️ ${s.toUpperCase()} EARTHQUAKE ALERT: Seismic activity near ${r}. DROP, COVER, HOLD ON. Stay away from windows and walls. Evacuate to open ground. Do not use elevators. Helpline: 1078.`,
+  Heatwave:   (r, s) => `⚠️ ${s.toUpperCase()} HEATWAVE ALERT: Extreme heat warning for ${r}. Avoid outdoor activity 11AM–4PM. Stay hydrated. Check on elderly neighbours. ORS at community health centres. Helpline: 104.`,
+  Storm:      (r, s) => `⚠️ ${s.toUpperCase()} STORM ALERT: Severe storm approaching ${r}. Secure loose objects. Stay indoors. Avoid flooded underpasses. Emergency teams on standby. Helpline: 1077.`,
+  Landslide:  (r, s) => `⚠️ ${s.toUpperCase()} LANDSLIDE ALERT: Ground movement risk in ${r}. Vacate slopes and embankments immediately. Do not cross flooded streams. Contact evacuation team. Helpline: 1078.`,
+};
+
+                const SEV_LABELS = {
+                    low:  '🟢 LOW SEVERITY',
+                med:  '🟡 MEDIUM SEVERITY',
+                crit: '🔴 CRITICAL ALERT',
+};
+
+                const SEV_ICONS = {low:'🌿', med:'⚠️', crit:'🚨' };
+
+                /* =====================================================
+                   STATE
+                   ===================================================== */
+                let currentRegion = '';
+                let currentSev    = 'low';
+                let history       = [];
+                let sentCount     = 0;
+                let isSending     = false;
+                let toastTimer;
+
+/* =====================================================
+   BOOT
+   ===================================================== */
+document.addEventListener('DOMContentLoaded', () => {
+                    renderRegions();
+                renderContacts();
+                updatePreview();
+                refreshSendBtn();
+                startClock();
+});
+
+                /* Live clock */
+                function startClock() {
+  const el = document.getElementById('clock');
+  const tick = () => {
+    const t = new Date().toLocaleTimeString('en-IN', {hour:'2-digit', minute:'2-digit', second:'2-digit', hour12:false });
+                el.textContent = `IST ${t}`;
+  };
+                tick();
+                setInterval(tick, 1000);
+}
+
+                /* =====================================================
+                   REGION BUTTONS
+                   ===================================================== */
+                function renderRegions() {
+                    document.getElementById('regionGrid').innerHTML = REGIONS.map(r => `
+    <button class="region-btn${currentRegion === r ? ' active' : ''}"
+            onclick="selectRegion('${r}')">${r}</button>
+  `).join('');
+}
+
+                function selectRegion(r) {
+                    currentRegion = r;
+                renderRegions();
+                onFormChange();
+}
+
+                /* =====================================================
+                   CONTACTS
+                   ===================================================== */
+                function renderContacts() {
+                    document.getElementById('contactsList').innerHTML = CONTACTS.map(c => `
+    <label class="contact-item" id="ci-${c.id}" for="chk-${c.id}">
+      <input type="checkbox" id="chk-${c.id}" value="${c.id}"
+             onchange="onCheck('${c.id}')">
+      <div class="c-avatar">${c.init}</div>
+      <div class="c-info">
+        <div class="c-name">${c.name}</div>
+        <div class="c-num">${c.num}</div>
+      </div>
+      <span class="c-role">${c.role}</span>
+    </label>
+  `).join('');
+}
+
+                function onCheck(id) {
+  const chk  = document.getElementById(`chk-${id}`);
+                const item = document.getElementById(`ci-${id}`);
+                item.classList.toggle('picked', chk.checked);
+                refreshRecipCounts();
+                updatePreview();
+}
+
+                function toggleAll() {
+  const boxes = document.querySelectorAll('#contactsList input[type=checkbox]');
+  const anyOff = [...boxes].some(b => !b.checked);
+  boxes.forEach(b => {
+                    b.checked = anyOff;
+                document.getElementById(`ci-${b.value}`).classList.toggle('picked', anyOff);
+  });
+                refreshRecipCounts();
+                updatePreview();
+}
+
+                function getSelected() {
+  return [...document.querySelectorAll('#contactsList input:checked')]
+    .map(b => CONTACTS.find(c => c.id === b.value)).filter(Boolean);
+}
+
+                function refreshRecipCounts() {
+  const n = getSelected().length;
+                document.getElementById('recipBadge').textContent = n;
+                document.getElementById('recipInfo').textContent  = `${n} of ${CONTACTS.length} selected`;
+                document.getElementById('pfRecip').textContent    = n;
+}
+
+                /* =====================================================
+                   SEVERITY
+                   ===================================================== */
+                function setSev(sev) {
+                    currentSev = sev;
+  document.querySelectorAll('.sev-btn').forEach(b => {
+                    b.className = 'sev-btn';
+                if (b.dataset.sev === sev) b.classList.add(`sev-${sev}`);
+  });
+                // Re-generate message
+                const disaster = document.getElementById('disasterType').value;
+                if (currentRegion && disaster && TEMPLATES[disaster]) {
+                    document.getElementById('alertMsg').value = TEMPLATES[disaster](currentRegion, sev);
+  }
+                updatePreview();
+                refreshSendBtn();
+}
+
+                /* =====================================================
+                   FORM CHANGE — auto-fill message
+                   ===================================================== */
+                function onFormChange() {
+  const disaster = document.getElementById('disasterType').value;
+                if (currentRegion && disaster && TEMPLATES[disaster]) {
+                    document.getElementById('alertMsg').value = TEMPLATES[disaster](currentRegion, currentSev);
+  }
+                updatePreview();
+}
+
+                /* =====================================================
+                   LIVE PREVIEW
+                   ===================================================== */
+                function updatePreview() {
+  const msg  = document.getElementById('alertMsg').value;
+                const type = document.getElementById('disasterType').value || '—';
+
+                // preview box colour class
+                document.getElementById('previewBox').className = `preview-box p-${currentSev}`;
+                document.getElementById('prevSevLabel').textContent = SEV_LABELS[currentSev];
+                document.getElementById('pfRegion').textContent = currentRegion || '—';
+                document.getElementById('pfType').textContent   = type;
+
+                const msgEl = document.getElementById('prevMsg');
+                if (msg) {
+                    msgEl.textContent = msg;
+  } else {
+                    msgEl.innerHTML = '<em style="color:#94a3b8;">Select a region and disaster type to preview.</em>';
+  }
+
+                // char / SMS count
+                const len = msg.length;
+                document.getElementById('charCount').textContent = len;
+                document.getElementById('smsCount').textContent  = Math.max(1, Math.ceil(len / 160));
+}
+
+                /* =====================================================
+                   SEND BUTTON COLOUR
+                   ===================================================== */
+                function refreshSendBtn() {
+  const btn = document.getElementById('sendBtn');
+                btn.className = 'send-btn' +
+                (currentSev === 'crit' ? ' btn-crit' :
+                currentSev === 'med'  ? ' btn-med'  : '');
+}
+
+                /* =====================================================
+                   sendAlert()  ← MAIN FUNCTION
+                   ===================================================== */
+                async function sendAlert() {
+  if (isSending) return;
+
+                const disaster  = document.getElementById('disasterType').value;
+                const message   = document.getElementById('alertMsg').value.trim();
+                const selected  = getSelected();
+
+                // --- Validate ---
+                if (!currentRegion)    return toast('⚠️ Please select a region first.', 'err');
+                if (!disaster)         return toast('⚠️ Please choose a disaster type.', 'err');
+                if (!message)          return toast('⚠️ Alert message cannot be empty.', 'err');
+                if (!selected.length)  return toast('⚠️ Select at least one recipient.', 'err');
+
+                // --- Build payload ---
+                const payload = {
+                    region:       currentRegion,
+                disaster,
+                severity:     currentSev,
+                message,
+    phoneNumbers: selected.map(c => ({name: c.name, number: c.num, role: c.role })),
+                timestamp:    new Date().toISOString(),
+  };
+
+                console.log('[DFIS · Send Alerts] Payload →', payload);
+
+                // --- UI: sending state ---
+                isSending = true;
+                setStatus('pill-sending', 'Sending…');
+                const btn = document.getElementById('sendBtn');
+                btn.disabled = true;
+                btn.innerHTML = '<span>⏳</span> Sending…';
+
+                try {
+                    /* ================================================
+                       BACKEND HOOK — uncomment when backend is ready:
+                
+                       const res = await fetch('/send-alert', {
+                         method:  'POST',
+                         headers: { 'Content-Type': 'application/json' },
+                         body:    JSON.stringify(payload),
+                       });
+                       if (!res.ok) throw new Error(`HTTP ${res.status}`);
+                       const data = await res.json();
+                       ================================================ */
+
+                    // Simulate network delay
+                    await new Promise(r => setTimeout(r, 1700));
+
+                // --- Success ---
+                sentCount++;
+                document.getElementById('sentCount').textContent = sentCount;
+
+                const now = new Date();
+                document.getElementById('lastSentEl').textContent =
+                now.toLocaleTimeString('en-IN', {hour:'2-digit', minute:'2-digit' });
+
+                setStatus('pill-sent', 'Sent Successfully ✓');
+                toast(`✅ Alert sent to ${selected.length} recipient${selected.length > 1 ? 's' : ''} in ${currentRegion}!`, 'ok');
+                addHistory(payload);
+    setTimeout(() => setStatus('pill-ready', 'Ready to Send'), 4000);
+
+  } catch (err) {
+                    console.error('[DFIS] Dispatch error:', err);
+                setStatus('pill-error', 'Dispatch Failed');
+                toast('❌ Send failed. Check console and retry.', 'err');
+    setTimeout(() => setStatus('pill-ready', 'Ready to Send'), 3500);
+  } finally {
+                    isSending = false;
+                btn.disabled = false;
+                btn.innerHTML = '<span>📤</span> Send Alert';
+                refreshSendBtn();
+  }
+}
+
+                /* =====================================================
+                   STATUS PILL
+                   ===================================================== */
+                function setStatus(cls, label) {
+  const pill = document.getElementById('statusPill');
+                const dot  = pill.querySelector('.sdot');
+                pill.className = `status-pill ${cls}`;
+                document.getElementById('statusText').textContent = label;
+                dot.className  = `sdot${cls === 'pill-sending' ? ' sdot-blink' : ''}`;
+}
+
+                /* =====================================================
+                   HISTORY
+                   ===================================================== */
+                function addHistory(p) {
+                    history.unshift(p);
+  if (history.length > 3) history.pop();
+                renderHistory();
+}
+
+                function clearHistory() {
+                    history = [];
+                renderHistory();
+}
+
+                function renderHistory() {
+  const el = document.getElementById('historyList');
+                if (!history.length) {
+                    el.innerHTML = `<div class="history-empty"><span class="ei">📭</span>No alerts dispatched yet this session.</div>`;
+                return;
+  }
+  el.innerHTML = history.map(h => {
+    const d    = new Date(h.timestamp);
+                const time = d.toLocaleTimeString('en-IN', {hour:'2-digit', minute:'2-digit' });
+                const date = d.toLocaleDateString('en-IN', {day:'numeric', month:'short' });
+                return `
+                <div class="history-item">
+                    <div class="h-icon i-${h.severity}">${SEV_ICONS[h.severity]}</div>
+                    <div class="h-body">
+                        <div class="h-top">
+                            <span class="h-title">${h.region} · ${h.disaster}</span>
+                            <span class="h-time">${time}, ${date}</span>
+                        </div>
+                        <div class="h-msg">${h.message}</div>
+                        <div class="h-tags">
+                            <span class="htag t-${h.severity}">${h.severity.toUpperCase()}</span>
+                            <span class="htag t-info">📱 ${h.phoneNumbers.length} sent</span>
+                        </div>
+                    </div>
+                </div>`;
+  }).join('');
+}
+
+                /* =====================================================
+                   TOAST
+                   ===================================================== */
+                function toast(msg, type = 'ok') {
+                    clearTimeout(toastTimer);
+                const el = document.getElementById('toast');
+                el.textContent = msg;
+                el.className   = `show ${type}`;
+  toastTimer = setTimeout(() => {el.className = type; }, 3600);
+}
+            </script>
+        </body>
+    </html>

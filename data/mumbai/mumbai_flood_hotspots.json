@@ -1,0 +1,4722 @@
+[
+  {
+    "id": "MHZ-0004",
+    "name": "Haji Ali Depression",
+    "lat": 18.982,
+    "lon": 72.809,
+    "elevation_m": 3.0,
+    "ward": "D",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.3583,
+    "scenario": {
+      "rainfall_mm": 248.0,
+      "water_level_m": 5.6,
+      "soil_moisture": 91.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (5.6m > 3.5m)",
+      "Soil fully saturated (91%)",
+      "Critical low-lying area (3.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0005",
+    "name": "Dharavi Nullah Corridor",
+    "lat": 19.038,
+    "lon": 72.852,
+    "elevation_m": 2.5,
+    "ward": "G/S",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.7221,
+    "scenario": {
+      "rainfall_mm": 270.0,
+      "water_level_m": 6.1,
+      "soil_moisture": 93.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (6.1m > 3.5m)",
+      "Soil fully saturated (93%)",
+      "Critical low-lying area (2.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0006",
+    "name": "Dharavi South Tip",
+    "lat": 19.028,
+    "lon": 72.851,
+    "elevation_m": 2.0,
+    "ward": "G/S",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.5927,
+    "scenario": {
+      "rainfall_mm": 270.0,
+      "water_level_m": 6.1,
+      "soil_moisture": 93.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (6.1m > 3.5m)",
+      "Soil fully saturated (93%)",
+      "Critical low-lying area (2.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0007",
+    "name": "Mithi River \u2014 BKC Stretch",
+    "lat": 19.065,
+    "lon": 72.868,
+    "elevation_m": 2.0,
+    "ward": "H/W",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.4568,
+    "scenario": {
+      "rainfall_mm": 270.0,
+      "water_level_m": 6.1,
+      "soil_moisture": 93.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (6.1m > 3.5m)",
+      "Soil fully saturated (93%)",
+      "Critical low-lying area (2.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0008",
+    "name": "Wadala Creek Inlet",
+    "lat": 19.016,
+    "lon": 72.851,
+    "elevation_m": 2.0,
+    "ward": "F/N",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.3863,
+    "scenario": {
+      "rainfall_mm": 270.0,
+      "water_level_m": 6.1,
+      "soil_moisture": 93.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (6.1m > 3.5m)",
+      "Soil fully saturated (93%)",
+      "Critical low-lying area (2.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0011",
+    "name": "Shivaji Nagar Govandi",
+    "lat": 19.038,
+    "lon": 72.914,
+    "elevation_m": 2.0,
+    "ward": "M/W",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.4257,
+    "scenario": {
+      "rainfall_mm": 270.0,
+      "water_level_m": 6.1,
+      "soil_moisture": 93.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (6.1m > 3.5m)",
+      "Soil fully saturated (93%)",
+      "Critical low-lying area (2.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0012",
+    "name": "Mankhurd Wetland Fringe",
+    "lat": 19.047,
+    "lon": 72.931,
+    "elevation_m": 1.8,
+    "ward": "M/E",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.6356,
+    "scenario": {
+      "rainfall_mm": 270.0,
+      "water_level_m": 6.1,
+      "soil_moisture": 93.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (6.1m > 3.5m)",
+      "Soil fully saturated (93%)",
+      "Critical low-lying area (1.8m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0013",
+    "name": "Deonar Dumping Ground Periphery",
+    "lat": 19.046,
+    "lon": 72.921,
+    "elevation_m": 2.0,
+    "ward": "M/E",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.6665,
+    "scenario": {
+      "rainfall_mm": 270.0,
+      "water_level_m": 6.1,
+      "soil_moisture": 93.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (6.1m > 3.5m)",
+      "Soil fully saturated (93%)",
+      "Critical low-lying area (2.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0014",
+    "name": "Govandi Mangrove Edge",
+    "lat": 19.033,
+    "lon": 72.918,
+    "elevation_m": 2.2,
+    "ward": "M/W",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.3852,
+    "scenario": {
+      "rainfall_mm": 270.0,
+      "water_level_m": 6.1,
+      "soil_moisture": 93.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (6.1m > 3.5m)",
+      "Soil fully saturated (93%)",
+      "Critical low-lying area (2.2m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0015",
+    "name": "RCF Colony Pocket",
+    "lat": 19.042,
+    "lon": 72.924,
+    "elevation_m": 3.5,
+    "ward": "M/E",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.7087,
+    "scenario": {
+      "rainfall_mm": 235.0,
+      "water_level_m": 5.6,
+      "soil_moisture": 91.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (5.6m > 3.5m)",
+      "Soil fully saturated (91%)",
+      "Critical low-lying area (3.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0016",
+    "name": "Airoli Creek Bank",
+    "lat": 19.149,
+    "lon": 73.0,
+    "elevation_m": 2.0,
+    "ward": "Navi Mumbai",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.5044,
+    "scenario": {
+      "rainfall_mm": 270.0,
+      "water_level_m": 6.1,
+      "soil_moisture": 93.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (6.1m > 3.5m)",
+      "Soil fully saturated (93%)",
+      "Critical low-lying area (2.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0017",
+    "name": "Belapur Tidal Flat",
+    "lat": 19.017,
+    "lon": 73.038,
+    "elevation_m": 2.0,
+    "ward": "Navi Mumbai",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.371,
+    "scenario": {
+      "rainfall_mm": 270.0,
+      "water_level_m": 6.1,
+      "soil_moisture": 93.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (6.1m > 3.5m)",
+      "Soil fully saturated (93%)",
+      "Critical low-lying area (2.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0019",
+    "name": "Dronagiri Nullah",
+    "lat": 18.872,
+    "lon": 72.971,
+    "elevation_m": 4.0,
+    "ward": "Raigad",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.6171,
+    "scenario": {
+      "rainfall_mm": 248.0,
+      "water_level_m": 5.6,
+      "soil_moisture": 91.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (5.6m > 3.5m)",
+      "Soil fully saturated (91%)",
+      "Critical low-lying area (4.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0020",
+    "name": "Ulwe Creek Basin",
+    "lat": 18.977,
+    "lon": 73.041,
+    "elevation_m": 4.5,
+    "ward": "Navi Mumbai",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.6254,
+    "scenario": {
+      "rainfall_mm": 248.0,
+      "water_level_m": 5.6,
+      "soil_moisture": 91.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (5.6m > 3.5m)",
+      "Soil fully saturated (91%)",
+      "Critical low-lying area (4.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0024",
+    "name": "Bhayandar Creek",
+    "lat": 19.293,
+    "lon": 72.855,
+    "elevation_m": 3.5,
+    "ward": "Mira-Bhayander",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.9399,
+    "scenario": {
+      "rainfall_mm": 248.0,
+      "water_level_m": 5.6,
+      "soil_moisture": 91.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (5.6m > 3.5m)",
+      "Soil fully saturated (91%)",
+      "Critical low-lying area (3.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0031",
+    "name": "CST Station Surrounding",
+    "lat": 18.94,
+    "lon": 72.836,
+    "elevation_m": 4.5,
+    "ward": "B",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.3255,
+    "scenario": {
+      "rainfall_mm": 248.0,
+      "water_level_m": 5.6,
+      "soil_moisture": 91.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (5.6m > 3.5m)",
+      "Soil fully saturated (91%)",
+      "Critical low-lying area (4.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0032",
+    "name": "Sion Nullah Confluence",
+    "lat": 19.038,
+    "lon": 72.87,
+    "elevation_m": 2.5,
+    "ward": "F/S",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.7511,
+    "scenario": {
+      "rainfall_mm": 270.0,
+      "water_level_m": 6.1,
+      "soil_moisture": 93.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (6.1m > 3.5m)",
+      "Soil fully saturated (93%)",
+      "Critical low-lying area (2.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0033",
+    "name": "Sion Low-Lying Basin",
+    "lat": 19.043,
+    "lon": 72.863,
+    "elevation_m": 3.2,
+    "ward": "F/S",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.7524,
+    "scenario": {
+      "rainfall_mm": 248.0,
+      "water_level_m": 5.6,
+      "soil_moisture": 91.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (5.6m > 3.5m)",
+      "Soil fully saturated (91%)",
+      "Critical low-lying area (3.2m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0034",
+    "name": "Sion Hospital Basin",
+    "lat": 19.04,
+    "lon": 72.862,
+    "elevation_m": 3.5,
+    "ward": "F/S",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.5677,
+    "scenario": {
+      "rainfall_mm": 248.0,
+      "water_level_m": 5.6,
+      "soil_moisture": 91.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (5.6m > 3.5m)",
+      "Soil fully saturated (91%)",
+      "Critical low-lying area (3.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0035",
+    "name": "Matunga East Nullah",
+    "lat": 19.026,
+    "lon": 72.864,
+    "elevation_m": 4.8,
+    "ward": "F/S",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.3876,
+    "scenario": {
+      "rainfall_mm": 248.0,
+      "water_level_m": 5.6,
+      "soil_moisture": 91.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (5.6m > 3.5m)",
+      "Soil fully saturated (91%)",
+      "Critical low-lying area (4.8m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0036",
+    "name": "Chunabhatti Depression",
+    "lat": 19.048,
+    "lon": 72.872,
+    "elevation_m": 4.5,
+    "ward": "G/S",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.6384,
+    "scenario": {
+      "rainfall_mm": 235.0,
+      "water_level_m": 5.6,
+      "soil_moisture": 91.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (5.6m > 3.5m)",
+      "Soil fully saturated (91%)",
+      "Critical low-lying area (4.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0039",
+    "name": "Anik Village Nullah",
+    "lat": 19.03,
+    "lon": 72.902,
+    "elevation_m": 3.5,
+    "ward": "M/W",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.4659,
+    "scenario": {
+      "rainfall_mm": 235.0,
+      "water_level_m": 5.6,
+      "soil_moisture": 91.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (5.6m > 3.5m)",
+      "Soil fully saturated (91%)",
+      "Critical low-lying area (3.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0040",
+    "name": "Kurla Nullah West",
+    "lat": 19.07,
+    "lon": 72.878,
+    "elevation_m": 3.5,
+    "ward": "L",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.512,
+    "scenario": {
+      "rainfall_mm": 235.0,
+      "water_level_m": 5.6,
+      "soil_moisture": 91.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (5.6m > 3.5m)",
+      "Soil fully saturated (91%)",
+      "Critical low-lying area (3.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0041",
+    "name": "Kurla (E) Station Underdrain",
+    "lat": 19.072,
+    "lon": 72.888,
+    "elevation_m": 3.0,
+    "ward": "L",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.7272,
+    "scenario": {
+      "rainfall_mm": 235.0,
+      "water_level_m": 5.6,
+      "soil_moisture": 91.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (5.6m > 3.5m)",
+      "Soil fully saturated (91%)",
+      "Critical low-lying area (3.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0042",
+    "name": "Kurla West Swamp",
+    "lat": 19.064,
+    "lon": 72.877,
+    "elevation_m": 5.0,
+    "ward": "L",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.4363,
+    "scenario": {
+      "rainfall_mm": 205.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (5.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0043",
+    "name": "Tilak Nagar Depression",
+    "lat": 19.077,
+    "lon": 72.889,
+    "elevation_m": 3.0,
+    "ward": "L",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.7869,
+    "scenario": {
+      "rainfall_mm": 235.0,
+      "water_level_m": 5.6,
+      "soil_moisture": 91.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (5.6m > 3.5m)",
+      "Soil fully saturated (91%)",
+      "Critical low-lying area (3.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0044",
+    "name": "Chembur Nullah Outlet",
+    "lat": 19.043,
+    "lon": 72.906,
+    "elevation_m": 3.0,
+    "ward": "M/E",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.3851,
+    "scenario": {
+      "rainfall_mm": 235.0,
+      "water_level_m": 5.6,
+      "soil_moisture": 91.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (5.6m > 3.5m)",
+      "Soil fully saturated (91%)",
+      "Critical low-lying area (3.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0045",
+    "name": "Chembur Mangrove Buffer",
+    "lat": 19.055,
+    "lon": 72.898,
+    "elevation_m": 2.8,
+    "ward": "M/E",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.4512,
+    "scenario": {
+      "rainfall_mm": 270.0,
+      "water_level_m": 6.1,
+      "soil_moisture": 93.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (6.1m > 3.5m)",
+      "Soil fully saturated (93%)",
+      "Critical low-lying area (2.8m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0046",
+    "name": "Priyadarshini Nagar Basin",
+    "lat": 19.048,
+    "lon": 72.903,
+    "elevation_m": 4.0,
+    "ward": "M/E",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.6063,
+    "scenario": {
+      "rainfall_mm": 235.0,
+      "water_level_m": 5.6,
+      "soil_moisture": 91.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (5.6m > 3.5m)",
+      "Soil fully saturated (91%)",
+      "Critical low-lying area (4.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0048",
+    "name": "Vashi Creek Inlet",
+    "lat": 19.076,
+    "lon": 73.001,
+    "elevation_m": 2.5,
+    "ward": "Navi Mumbai",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.7325,
+    "scenario": {
+      "rainfall_mm": 270.0,
+      "water_level_m": 6.1,
+      "soil_moisture": 93.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (6.1m > 3.5m)",
+      "Soil fully saturated (93%)",
+      "Critical low-lying area (2.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0049",
+    "name": "Ghansoli Creek",
+    "lat": 19.121,
+    "lon": 73.0,
+    "elevation_m": 4.5,
+    "ward": "Navi Mumbai",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.7481,
+    "scenario": {
+      "rainfall_mm": 248.0,
+      "water_level_m": 5.6,
+      "soil_moisture": 91.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (5.6m > 3.5m)",
+      "Soil fully saturated (91%)",
+      "Critical low-lying area (4.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0052",
+    "name": "Sanpada Nullah West",
+    "lat": 19.058,
+    "lon": 73.009,
+    "elevation_m": 6.0,
+    "ward": "Navi Mumbai",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.326,
+    "scenario": {
+      "rainfall_mm": 205.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (6.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0053",
+    "name": "Juinagar Creek",
+    "lat": 19.023,
+    "lon": 73.024,
+    "elevation_m": 5.5,
+    "ward": "Navi Mumbai",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.5625,
+    "scenario": {
+      "rainfall_mm": 205.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (5.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0054",
+    "name": "Kopra Nullah (Navi Mumbai)",
+    "lat": 19.09,
+    "lon": 73.002,
+    "elevation_m": 5.5,
+    "ward": "Navi Mumbai",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.7236,
+    "scenario": {
+      "rainfall_mm": 205.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (5.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0056",
+    "name": "Juhu Koliwada",
+    "lat": 19.101,
+    "lon": 72.826,
+    "elevation_m": 4.5,
+    "ward": "K/W",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.3123,
+    "scenario": {
+      "rainfall_mm": 248.0,
+      "water_level_m": 5.6,
+      "soil_moisture": 91.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (5.6m > 3.5m)",
+      "Soil fully saturated (91%)",
+      "Critical low-lying area (4.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0058",
+    "name": "Malad Creek South",
+    "lat": 19.178,
+    "lon": 72.839,
+    "elevation_m": 5.5,
+    "ward": "P/N",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.3541,
+    "scenario": {
+      "rainfall_mm": 218.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (5.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0061",
+    "name": "Thane Creek South",
+    "lat": 19.18,
+    "lon": 72.982,
+    "elevation_m": 5.5,
+    "ward": "Thane",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.8314,
+    "scenario": {
+      "rainfall_mm": 205.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (5.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0062",
+    "name": "Kalwa Creek Inlet",
+    "lat": 19.218,
+    "lon": 72.999,
+    "elevation_m": 4.8,
+    "ward": "Thane",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.5806,
+    "scenario": {
+      "rainfall_mm": 248.0,
+      "water_level_m": 5.6,
+      "soil_moisture": 91.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (5.6m > 3.5m)",
+      "Soil fully saturated (91%)",
+      "Critical low-lying area (4.8m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0063",
+    "name": "Mumbra Shilphata Nullah",
+    "lat": 19.179,
+    "lon": 73.021,
+    "elevation_m": 5.5,
+    "ward": "Thane",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.5905,
+    "scenario": {
+      "rainfall_mm": 205.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (5.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0064",
+    "name": "Mumbra Nullah",
+    "lat": 19.179,
+    "lon": 73.019,
+    "elevation_m": 8.5,
+    "ward": "Thane",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.6959,
+    "scenario": {
+      "rainfall_mm": 188.0,
+      "water_level_m": 4.2,
+      "soil_moisture": 80.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.2m > 3.5m)",
+      "Soil heavily saturated (80%)",
+      "Low-lying area (8.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0069",
+    "name": "Bandra Station Bowl",
+    "lat": 19.054,
+    "lon": 72.84,
+    "elevation_m": 5.8,
+    "ward": "H/W",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.6838,
+    "scenario": {
+      "rainfall_mm": 218.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (5.8m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0070",
+    "name": "Santacruz Vakola Nullah",
+    "lat": 19.082,
+    "lon": 72.861,
+    "elevation_m": 6.5,
+    "ward": "H/W",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.3413,
+    "scenario": {
+      "rainfall_mm": 218.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (6.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0071",
+    "name": "Mahalaxmi Nullah",
+    "lat": 18.977,
+    "lon": 72.824,
+    "elevation_m": 5.0,
+    "ward": "D",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.4311,
+    "scenario": {
+      "rainfall_mm": 218.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (5.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0076",
+    "name": "Lower Parel Lowland",
+    "lat": 18.996,
+    "lon": 72.826,
+    "elevation_m": 6.0,
+    "ward": "G/S",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.4291,
+    "scenario": {
+      "rainfall_mm": 218.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (6.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0077",
+    "name": "Parel Elphinstone Low",
+    "lat": 18.99,
+    "lon": 72.833,
+    "elevation_m": 5.5,
+    "ward": "F/S",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.334,
+    "scenario": {
+      "rainfall_mm": 218.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (5.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0079",
+    "name": "Worli Sea Face",
+    "lat": 19.009,
+    "lon": 72.82,
+    "elevation_m": 5.5,
+    "ward": "F/S",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.4777,
+    "scenario": {
+      "rainfall_mm": 218.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (5.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0080",
+    "name": "Dadar East Pocket",
+    "lat": 19.02,
+    "lon": 72.848,
+    "elevation_m": 6.0,
+    "ward": "G/N",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.5946,
+    "scenario": {
+      "rainfall_mm": 218.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (6.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0081",
+    "name": "King's Circle Basin",
+    "lat": 19.031,
+    "lon": 72.861,
+    "elevation_m": 5.5,
+    "ward": "F/N",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.4015,
+    "scenario": {
+      "rainfall_mm": 218.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (5.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0082",
+    "name": "Mahim West Nullah",
+    "lat": 19.042,
+    "lon": 72.84,
+    "elevation_m": 6.0,
+    "ward": "G/N",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.4173,
+    "scenario": {
+      "rainfall_mm": 218.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (6.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0083",
+    "name": "Bhandup Pumping Basin",
+    "lat": 19.149,
+    "lon": 72.94,
+    "elevation_m": 3.8,
+    "ward": "S",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.8204,
+    "scenario": {
+      "rainfall_mm": 235.0,
+      "water_level_m": 5.6,
+      "soil_moisture": 91.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (5.6m > 3.5m)",
+      "Soil fully saturated (91%)",
+      "Critical low-lying area (3.8m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0084",
+    "name": "Kanjurmarg Creek Arm",
+    "lat": 19.126,
+    "lon": 72.934,
+    "elevation_m": 3.5,
+    "ward": "S",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.9147,
+    "scenario": {
+      "rainfall_mm": 235.0,
+      "water_level_m": 5.6,
+      "soil_moisture": 91.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (5.6m > 3.5m)",
+      "Soil fully saturated (91%)",
+      "Critical low-lying area (3.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0085",
+    "name": "Vikhroli Nullah East",
+    "lat": 19.108,
+    "lon": 72.93,
+    "elevation_m": 3.2,
+    "ward": "S",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.6103,
+    "scenario": {
+      "rainfall_mm": 235.0,
+      "water_level_m": 5.6,
+      "soil_moisture": 91.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (5.6m > 3.5m)",
+      "Soil fully saturated (91%)",
+      "Critical low-lying area (3.2m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0086",
+    "name": "Vikhroli West Nullah",
+    "lat": 19.105,
+    "lon": 72.915,
+    "elevation_m": 5.5,
+    "ward": "S",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.6815,
+    "scenario": {
+      "rainfall_mm": 205.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (5.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0087",
+    "name": "Vikhroli East Nullah",
+    "lat": 19.101,
+    "lon": 72.936,
+    "elevation_m": 7.0,
+    "ward": "S",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.5963,
+    "scenario": {
+      "rainfall_mm": 205.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (7.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0088",
+    "name": "Ghatkopar Nullah South",
+    "lat": 19.083,
+    "lon": 72.906,
+    "elevation_m": 4.0,
+    "ward": "N",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.5637,
+    "scenario": {
+      "rainfall_mm": 235.0,
+      "water_level_m": 5.6,
+      "soil_moisture": 91.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (5.6m > 3.5m)",
+      "Soil fully saturated (91%)",
+      "Critical low-lying area (4.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0089",
+    "name": "Ghatkopar Creek Arm",
+    "lat": 19.079,
+    "lon": 72.921,
+    "elevation_m": 3.2,
+    "ward": "N",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.6755,
+    "scenario": {
+      "rainfall_mm": 235.0,
+      "water_level_m": 5.6,
+      "soil_moisture": 91.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (5.6m > 3.5m)",
+      "Soil fully saturated (91%)",
+      "Critical low-lying area (3.2m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0090",
+    "name": "Vidyavihar Low Bowl",
+    "lat": 19.082,
+    "lon": 72.882,
+    "elevation_m": 3.5,
+    "ward": "N",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.6636,
+    "scenario": {
+      "rainfall_mm": 235.0,
+      "water_level_m": 5.6,
+      "soil_moisture": 91.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (5.6m > 3.5m)",
+      "Soil fully saturated (91%)",
+      "Critical low-lying area (3.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0091",
+    "name": "GTB Nagar Nullah",
+    "lat": 19.064,
+    "lon": 72.899,
+    "elevation_m": 5.5,
+    "ward": "L",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.8939,
+    "scenario": {
+      "rainfall_mm": 205.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (5.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0092",
+    "name": "Kurla East Pocket",
+    "lat": 19.073,
+    "lon": 72.892,
+    "elevation_m": 7.0,
+    "ward": "L",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.62,
+    "scenario": {
+      "rainfall_mm": 205.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (7.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0093",
+    "name": "Chembur West Drain",
+    "lat": 19.054,
+    "lon": 72.891,
+    "elevation_m": 6.5,
+    "ward": "M/E",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.5363,
+    "scenario": {
+      "rainfall_mm": 205.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (6.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0094",
+    "name": "Chembur Colony Drain",
+    "lat": 19.059,
+    "lon": 72.898,
+    "elevation_m": 6.0,
+    "ward": "M/E",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.508,
+    "scenario": {
+      "rainfall_mm": 205.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (6.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0095",
+    "name": "Chembur Golf Club Basin",
+    "lat": 19.062,
+    "lon": 72.891,
+    "elevation_m": 7.0,
+    "ward": "M/E",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.5986,
+    "scenario": {
+      "rainfall_mm": 205.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (7.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0096",
+    "name": "Mulund Check Nullah",
+    "lat": 19.174,
+    "lon": 72.958,
+    "elevation_m": 3.5,
+    "ward": "T",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.6481,
+    "scenario": {
+      "rainfall_mm": 248.0,
+      "water_level_m": 5.6,
+      "soil_moisture": 91.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (5.6m > 3.5m)",
+      "Soil fully saturated (91%)",
+      "Critical low-lying area (3.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0097",
+    "name": "Thane Creek South (Kopri)",
+    "lat": 19.225,
+    "lon": 72.99,
+    "elevation_m": 5.0,
+    "ward": "Thane",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.3554,
+    "scenario": {
+      "rainfall_mm": 205.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (5.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0098",
+    "name": "Rabale Creek",
+    "lat": 19.104,
+    "lon": 73.015,
+    "elevation_m": 5.5,
+    "ward": "Navi Mumbai",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.4429,
+    "scenario": {
+      "rainfall_mm": 205.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (5.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0099",
+    "name": "Koparkhairane Creek",
+    "lat": 19.102,
+    "lon": 72.997,
+    "elevation_m": 5.0,
+    "ward": "Navi Mumbai",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.3875,
+    "scenario": {
+      "rainfall_mm": 205.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (5.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0100",
+    "name": "Turbhe Low Basin",
+    "lat": 19.069,
+    "lon": 73.013,
+    "elevation_m": 5.5,
+    "ward": "Navi Mumbai",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.5149,
+    "scenario": {
+      "rainfall_mm": 205.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (5.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0102",
+    "name": "Kamothe Creek Basin",
+    "lat": 18.999,
+    "lon": 73.075,
+    "elevation_m": 8.0,
+    "ward": "Navi Mumbai",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.3141,
+    "scenario": {
+      "rainfall_mm": 188.0,
+      "water_level_m": 4.2,
+      "soil_moisture": 80.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.2m > 3.5m)",
+      "Soil heavily saturated (80%)",
+      "Low-lying area (8.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0104",
+    "name": "Andheri East Nullah",
+    "lat": 19.114,
+    "lon": 72.877,
+    "elevation_m": 6.0,
+    "ward": "K/E",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.6207,
+    "scenario": {
+      "rainfall_mm": 205.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (6.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0105",
+    "name": "JB Nagar Nullah",
+    "lat": 19.111,
+    "lon": 72.872,
+    "elevation_m": 8.0,
+    "ward": "K/E",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.7339,
+    "scenario": {
+      "rainfall_mm": 188.0,
+      "water_level_m": 4.2,
+      "soil_moisture": 80.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.2m > 3.5m)",
+      "Soil heavily saturated (80%)",
+      "Low-lying area (8.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0106",
+    "name": "Marol Nullah",
+    "lat": 19.114,
+    "lon": 72.87,
+    "elevation_m": 7.5,
+    "ward": "K/E",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.9286,
+    "scenario": {
+      "rainfall_mm": 205.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (7.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0107",
+    "name": "Chakala Nullah",
+    "lat": 19.109,
+    "lon": 72.862,
+    "elevation_m": 8.5,
+    "ward": "K/E",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.3982,
+    "scenario": {
+      "rainfall_mm": 188.0,
+      "water_level_m": 4.2,
+      "soil_moisture": 80.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.2m > 3.5m)",
+      "Soil heavily saturated (80%)",
+      "Low-lying area (8.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0108",
+    "name": "MIDC Andheri Nullah",
+    "lat": 19.112,
+    "lon": 72.869,
+    "elevation_m": 7.0,
+    "ward": "K/E",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.8929,
+    "scenario": {
+      "rainfall_mm": 218.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (7.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0109",
+    "name": "Oshiwara Nullah West",
+    "lat": 19.134,
+    "lon": 72.827,
+    "elevation_m": 6.0,
+    "ward": "K/W",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.6719,
+    "scenario": {
+      "rainfall_mm": 218.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (6.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0110",
+    "name": "Lokhandwala Nullah",
+    "lat": 19.145,
+    "lon": 72.83,
+    "elevation_m": 6.5,
+    "ward": "K/W",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.3305,
+    "scenario": {
+      "rainfall_mm": 218.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (6.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0111",
+    "name": "Yari Road Nullah",
+    "lat": 19.137,
+    "lon": 72.825,
+    "elevation_m": 6.0,
+    "ward": "K/W",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.6337,
+    "scenario": {
+      "rainfall_mm": 218.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (6.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0112",
+    "name": "Goregaon East Nullah",
+    "lat": 19.155,
+    "lon": 72.868,
+    "elevation_m": 7.5,
+    "ward": "P/S",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.3804,
+    "scenario": {
+      "rainfall_mm": 218.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (7.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0113",
+    "name": "Bangur Nagar Nullah",
+    "lat": 19.178,
+    "lon": 72.842,
+    "elevation_m": 7.0,
+    "ward": "P/N",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.3299,
+    "scenario": {
+      "rainfall_mm": 218.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (7.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0116",
+    "name": "Kandivali Creek Arm",
+    "lat": 19.199,
+    "lon": 72.841,
+    "elevation_m": 5.5,
+    "ward": "R/S",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.8664,
+    "scenario": {
+      "rainfall_mm": 218.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (5.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0117",
+    "name": "Naupada Nullah (Thane)",
+    "lat": 19.194,
+    "lon": 72.974,
+    "elevation_m": 8.0,
+    "ward": "Thane",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.8237,
+    "scenario": {
+      "rainfall_mm": 188.0,
+      "water_level_m": 4.2,
+      "soil_moisture": 80.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.2m > 3.5m)",
+      "Soil heavily saturated (80%)",
+      "Low-lying area (8.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0118",
+    "name": "Mumbra Nullah East",
+    "lat": 19.18,
+    "lon": 73.025,
+    "elevation_m": 7.0,
+    "ward": "Thane",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.5635,
+    "scenario": {
+      "rainfall_mm": 205.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (7.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0119",
+    "name": "Dombivli Low Bowl",
+    "lat": 19.21,
+    "lon": 73.085,
+    "elevation_m": 7.0,
+    "ward": "Kalyan-Dombivli",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.4583,
+    "scenario": {
+      "rainfall_mm": 205.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (7.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0122",
+    "name": "Mira Road Low Area",
+    "lat": 19.281,
+    "lon": 72.863,
+    "elevation_m": 5.5,
+    "ward": "Mira-Bhayander",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.4724,
+    "scenario": {
+      "rainfall_mm": 218.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (5.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0123",
+    "name": "Bhayander East Nullah",
+    "lat": 19.299,
+    "lon": 72.874,
+    "elevation_m": 6.0,
+    "ward": "Mira-Bhayander",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.4162,
+    "scenario": {
+      "rainfall_mm": 205.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (6.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0126",
+    "name": "Khar West Nullah",
+    "lat": 19.071,
+    "lon": 72.831,
+    "elevation_m": 12.0,
+    "ward": "H/W",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.451,
+    "scenario": {
+      "rainfall_mm": 172.0,
+      "water_level_m": 3.8,
+      "soil_moisture": 73.0,
+      "month": 7,
+      "doy": 188
+    },
+    "risk_factors": [
+      "Water level above danger (3.8m > 3.5m)",
+      "Soil heavily saturated (73%)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0127",
+    "name": "Santacruz West Pocket",
+    "lat": 19.086,
+    "lon": 72.837,
+    "elevation_m": 13.0,
+    "ward": "H/W",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.5212,
+    "scenario": {
+      "rainfall_mm": 172.0,
+      "water_level_m": 3.8,
+      "soil_moisture": 73.0,
+      "month": 7,
+      "doy": 188
+    },
+    "risk_factors": [
+      "Water level above danger (3.8m > 3.5m)",
+      "Soil heavily saturated (73%)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0129",
+    "name": "Tardeo Nullah",
+    "lat": 18.975,
+    "lon": 72.815,
+    "elevation_m": 12.0,
+    "ward": "D",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.3319,
+    "scenario": {
+      "rainfall_mm": 172.0,
+      "water_level_m": 3.8,
+      "soil_moisture": 73.0,
+      "month": 7,
+      "doy": 188
+    },
+    "risk_factors": [
+      "Water level above danger (3.8m > 3.5m)",
+      "Soil heavily saturated (73%)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0130",
+    "name": "Dadar West",
+    "lat": 19.018,
+    "lon": 72.84,
+    "elevation_m": 10.5,
+    "ward": "G/N",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.5586,
+    "scenario": {
+      "rainfall_mm": 188.0,
+      "water_level_m": 4.2,
+      "soil_moisture": 80.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.2m > 3.5m)",
+      "Soil heavily saturated (80%)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0131",
+    "name": "Matunga West",
+    "lat": 19.025,
+    "lon": 72.857,
+    "elevation_m": 11.0,
+    "ward": "F/N",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.3309,
+    "scenario": {
+      "rainfall_mm": 188.0,
+      "water_level_m": 4.2,
+      "soil_moisture": 80.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.2m > 3.5m)",
+      "Soil heavily saturated (80%)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0132",
+    "name": "Ghatkopar West Nullah",
+    "lat": 19.087,
+    "lon": 72.904,
+    "elevation_m": 12.0,
+    "ward": "N",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.7814,
+    "scenario": {
+      "rainfall_mm": 172.0,
+      "water_level_m": 3.8,
+      "soil_moisture": 73.0,
+      "month": 7,
+      "doy": 188
+    },
+    "risk_factors": [
+      "Water level above danger (3.8m > 3.5m)",
+      "Soil heavily saturated (73%)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0133",
+    "name": "Sakinaka Nullah",
+    "lat": 19.104,
+    "lon": 72.889,
+    "elevation_m": 11.5,
+    "ward": "K/E",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.9506,
+    "scenario": {
+      "rainfall_mm": 188.0,
+      "water_level_m": 4.2,
+      "soil_moisture": 80.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.2m > 3.5m)",
+      "Soil heavily saturated (80%)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0134",
+    "name": "Chandivali Nullah",
+    "lat": 19.097,
+    "lon": 72.883,
+    "elevation_m": 12.0,
+    "ward": "K/E",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.9407,
+    "scenario": {
+      "rainfall_mm": 172.0,
+      "water_level_m": 3.8,
+      "soil_moisture": 73.0,
+      "month": 7,
+      "doy": 188
+    },
+    "risk_factors": [
+      "Water level above danger (3.8m > 3.5m)",
+      "Soil heavily saturated (73%)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0135",
+    "name": "Saki Naka Nullah",
+    "lat": 19.099,
+    "lon": 72.887,
+    "elevation_m": 11.5,
+    "ward": "K/E",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.8428,
+    "scenario": {
+      "rainfall_mm": 188.0,
+      "water_level_m": 4.2,
+      "soil_moisture": 80.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.2m > 3.5m)",
+      "Soil heavily saturated (80%)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0136",
+    "name": "Andheri West Drain",
+    "lat": 19.119,
+    "lon": 72.836,
+    "elevation_m": 12.0,
+    "ward": "K/W",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.8841,
+    "scenario": {
+      "rainfall_mm": 172.0,
+      "water_level_m": 3.8,
+      "soil_moisture": 73.0,
+      "month": 7,
+      "doy": 188
+    },
+    "risk_factors": [
+      "Water level above danger (3.8m > 3.5m)",
+      "Soil heavily saturated (73%)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0137",
+    "name": "Jogeshwari East Nullah",
+    "lat": 19.144,
+    "lon": 72.86,
+    "elevation_m": 14.0,
+    "ward": "K/E",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.4878,
+    "scenario": {
+      "rainfall_mm": 172.0,
+      "water_level_m": 3.8,
+      "soil_moisture": 73.0,
+      "month": 7,
+      "doy": 188
+    },
+    "risk_factors": [
+      "Water level above danger (3.8m > 3.5m)",
+      "Soil heavily saturated (73%)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0138",
+    "name": "Jogeshwari West Coast",
+    "lat": 19.136,
+    "lon": 72.826,
+    "elevation_m": 5.5,
+    "ward": "K/W",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.6757,
+    "scenario": {
+      "rainfall_mm": 218.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (5.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0139",
+    "name": "Goregaon West Coast",
+    "lat": 19.163,
+    "lon": 72.845,
+    "elevation_m": 12.0,
+    "ward": "P/S",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.5299,
+    "scenario": {
+      "rainfall_mm": 172.0,
+      "water_level_m": 3.8,
+      "soil_moisture": 73.0,
+      "month": 7,
+      "doy": 188
+    },
+    "risk_factors": [
+      "Water level above danger (3.8m > 3.5m)",
+      "Soil heavily saturated (73%)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0140",
+    "name": "Malad West Coast",
+    "lat": 19.182,
+    "lon": 72.83,
+    "elevation_m": 11.5,
+    "ward": "P/N",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.4706,
+    "scenario": {
+      "rainfall_mm": 188.0,
+      "water_level_m": 4.2,
+      "soil_moisture": 80.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.2m > 3.5m)",
+      "Soil heavily saturated (80%)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0141",
+    "name": "Kandivali West Coast",
+    "lat": 19.205,
+    "lon": 72.828,
+    "elevation_m": 12.0,
+    "ward": "R/S",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.4012,
+    "scenario": {
+      "rainfall_mm": 172.0,
+      "water_level_m": 3.8,
+      "soil_moisture": 73.0,
+      "month": 7,
+      "doy": 188
+    },
+    "risk_factors": [
+      "Water level above danger (3.8m > 3.5m)",
+      "Soil heavily saturated (73%)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0142",
+    "name": "Borivali West Coast",
+    "lat": 19.232,
+    "lon": 72.845,
+    "elevation_m": 13.0,
+    "ward": "R/N",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.4102,
+    "scenario": {
+      "rainfall_mm": 172.0,
+      "water_level_m": 3.8,
+      "soil_moisture": 73.0,
+      "month": 7,
+      "doy": 188
+    },
+    "risk_factors": [
+      "Water level above danger (3.8m > 3.5m)",
+      "Soil heavily saturated (73%)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0144",
+    "name": "Bhandup West Creek",
+    "lat": 19.15,
+    "lon": 72.93,
+    "elevation_m": 5.8,
+    "ward": "S",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.4821,
+    "scenario": {
+      "rainfall_mm": 205.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (5.8m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0145",
+    "name": "Bhandup East Nullah",
+    "lat": 19.151,
+    "lon": 72.944,
+    "elevation_m": 13.0,
+    "ward": "T",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.4991,
+    "scenario": {
+      "rainfall_mm": 172.0,
+      "water_level_m": 3.8,
+      "soil_moisture": 73.0,
+      "month": 7,
+      "doy": 188
+    },
+    "risk_factors": [
+      "Water level above danger (3.8m > 3.5m)",
+      "Soil heavily saturated (73%)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0146",
+    "name": "Mulund West Nullah",
+    "lat": 19.169,
+    "lon": 72.94,
+    "elevation_m": 6.0,
+    "ward": "T",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.6494,
+    "scenario": {
+      "rainfall_mm": 205.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (6.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0147",
+    "name": "Mulund East Nullah",
+    "lat": 19.175,
+    "lon": 72.96,
+    "elevation_m": 14.0,
+    "ward": "T",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.8815,
+    "scenario": {
+      "rainfall_mm": 172.0,
+      "water_level_m": 3.8,
+      "soil_moisture": 73.0,
+      "month": 7,
+      "doy": 188
+    },
+    "risk_factors": [
+      "Water level above danger (3.8m > 3.5m)",
+      "Soil heavily saturated (73%)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0148",
+    "name": "Hiranandani Estate Nullah",
+    "lat": 19.245,
+    "lon": 72.978,
+    "elevation_m": 10.5,
+    "ward": "Thane",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.7729,
+    "scenario": {
+      "rainfall_mm": 188.0,
+      "water_level_m": 4.2,
+      "soil_moisture": 80.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.2m > 3.5m)",
+      "Soil heavily saturated (80%)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0150",
+    "name": "Thane West Pocket",
+    "lat": 19.201,
+    "lon": 72.963,
+    "elevation_m": 13.0,
+    "ward": "Thane",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.7799,
+    "scenario": {
+      "rainfall_mm": 172.0,
+      "water_level_m": 3.8,
+      "soil_moisture": 73.0,
+      "month": 7,
+      "doy": 188
+    },
+    "risk_factors": [
+      "Water level above danger (3.8m > 3.5m)",
+      "Soil heavily saturated (73%)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0156",
+    "name": "New Panvel Low",
+    "lat": 18.992,
+    "lon": 73.109,
+    "elevation_m": 9.0,
+    "ward": "Raigad",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.4643,
+    "scenario": {
+      "rainfall_mm": 188.0,
+      "water_level_m": 4.2,
+      "soil_moisture": 80.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.2m > 3.5m)",
+      "Soil heavily saturated (80%)",
+      "Low-lying area (9.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0157",
+    "name": "Panvel Creek Arm",
+    "lat": 18.99,
+    "lon": 73.1,
+    "elevation_m": 5.5,
+    "ward": "Raigad",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.8085,
+    "scenario": {
+      "rainfall_mm": 205.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (5.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0162",
+    "name": "Santacruz Airport Drain",
+    "lat": 19.088,
+    "lon": 72.868,
+    "elevation_m": 11.0,
+    "ward": "H/W",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.42,
+    "scenario": {
+      "rainfall_mm": 188.0,
+      "water_level_m": 4.2,
+      "soil_moisture": 80.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.2m > 3.5m)",
+      "Soil heavily saturated (80%)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0163",
+    "name": "Malad East \u2014 Maroshi",
+    "lat": 19.185,
+    "lon": 72.858,
+    "elevation_m": 21.0,
+    "ward": "P/N",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 1.0,
+    "waterway_proximity": 0.5564,
+    "scenario": {
+      "rainfall_mm": 162.0,
+      "water_level_m": 3.5,
+      "soil_moisture": 66.0,
+      "month": 8,
+      "doy": 225
+    },
+    "risk_factors": [
+      "Water level above warning (3.5m > 2.8m)",
+      "Soil heavily saturated (66%)",
+      "Active monsoon season (Month 8)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0060",
+    "name": "Vasai Creek Arm",
+    "lat": 19.27,
+    "lon": 72.825,
+    "elevation_m": 5.0,
+    "ward": "R/N",
+    "risk_score": 99.9,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9993,
+    "waterway_proximity": 0.3041,
+    "scenario": {
+      "rainfall_mm": 218.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (5.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0154",
+    "name": "Khanda Colony West",
+    "lat": 18.975,
+    "lon": 73.085,
+    "elevation_m": 12.0,
+    "ward": "Navi Mumbai",
+    "risk_score": 99.9,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9989,
+    "waterway_proximity": 0.3198,
+    "scenario": {
+      "rainfall_mm": 172.0,
+      "water_level_m": 3.8,
+      "soil_moisture": 73.0,
+      "month": 7,
+      "doy": 188
+    },
+    "risk_factors": [
+      "Water level above danger (3.8m > 3.5m)",
+      "Soil heavily saturated (73%)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0161",
+    "name": "Powai Hiranandani Nullah",
+    "lat": 19.118,
+    "lon": 72.912,
+    "elevation_m": 16.0,
+    "ward": "S",
+    "risk_score": 99.9,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9995,
+    "waterway_proximity": 0.3235,
+    "scenario": {
+      "rainfall_mm": 172.0,
+      "water_level_m": 3.8,
+      "soil_moisture": 73.0,
+      "month": 7,
+      "doy": 188
+    },
+    "risk_factors": [
+      "Water level above danger (3.8m > 3.5m)",
+      "Soil heavily saturated (73%)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0010",
+    "name": "Mahul Village Creek",
+    "lat": 19.025,
+    "lon": 72.934,
+    "elevation_m": 2.0,
+    "ward": "M/E",
+    "risk_score": 99.8,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9975,
+    "waterway_proximity": 0.2901,
+    "scenario": {
+      "rainfall_mm": 270.0,
+      "water_level_m": 6.1,
+      "soil_moisture": 93.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (6.1m > 3.5m)",
+      "Soil fully saturated (93%)",
+      "Critical low-lying area (2.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0065",
+    "name": "Diva Nullah Confluence",
+    "lat": 19.206,
+    "lon": 73.034,
+    "elevation_m": 5.0,
+    "ward": "Thane",
+    "risk_score": 99.8,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9982,
+    "waterway_proximity": 0.2967,
+    "scenario": {
+      "rainfall_mm": 205.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (5.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0149",
+    "name": "Manpada Pocket",
+    "lat": 19.221,
+    "lon": 73.006,
+    "elevation_m": 12.0,
+    "ward": "Thane",
+    "risk_score": 99.8,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9975,
+    "waterway_proximity": 0.3106,
+    "scenario": {
+      "rainfall_mm": 172.0,
+      "water_level_m": 3.8,
+      "soil_moisture": 73.0,
+      "month": 7,
+      "doy": 188
+    },
+    "risk_factors": [
+      "Water level above danger (3.8m > 3.5m)",
+      "Soil heavily saturated (73%)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0072",
+    "name": "Mumbai Central Nullah",
+    "lat": 18.972,
+    "lon": 72.827,
+    "elevation_m": 5.8,
+    "ward": "D",
+    "risk_score": 99.7,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9972,
+    "waterway_proximity": 0.2901,
+    "scenario": {
+      "rainfall_mm": 218.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (5.8m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0103",
+    "name": "Khanda Colony Nullah",
+    "lat": 18.971,
+    "lon": 73.091,
+    "elevation_m": 9.0,
+    "ward": "Navi Mumbai",
+    "risk_score": 99.7,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9967,
+    "waterway_proximity": 0.2797,
+    "scenario": {
+      "rainfall_mm": 188.0,
+      "water_level_m": 4.2,
+      "soil_moisture": 80.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.2m > 3.5m)",
+      "Soil heavily saturated (80%)",
+      "Low-lying area (9.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0128",
+    "name": "Cumballa Hill Drain",
+    "lat": 18.971,
+    "lon": 72.817,
+    "elevation_m": 8.0,
+    "ward": "C",
+    "risk_score": 99.7,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9972,
+    "waterway_proximity": 0.2831,
+    "scenario": {
+      "rainfall_mm": 188.0,
+      "water_level_m": 4.2,
+      "soil_moisture": 80.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.2m > 3.5m)",
+      "Soil heavily saturated (80%)",
+      "Low-lying area (8.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0159",
+    "name": "Powai Lake Overflow Zone",
+    "lat": 19.117,
+    "lon": 72.906,
+    "elevation_m": 20.0,
+    "ward": "S",
+    "risk_score": 99.7,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.997,
+    "waterway_proximity": 0.4061,
+    "scenario": {
+      "rainfall_mm": 162.0,
+      "water_level_m": 3.5,
+      "soil_moisture": 66.0,
+      "month": 8,
+      "doy": 225
+    },
+    "risk_factors": [
+      "Water level above warning (3.5m > 2.8m)",
+      "Soil heavily saturated (66%)",
+      "Active monsoon season (Month 8)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0055",
+    "name": "Taloja Creek",
+    "lat": 19.019,
+    "lon": 73.069,
+    "elevation_m": 6.0,
+    "ward": "Navi Mumbai",
+    "risk_score": 99.6,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.996,
+    "waterway_proximity": 0.2791,
+    "scenario": {
+      "rainfall_mm": 205.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (6.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0051",
+    "name": "Sanpada Creek Fringe",
+    "lat": 19.061,
+    "lon": 73.004,
+    "elevation_m": 5.0,
+    "ward": "Navi Mumbai",
+    "risk_score": 99.5,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9952,
+    "waterway_proximity": 0.2769,
+    "scenario": {
+      "rainfall_mm": 205.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (5.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0125",
+    "name": "Bandra Reclamation",
+    "lat": 19.048,
+    "lon": 72.83,
+    "elevation_m": 11.0,
+    "ward": "H/W",
+    "risk_score": 99.5,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9952,
+    "waterway_proximity": 0.2684,
+    "scenario": {
+      "rainfall_mm": 188.0,
+      "water_level_m": 4.2,
+      "soil_moisture": 80.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.2m > 3.5m)",
+      "Soil heavily saturated (80%)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0160",
+    "name": "Hiranandani Drain (Powai)",
+    "lat": 19.108,
+    "lon": 72.91,
+    "elevation_m": 18.0,
+    "ward": "S",
+    "risk_score": 99.4,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9939,
+    "waterway_proximity": 0.4035,
+    "scenario": {
+      "rainfall_mm": 162.0,
+      "water_level_m": 3.5,
+      "soil_moisture": 66.0,
+      "month": 8,
+      "doy": 225
+    },
+    "risk_factors": [
+      "Water level above warning (3.5m > 2.8m)",
+      "Soil heavily saturated (66%)",
+      "Active monsoon season (Month 8)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0075",
+    "name": "Breach Candy Low",
+    "lat": 18.974,
+    "lon": 72.809,
+    "elevation_m": 4.0,
+    "ward": "C",
+    "risk_score": 99.3,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9932,
+    "waterway_proximity": 0.2612,
+    "scenario": {
+      "rainfall_mm": 248.0,
+      "water_level_m": 5.6,
+      "soil_moisture": 91.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (5.6m > 3.5m)",
+      "Soil fully saturated (91%)",
+      "Critical low-lying area (4.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0114",
+    "name": "Marve Road Creek",
+    "lat": 19.194,
+    "lon": 72.811,
+    "elevation_m": 5.5,
+    "ward": "P/N",
+    "risk_score": 99.3,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9932,
+    "waterway_proximity": 0.2635,
+    "scenario": {
+      "rainfall_mm": 218.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (5.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0121",
+    "name": "Bhiwandi Nullah East",
+    "lat": 19.302,
+    "lon": 73.059,
+    "elevation_m": 8.0,
+    "ward": "Bhiwandi",
+    "risk_score": 99.3,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9926,
+    "waterway_proximity": 0.2526,
+    "scenario": {
+      "rainfall_mm": 188.0,
+      "water_level_m": 4.2,
+      "soil_moisture": 80.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.2m > 3.5m)",
+      "Soil heavily saturated (80%)",
+      "Low-lying area (8.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0050",
+    "name": "Nerul Creek Basin",
+    "lat": 19.033,
+    "lon": 73.017,
+    "elevation_m": 5.0,
+    "ward": "Navi Mumbai",
+    "risk_score": 99.2,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9919,
+    "waterway_proximity": 0.255,
+    "scenario": {
+      "rainfall_mm": 205.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (5.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0059",
+    "name": "Dahisar River Mouth",
+    "lat": 19.241,
+    "lon": 72.841,
+    "elevation_m": 6.0,
+    "ward": "R/N",
+    "risk_score": 99.2,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9916,
+    "waterway_proximity": 0.2504,
+    "scenario": {
+      "rainfall_mm": 218.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (6.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0025",
+    "name": "Navi Mumbai Airport Site",
+    "lat": 18.993,
+    "lon": 73.025,
+    "elevation_m": 5.0,
+    "ward": "Navi Mumbai",
+    "risk_score": 99.1,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9912,
+    "waterway_proximity": 0.2505,
+    "scenario": {
+      "rainfall_mm": 205.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (5.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0030",
+    "name": "Fort Low Pocket",
+    "lat": 18.93,
+    "lon": 72.834,
+    "elevation_m": 4.0,
+    "ward": "B",
+    "risk_score": 99.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9897,
+    "waterway_proximity": 0.2381,
+    "scenario": {
+      "rainfall_mm": 248.0,
+      "water_level_m": 5.6,
+      "soil_moisture": 91.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (5.6m > 3.5m)",
+      "Soil fully saturated (91%)",
+      "Critical low-lying area (4.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0057",
+    "name": "Versova Creek North",
+    "lat": 19.17,
+    "lon": 72.806,
+    "elevation_m": 5.5,
+    "ward": "P/S",
+    "risk_score": 99.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9896,
+    "waterway_proximity": 0.2395,
+    "scenario": {
+      "rainfall_mm": 218.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (5.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0115",
+    "name": "Borivali Creek East",
+    "lat": 19.229,
+    "lon": 72.871,
+    "elevation_m": 6.0,
+    "ward": "R/N",
+    "risk_score": 99.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9904,
+    "waterway_proximity": 0.2417,
+    "scenario": {
+      "rainfall_mm": 205.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (6.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0028",
+    "name": "Byculla Nullah",
+    "lat": 18.975,
+    "lon": 72.837,
+    "elevation_m": 4.8,
+    "ward": "E",
+    "risk_score": 98.9,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9888,
+    "waterway_proximity": 0.2322,
+    "scenario": {
+      "rainfall_mm": 248.0,
+      "water_level_m": 5.6,
+      "soil_moisture": 91.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (5.6m > 3.5m)",
+      "Soil fully saturated (91%)",
+      "Critical low-lying area (4.8m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0029",
+    "name": "Agripada Nullah",
+    "lat": 18.97,
+    "lon": 72.835,
+    "elevation_m": 5.0,
+    "ward": "E",
+    "risk_score": 98.6,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.986,
+    "waterway_proximity": 0.2157,
+    "scenario": {
+      "rainfall_mm": 218.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (5.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0073",
+    "name": "Grant Road Basin",
+    "lat": 18.965,
+    "lon": 72.817,
+    "elevation_m": 6.0,
+    "ward": "C",
+    "risk_score": 98.6,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9861,
+    "waterway_proximity": 0.2134,
+    "scenario": {
+      "rainfall_mm": 218.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (6.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0009",
+    "name": "Sewri Creek Tidal Flat",
+    "lat": 18.996,
+    "lon": 72.851,
+    "elevation_m": 2.5,
+    "ward": "F/N",
+    "risk_score": 98.5,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9855,
+    "waterway_proximity": 0.21,
+    "scenario": {
+      "rainfall_mm": 270.0,
+      "water_level_m": 6.1,
+      "soil_moisture": 93.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (6.1m > 3.5m)",
+      "Soil fully saturated (93%)",
+      "Critical low-lying area (2.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0018",
+    "name": "Uran Creek Flat",
+    "lat": 18.899,
+    "lon": 72.933,
+    "elevation_m": 3.5,
+    "ward": "Raigad",
+    "risk_score": 98.5,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9851,
+    "waterway_proximity": 0.2077,
+    "scenario": {
+      "rainfall_mm": 235.0,
+      "water_level_m": 5.6,
+      "soil_moisture": 91.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (5.6m > 3.5m)",
+      "Soil fully saturated (91%)",
+      "Critical low-lying area (3.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0155",
+    "name": "Kharghar Nullah",
+    "lat": 18.999,
+    "lon": 73.056,
+    "elevation_m": 12.0,
+    "ward": "Navi Mumbai",
+    "risk_score": 98.5,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9851,
+    "waterway_proximity": 0.2277,
+    "scenario": {
+      "rainfall_mm": 172.0,
+      "water_level_m": 3.8,
+      "soil_moisture": 73.0,
+      "month": 7,
+      "doy": 188
+    },
+    "risk_factors": [
+      "Water level above danger (3.8m > 3.5m)",
+      "Soil heavily saturated (73%)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0101",
+    "name": "Sector 20 Kharghar Creek",
+    "lat": 19.009,
+    "lon": 73.068,
+    "elevation_m": 7.0,
+    "ward": "Navi Mumbai",
+    "risk_score": 98.3,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9828,
+    "waterway_proximity": 0.1879,
+    "scenario": {
+      "rainfall_mm": 205.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (7.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0037",
+    "name": "Antop Hill Nullah",
+    "lat": 18.99,
+    "lon": 72.849,
+    "elevation_m": 5.5,
+    "ward": "F/N",
+    "risk_score": 98.2,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9821,
+    "waterway_proximity": 0.1899,
+    "scenario": {
+      "rainfall_mm": 218.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (5.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0026",
+    "name": "Mazagaon Dock Belt",
+    "lat": 18.967,
+    "lon": 72.84,
+    "elevation_m": 3.0,
+    "ward": "E",
+    "risk_score": 98.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.98,
+    "waterway_proximity": 0.1735,
+    "scenario": {
+      "rainfall_mm": 248.0,
+      "water_level_m": 5.6,
+      "soil_moisture": 91.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (5.6m > 3.5m)",
+      "Soil fully saturated (91%)",
+      "Critical low-lying area (3.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0027",
+    "name": "Reay Road Nullah Junction",
+    "lat": 18.97,
+    "lon": 72.843,
+    "elevation_m": 2.8,
+    "ward": "E",
+    "risk_score": 98.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9796,
+    "waterway_proximity": 0.1707,
+    "scenario": {
+      "rainfall_mm": 270.0,
+      "water_level_m": 6.1,
+      "soil_moisture": 93.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (6.1m > 3.5m)",
+      "Soil fully saturated (93%)",
+      "Critical low-lying area (2.8m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0078",
+    "name": "Naigaon Low Pocket",
+    "lat": 18.96,
+    "lon": 72.82,
+    "elevation_m": 5.0,
+    "ward": "D",
+    "risk_score": 98.0,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9805,
+    "waterway_proximity": 0.1787,
+    "scenario": {
+      "rainfall_mm": 218.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (5.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0022",
+    "name": "Manori Creek",
+    "lat": 19.21,
+    "lon": 72.794,
+    "elevation_m": 4.0,
+    "ward": "R/S",
+    "risk_score": 97.9,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.979,
+    "waterway_proximity": 0.1665,
+    "scenario": {
+      "rainfall_mm": 248.0,
+      "water_level_m": 5.6,
+      "soil_moisture": 91.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (5.6m > 3.5m)",
+      "Soil fully saturated (91%)",
+      "Critical low-lying area (4.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0038",
+    "name": "Antop Hill East",
+    "lat": 18.996,
+    "lon": 72.858,
+    "elevation_m": 5.0,
+    "ward": "F/N",
+    "risk_score": 97.9,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.979,
+    "waterway_proximity": 0.1687,
+    "scenario": {
+      "rainfall_mm": 218.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (5.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0003",
+    "name": "Churchgate Coastal Belt",
+    "lat": 18.936,
+    "lon": 72.825,
+    "elevation_m": 2.8,
+    "ward": "A",
+    "risk_score": 97.8,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9778,
+    "waterway_proximity": 0.1587,
+    "scenario": {
+      "rainfall_mm": 270.0,
+      "water_level_m": 6.1,
+      "soil_moisture": 93.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (6.1m > 3.5m)",
+      "Soil fully saturated (93%)",
+      "Critical low-lying area (2.8m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0047",
+    "name": "Trombay Creek Basin",
+    "lat": 19.017,
+    "lon": 72.947,
+    "elevation_m": 2.5,
+    "ward": "M/E",
+    "risk_score": 97.8,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9777,
+    "waterway_proximity": 0.1579,
+    "scenario": {
+      "rainfall_mm": 270.0,
+      "water_level_m": 6.1,
+      "soil_moisture": 93.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (6.1m > 3.5m)",
+      "Soil fully saturated (93%)",
+      "Critical low-lying area (2.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0143",
+    "name": "Dahisar East Pocket",
+    "lat": 19.24,
+    "lon": 72.87,
+    "elevation_m": 15.0,
+    "ward": "R/N",
+    "risk_score": 97.8,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9784,
+    "waterway_proximity": 0.1834,
+    "scenario": {
+      "rainfall_mm": 172.0,
+      "water_level_m": 3.8,
+      "soil_moisture": 73.0,
+      "month": 7,
+      "doy": 188
+    },
+    "risk_factors": [
+      "Water level above danger (3.8m > 3.5m)",
+      "Soil heavily saturated (73%)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0074",
+    "name": "Girgaon Low Patch",
+    "lat": 18.957,
+    "lon": 72.813,
+    "elevation_m": 5.5,
+    "ward": "C",
+    "risk_score": 97.7,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9769,
+    "waterway_proximity": 0.1552,
+    "scenario": {
+      "rainfall_mm": 218.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (5.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0021",
+    "name": "Gorai Creek",
+    "lat": 19.235,
+    "lon": 72.786,
+    "elevation_m": 3.5,
+    "ward": "R/N",
+    "risk_score": 97.5,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9753,
+    "waterway_proximity": 0.1422,
+    "scenario": {
+      "rainfall_mm": 248.0,
+      "water_level_m": 5.6,
+      "soil_moisture": 91.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (5.6m > 3.5m)",
+      "Soil fully saturated (91%)",
+      "Critical low-lying area (3.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0001",
+    "name": "Cuffe Parade Reclaimed Land",
+    "lat": 18.924,
+    "lon": 72.819,
+    "elevation_m": 2.0,
+    "ward": "A",
+    "risk_score": 97.1,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9706,
+    "waterway_proximity": 0.111,
+    "scenario": {
+      "rainfall_mm": 270.0,
+      "water_level_m": 6.1,
+      "soil_moisture": 93.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (6.1m > 3.5m)",
+      "Soil fully saturated (93%)",
+      "Critical low-lying area (2.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0023",
+    "name": "Uttan Coast",
+    "lat": 19.301,
+    "lon": 72.801,
+    "elevation_m": 4.0,
+    "ward": "Mira-Bhayander",
+    "risk_score": 96.9,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9689,
+    "waterway_proximity": 0.0997,
+    "scenario": {
+      "rainfall_mm": 248.0,
+      "water_level_m": 5.6,
+      "soil_moisture": 91.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (5.6m > 3.5m)",
+      "Soil fully saturated (91%)",
+      "Critical low-lying area (4.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0002",
+    "name": "Colaba Seashore Fringe",
+    "lat": 18.908,
+    "lon": 72.815,
+    "elevation_m": 2.5,
+    "ward": "A",
+    "risk_score": 96.6,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9657,
+    "waterway_proximity": 0.078,
+    "scenario": {
+      "rainfall_mm": 270.0,
+      "water_level_m": 6.1,
+      "soil_moisture": 93.0,
+      "month": 7,
+      "doy": 207
+    },
+    "risk_factors": [
+      "Water level above danger (6.1m > 3.5m)",
+      "Soil fully saturated (93%)",
+      "Critical low-lying area (2.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0124",
+    "name": "Vasai Virar Creek",
+    "lat": 19.37,
+    "lon": 72.831,
+    "elevation_m": 6.0,
+    "ward": "Vasai-Virar",
+    "risk_score": 96.3,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9631,
+    "waterway_proximity": 0.0598,
+    "scenario": {
+      "rainfall_mm": 218.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (6.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0151",
+    "name": "Kalyan Nullah East",
+    "lat": 19.248,
+    "lon": 73.136,
+    "elevation_m": 15.0,
+    "ward": "Kalyan-Dombivli",
+    "risk_score": 96.3,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9634,
+    "waterway_proximity": 0.0832,
+    "scenario": {
+      "rainfall_mm": 172.0,
+      "water_level_m": 3.8,
+      "soil_moisture": 73.0,
+      "month": 7,
+      "doy": 188
+    },
+    "risk_factors": [
+      "Water level above danger (3.8m > 3.5m)",
+      "Soil heavily saturated (73%)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0152",
+    "name": "Ulhasnagar Pocket",
+    "lat": 19.218,
+    "lon": 73.153,
+    "elevation_m": 15.0,
+    "ward": "Ulhasnagar",
+    "risk_score": 96.3,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.963,
+    "waterway_proximity": 0.0801,
+    "scenario": {
+      "rainfall_mm": 172.0,
+      "water_level_m": 3.8,
+      "soil_moisture": 73.0,
+      "month": 7,
+      "doy": 188
+    },
+    "risk_factors": [
+      "Water level above danger (3.8m > 3.5m)",
+      "Soil heavily saturated (73%)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0120",
+    "name": "Titwala Creek",
+    "lat": 19.28,
+    "lon": 73.164,
+    "elevation_m": 8.0,
+    "ward": "Kalyan-Dombivli",
+    "risk_score": 96.2,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9624,
+    "waterway_proximity": 0.0509,
+    "scenario": {
+      "rainfall_mm": 188.0,
+      "water_level_m": 4.2,
+      "soil_moisture": 80.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.2m > 3.5m)",
+      "Soil heavily saturated (80%)",
+      "Low-lying area (8.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0066",
+    "name": "Patalganga River Flat",
+    "lat": 18.848,
+    "lon": 73.207,
+    "elevation_m": 7.5,
+    "ward": "Raigad",
+    "risk_score": 95.9,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.959,
+    "waterway_proximity": 0.0288,
+    "scenario": {
+      "rainfall_mm": 205.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (7.5m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0067",
+    "name": "Pen Creek Inlet",
+    "lat": 18.734,
+    "lon": 73.098,
+    "elevation_m": 6.0,
+    "ward": "Raigad",
+    "risk_score": 95.8,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9581,
+    "waterway_proximity": 0.0265,
+    "scenario": {
+      "rainfall_mm": 205.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (6.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0068",
+    "name": "Alibaug Coast",
+    "lat": 18.641,
+    "lon": 72.872,
+    "elevation_m": 5.0,
+    "ward": "Raigad",
+    "risk_score": 95.7,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9567,
+    "waterway_proximity": 0.0205,
+    "scenario": {
+      "rainfall_mm": 205.0,
+      "water_level_m": 4.8,
+      "soil_moisture": 86.0,
+      "month": 7,
+      "doy": 195
+    },
+    "risk_factors": [
+      "Water level above danger (4.8m > 3.5m)",
+      "Soil fully saturated (86%)",
+      "Low-lying area (5.0m elevation)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0158",
+    "name": "Karjat River Low",
+    "lat": 18.908,
+    "lon": 73.322,
+    "elevation_m": 12.0,
+    "ward": "Raigad",
+    "risk_score": 95.4,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9542,
+    "waterway_proximity": 0.0216,
+    "scenario": {
+      "rainfall_mm": 172.0,
+      "water_level_m": 3.8,
+      "soil_moisture": 73.0,
+      "month": 7,
+      "doy": 188
+    },
+    "risk_factors": [
+      "Water level above danger (3.8m > 3.5m)",
+      "Soil heavily saturated (73%)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0169",
+    "name": "Shahapur River Low",
+    "lat": 19.454,
+    "lon": 73.329,
+    "elevation_m": 16.0,
+    "ward": "Thane District",
+    "risk_score": 95.3,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9532,
+    "waterway_proximity": 0.0152,
+    "scenario": {
+      "rainfall_mm": 172.0,
+      "water_level_m": 3.8,
+      "soil_moisture": 73.0,
+      "month": 7,
+      "doy": 188
+    },
+    "risk_factors": [
+      "Water level above danger (3.8m > 3.5m)",
+      "Soil heavily saturated (73%)",
+      "Active monsoon season (Month 7)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0153",
+    "name": "Ambernath Nullah",
+    "lat": 19.2,
+    "lon": 73.185,
+    "elevation_m": 18.0,
+    "ward": "Ambernath",
+    "risk_score": 94.2,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9416,
+    "waterway_proximity": 0.0548,
+    "scenario": {
+      "rainfall_mm": 162.0,
+      "water_level_m": 3.5,
+      "soil_moisture": 66.0,
+      "month": 8,
+      "doy": 225
+    },
+    "risk_factors": [
+      "Water level above warning (3.5m > 2.8m)",
+      "Soil heavily saturated (66%)",
+      "Active monsoon season (Month 8)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0165",
+    "name": "Badlapur Low Basin",
+    "lat": 19.153,
+    "lon": 73.259,
+    "elevation_m": 17.0,
+    "ward": "Badlapur",
+    "risk_score": 93.8,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9377,
+    "waterway_proximity": 0.0291,
+    "scenario": {
+      "rainfall_mm": 162.0,
+      "water_level_m": 3.5,
+      "soil_moisture": 66.0,
+      "month": 8,
+      "doy": 225
+    },
+    "risk_factors": [
+      "Water level above warning (3.5m > 2.8m)",
+      "Soil heavily saturated (66%)",
+      "Active monsoon season (Month 8)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0168",
+    "name": "Karjat Nullah Confluence",
+    "lat": 18.914,
+    "lon": 73.31,
+    "elevation_m": 17.0,
+    "ward": "Raigad",
+    "risk_score": 93.7,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9368,
+    "waterway_proximity": 0.0229,
+    "scenario": {
+      "rainfall_mm": 162.0,
+      "water_level_m": 3.5,
+      "soil_moisture": 66.0,
+      "month": 8,
+      "doy": 225
+    },
+    "risk_factors": [
+      "Water level above warning (3.5m > 2.8m)",
+      "Soil heavily saturated (66%)",
+      "Active monsoon season (Month 8)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0167",
+    "name": "Khopoli Nullah",
+    "lat": 18.792,
+    "lon": 73.341,
+    "elevation_m": 19.0,
+    "ward": "Raigad",
+    "risk_score": 93.6,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.9358,
+    "waterway_proximity": 0.0163,
+    "scenario": {
+      "rainfall_mm": 162.0,
+      "water_level_m": 3.5,
+      "soil_moisture": 66.0,
+      "month": 8,
+      "doy": 225
+    },
+    "risk_factors": [
+      "Water level above warning (3.5m > 2.8m)",
+      "Soil heavily saturated (66%)",
+      "Active monsoon season (Month 8)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0164",
+    "name": "Borivali National Park Edge",
+    "lat": 19.238,
+    "lon": 72.89,
+    "elevation_m": 25.0,
+    "ward": "R/N",
+    "risk_score": 83.9,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.8393,
+    "waterway_proximity": 0.2358,
+    "scenario": {
+      "rainfall_mm": 153.0,
+      "water_level_m": 3.2,
+      "soil_moisture": 61.0,
+      "month": 8,
+      "doy": 232
+    },
+    "risk_factors": [
+      "Water level above warning (3.2m > 2.8m)",
+      "Soil heavily saturated (61%)",
+      "Active monsoon season (Month 8)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0166",
+    "name": "Ambernath East Nullah",
+    "lat": 19.197,
+    "lon": 73.194,
+    "elevation_m": 22.0,
+    "ward": "Ambernath",
+    "risk_score": 81.1,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.8114,
+    "waterway_proximity": 0.0498,
+    "scenario": {
+      "rainfall_mm": 153.0,
+      "water_level_m": 3.2,
+      "soil_moisture": 61.0,
+      "month": 8,
+      "doy": 232
+    },
+    "risk_factors": [
+      "Water level above warning (3.2m > 2.8m)",
+      "Soil heavily saturated (61%)",
+      "Active monsoon season (Month 8)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  },
+  {
+    "id": "MHZ-0170",
+    "name": "Matheran Foothills Drain",
+    "lat": 18.987,
+    "lon": 73.273,
+    "elevation_m": 24.0,
+    "ward": "Raigad",
+    "risk_score": 80.8,
+    "risk_level": "critical",
+    "flood_predicted": true,
+    "probability": 0.8084,
+    "waterway_proximity": 0.0296,
+    "scenario": {
+      "rainfall_mm": 153.0,
+      "water_level_m": 3.2,
+      "soil_moisture": 61.0,
+      "month": 8,
+      "doy": 232
+    },
+    "risk_factors": [
+      "Water level above warning (3.2m > 2.8m)",
+      "Soil heavily saturated (61%)",
+      "Active monsoon season (Month 8)"
+    ],
+    "advice": "EVACUATE \u2014 Severe flooding imminent. Alert authorities immediately.",
+    "source": "MFIS-Mumbai-v1"
+  }
+]

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dhristi - Multi-City Flood Intelligence</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/hotspots-page.css" />
+  <link rel="stylesheet" href="css/wards-page.css" />
+  <link rel="stylesheet" href="css/yamuna-page.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/map.css" />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css"
+    crossorigin=""
+  />
+</head>
+<body>
+  <div class="bg-layer">
+    <div class="bg-grid"></div>
+    <div class="bg-glow glow1"></div>
+    <div class="bg-glow glow2"></div>
+  </div>
+  <div class="rain-container" id="rainContainer"></div>
+
+  <header class="topbar">
+    <div class="logo-area">
+      <div class="logo-icon">🌊</div>
+      <div>
+        <div class="logo-text" id="brandTitle">Dhristi</div>
+        <div class="logo-sub" id="brandSub">Multi-City Flood Intelligence · GIS · Hydrology · AI</div>
+      </div>
+    </div>
+    <div class="topbar-center">
+      <span class="ticker-live">⚡ LIVE</span>
+      <div class="ticker">
+        <div class="ticker-inner" id="tickerText">
+          Loading live flood intelligence...
+        </div>
+      </div>
+    </div>
+    <div class="topbar-right">
+      <label class="city-switcher">
+        <span class="city-switcher-label">City</span>
+        <select id="citySelect" class="city-switcher-select">
+          <option value="delhi">Delhi</option>
+          <option value="mumbai">Mumbai</option>
+          <option value="sikkim">Sikkim</option>
+        </select>
+      </label>
+      <div class="live-badge"><div class="live-dot"></div>SYSTEM LIVE</div>
+      <div class="monsoon-badge" id="cityModeBadge">MODEL LINKED</div>
+      <div class="clock" id="clockEl">00:00:00</div>
+    </div>
+  </header>
+
+  <div class="alert-strip">
+    <div class="alert-icon">⚠️</div>
+    <div class="alert-label">PRIORITY ALERT</div>
+    <div class="alert-divider"></div>
+    <div class="alert-msg">
+      <div class="alert-msg-inner" id="live-alert-strip-main">
+        Fetching model-backed alerts...
+      </div>
+    </div>
+  </div>
+
+  <nav class="nav" id="mainNav">
+    <div class="ntab on" data-page="dashboard">🗺️ Dashboard</div>
+    <div class="ntab" data-page="hotspots">📍 Hotspots</div>
+    <div class="ntab" data-page="wards">📊 Readiness</div>
+    <div class="ntab" data-page="yamuna">💧 Water Levels</div>
+    <div class="ntab" data-page="simulator">🌧️ Scenario Sim</div>
+    <div class="ntab" data-page="alerts">📢 Send Alerts</div>
+    <div class="ntab" data-page="routes">🗺️ Route Optimizer</div>
+    <div class="ntab" data-page="assistant">🤖 GenAI Assistant</div>
+    <div class="ntab" data-page="features">🚀 Features</div>
+  </nav>
+
+  <main class="main" id="mainContent"></main>
+
+  <footer class="footer">
+    <div class="footer-l" id="footerBrand">Dhristi · Multi-city flood intelligence dashboard</div>
+    <div class="footer-r">
+      <span><span class="status-dot"></span>LIVE</span>
+      <span id="footerSource">Open-Meteo · Flood API · Model inference</span>
+      <span id="footerTime">-</span>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/simulator.js"></script>
+  <script src="js/wards.js"></script>
+  <script src="js/pages.js"></script>
+  <script src="js/live.js"></script>
+  <script src="js/assistant.js"></script>
+  <script src="js/send-laert.js"></script>
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
+  <script
+    src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"
+    crossorigin=""
+  ></script>
+  <script src="js/route.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/hotspots-page.js"></script>
+  <script src="js/wards-page.js"></script>
+  <script src="js/yamuna-page.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" fill="none">
+  <rect width="1200" height="700" rx="24" fill="#F7FAFC"/>
+  <rect x="24" y="24" width="1152" height="70" rx="18" fill="#FFFFFF" stroke="#D8E3F0"/>
+  <text x="48" y="67" fill="#0F172A" font-family="Arial, sans-serif" font-size="30" font-weight="700">Dhristi (Vision) Dashboard Preview</text>
+  <rect x="24" y="118" width="1152" height="120" rx="22" fill="url(#g1)"/>
+  <text x="52" y="170" fill="#0F172A" font-family="Arial, sans-serif" font-size="20" font-weight="700">Next 24-Hour Flood Outlook</text>
+  <text x="52" y="205" fill="#334155" font-family="Arial, sans-serif" font-size="16">Hotspots, rainfall outlook, water-level outlook, alerts, and routing overview</text>
+  <rect x="24" y="262" width="270" height="150" rx="22" fill="#FFFFFF" stroke="#FCA5A5"/>
+  <rect x="318" y="262" width="270" height="150" rx="22" fill="#FFFFFF" stroke="#FDBA74"/>
+  <rect x="612" y="262" width="270" height="150" rx="22" fill="#FFFFFF" stroke="#86EFAC"/>
+  <rect x="906" y="262" width="270" height="150" rx="22" fill="#FFFFFF" stroke="#93C5FD"/>
+  <text x="54" y="300" fill="#EF4444" font-family="Arial, sans-serif" font-size="14" font-weight="700">CRITICAL</text>
+  <text x="348" y="300" fill="#F97316" font-family="Arial, sans-serif" font-size="14" font-weight="700">ELEVATED</text>
+  <text x="642" y="300" fill="#16A34A" font-family="Arial, sans-serif" font-size="14" font-weight="700">PREPARED</text>
+  <text x="936" y="300" fill="#2563EB" font-family="Arial, sans-serif" font-size="14" font-weight="700">WATER LEVEL</text>
+  <text x="54" y="360" fill="#0F172A" font-family="Arial, sans-serif" font-size="44" font-weight="800">42</text>
+  <text x="348" y="360" fill="#0F172A" font-family="Arial, sans-serif" font-size="44" font-weight="800">188</text>
+  <text x="642" y="360" fill="#0F172A" font-family="Arial, sans-serif" font-size="44" font-weight="800">340</text>
+  <text x="936" y="360" fill="#0F172A" font-family="Arial, sans-serif" font-size="44" font-weight="800">204.8m</text>
+  <rect x="24" y="438" width="720" height="238" rx="22" fill="#FFFFFF" stroke="#D8E3F0"/>
+  <rect x="768" y="438" width="408" height="112" rx="22" fill="#FFFFFF" stroke="#D8E3F0"/>
+  <rect x="768" y="564" width="408" height="112" rx="22" fill="#FFFFFF" stroke="#D8E3F0"/>
+  <text x="48" y="474" fill="#0F172A" font-family="Arial, sans-serif" font-size="18" font-weight="700">City Flood Risk Map</text>
+  <text x="792" y="474" fill="#0F172A" font-family="Arial, sans-serif" font-size="18" font-weight="700">Forecast Alerts</text>
+  <text x="792" y="600" fill="#0F172A" font-family="Arial, sans-serif" font-size="18" font-weight="700">Top At-Risk Areas</text>
+  <circle cx="140" cy="560" r="12" fill="#EF4444"/>
+  <circle cx="220" cy="520" r="10" fill="#F97316"/>
+  <circle cx="310" cy="590" r="9" fill="#FACC15"/>
+  <circle cx="410" cy="535" r="8" fill="#4ADE80"/>
+  <circle cx="530" cy="575" r="12" fill="#EF4444"/>
+  <defs>
+    <linearGradient id="g1" x1="24" y1="118" x2="1176" y2="238" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E0F2FE"/>
+      <stop offset="1" stop-color="#FFF7ED"/>
+    </linearGradient>
+  </defs>
+</svg>
