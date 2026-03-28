@@ -34,6 +34,55 @@ DFIS.pages = {
       <div class="scard s-info"><div class="scard-icon">🌧️</div><div class="scard-label">Rainfall Now <span style="font-size:8px;color:var(--info)">(LIVE)</span></div><div class="scard-val" id="live-rainfall-val">-</div><div class="scard-sub" id="live-rainfall-sub">Loading 24h outlook...</div><div class="scard-delta delta-up" id="live-rainfall-cat">Loading...</div></div>
       <div class="scard s-accent"><div class="scard-icon">🏙️</div><div class="scard-label">City Readiness <span style="font-size:8px;color:var(--info)">(LIVE)</span></div><div class="scard-val" id="live-readiness-val">-</div><div class="scard-sub">Calculated from backend readiness rows</div><div class="scard-delta delta-up">Loading...</div></div>
     </div>
+    <div class="card dashboard-overview" aria-label="flood summary">
+      <div class="card-body dashboard-overview-body">
+        <div class="pg-header overview-topline">
+          <div class="overview-heading">
+            <div class="pg-eyebrow">Active City · Next 24-Hour Flood Outlook</div>
+            <div class="pg-title">Flood Intelligence Dashboard</div>
+            <div class="pg-desc">Key forecast, live weather, water level, and readiness for the selected city.</div>
+          </div>
+          <div class="overview-status">
+            <div class="status-badge-row">
+              <div class="badge b-danger">⛔ 0 Critical</div>
+              <div class="badge b-warn">⚠ 0 Elevated</div>
+              <div class="badge b-safe">✓ 0 Low Risk</div>
+            </div>
+            <div class="overview-status-note" id="dashboardLiveDataStatus">Loading live data...</div>
+          </div>
+        </div>
+        <div class="overview-highlight">
+          <div class="overview-highlight-label">Priority Summary</div>
+          <div class="overview-highlight-value" id="dashboard24HourSummary">Loading summary...</div>
+        </div>
+        <div class="overview-meta-row">
+          <div class="overview-chip">
+            <span class="overview-chip-label">Temperature</span>
+            <span class="overview-chip-value" id="dashboardLiveTemp">...</span>
+          </div>
+          <div class="overview-chip">
+            <span class="overview-chip-label">Humidity</span>
+            <span class="overview-chip-value" id="dashboardLiveHumidity">...</span>
+          </div>
+          <div class="overview-chip">
+            <span class="overview-chip-label">Wind</span>
+            <span class="overview-chip-value" id="dashboardLiveWind">...</span>
+          </div>
+          <div class="overview-chip overview-chip-alert">
+            <span class="overview-chip-label">Priority Update</span>
+            <span class="overview-chip-value" id="dashboardAlertStrip">Fetching alerts...</span>
+          </div>
+        </div>
+        <div class="stats-row overview-kpis">
+          <div class="scard s-danger"><div class="scard-icon">⛔</div><div class="scard-label">Critical Areas</div><div class="scard-val">0</div><div class="scard-sub">Priority action areas</div><div class="scard-delta delta-up">Waiting for forecast...</div></div>
+          <div class="scard s-warn"><div class="scard-icon">⚠</div><div class="scard-label">Elevated Risk</div><div class="scard-val">0</div><div class="scard-sub">Watch and response areas</div><div class="scard-delta delta-up">Waiting for forecast...</div></div>
+          <div class="scard s-safe"><div class="scard-icon">✓</div><div class="scard-label">Low Risk</div><div class="scard-val">0</div><div class="scard-sub">Routine monitoring areas</div><div class="scard-delta delta-dn">Waiting for forecast...</div></div>
+          <div class="scard s-yamuna"><div class="scard-icon">≈</div><div class="scard-label">Water Level</div><div class="scard-val" id="dashboardWaterLevel">-</div><div class="scard-sub">Current monitored level</div><div class="scard-delta delta-up" id="dashboardWaterTrend">Loading...</div></div>
+          <div class="scard s-info"><div class="scard-icon">☔</div><div class="scard-label">Rainfall</div><div class="scard-val" id="dashboardRainfallVal">-</div><div class="scard-sub" id="dashboardRainfallSub">Loading forecast...</div><div class="scard-delta delta-up" id="dashboardRainfallCat">Loading...</div></div>
+          <div class="scard s-accent"><div class="scard-icon">⌂</div><div class="scard-label">Readiness</div><div class="scard-val" id="dashboardReadinessVal">-</div><div class="scard-sub">Operational readiness score</div><div class="scard-delta delta-up" id="dashboardReadinessNote">Loading...</div></div>
+        </div>
+      </div>
+    </div>
     <div class="g-main">
       <div class="card">
         <div class="card-head">
@@ -477,16 +526,8 @@ DFIS.pages = {
     <div class="assistant-grid">
       <div class="assistant-card assistant-sidebar">
         <div class="assistant-section">
-          <div class="assistant-kicker">Live briefing</div>
-          <div class="assistant-brief" id="assistantBriefing">Loading city briefing...</div>
-        </div>
-        <div class="assistant-section">
           <div class="assistant-kicker">Suggested asks</div>
           <div class="assistant-suggestions" id="assistantSuggestions"></div>
-        </div>
-        <div class="assistant-section">
-          <div class="assistant-kicker">Grounding sources</div>
-          <div class="assistant-source-list" id="assistantSources">Waiting for live sources...</div>
         </div>
       </div>
       <div class="assistant-card assistant-chat-card">

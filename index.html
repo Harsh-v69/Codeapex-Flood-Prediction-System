@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dhristi - Multi-City Flood Intelligence</title>
+  <title>Drishti - Flood Prediction System</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="css/base.css" />
   <link rel="stylesheet" href="css/components.css" />
@@ -28,78 +28,174 @@
     crossorigin=""
   />
 </head>
-<body>
-  <div class="bg-layer">
-    <div class="bg-grid"></div>
-    <div class="bg-glow glow1"></div>
-    <div class="bg-glow glow2"></div>
-  </div>
-  <div class="rain-container" id="rainContainer"></div>
+<body data-city="delhi">
+  <div class="war-room-noise" aria-hidden="true"></div>
+  <div class="war-room-vignette" aria-hidden="true"></div>
+  <div class="topographic-overlay" aria-hidden="true"></div>
 
   <header class="topbar">
-    <div class="logo-area">
-      <div class="logo-icon">🌊</div>
-      <div>
-        <div class="logo-text" id="brandTitle">Dhristi</div>
-        <div class="logo-sub" id="brandSub">Multi-City Flood Intelligence · GIS · Hydrology · AI</div>
+    <div class="command-brand">
+      <div class="logo-orb" aria-hidden="true">
+        <svg viewBox="0 0 64 64" class="logo-drop">
+          <defs>
+            <linearGradient id="dropGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#00C9B1"></stop>
+              <stop offset="50%" stop-color="#0BC4E3"></stop>
+              <stop offset="100%" stop-color="#3DFFA0"></stop>
+            </linearGradient>
+          </defs>
+          <path d="M32 6C32 6 17 23 17 35c0 8.7 6.6 16.5 15 18.4 8.4-1.9 15-9.7 15-18.4C47 23 32 6 32 6Z" fill="url(#dropGradient)"></path>
+          <path d="M41 30.5c0 5.1-4 10.2-9 11.8-5-1.6-9-6.7-9-11.8 0-2.8 1.6-6.3 4.4-10.1 1.7-2.3 3.5-4.2 4.6-5.3 1.1 1.1 2.9 3 4.6 5.3 2.8 3.8 4.4 7.3 4.4 10.1Z" fill="rgba(255,255,255,0.22)"></path>
+        </svg>
+        <span class="logo-ping"></span>
+      </div>
+      <div class="logo-copy">
+        <div class="logo-kicker">National Flood Intelligence Grid</div>
+        <div class="logo-text" id="brandTitle">Drishti</div>
+        <div class="logo-sub" id="brandSub">Flood monitoring and prediction dashboard</div>
       </div>
     </div>
-    <div class="topbar-center">
-      <span class="ticker-live">⚡ LIVE</span>
-      <div class="ticker">
-        <div class="ticker-inner" id="tickerText">
-          Loading live flood intelligence...
+
+    <div class="command-center">
+      <div class="city-ribbon-wrap">
+        <div class="city-ribbon-label">Selected City</div>
+        <div class="city-tabs" id="cityTabs">
+          <button type="button" class="city-tab active" data-city="delhi">
+            <span class="city-tab-name">Delhi</span>
+            <span class="city-tab-meta">Yamuna</span>
+          </button>
+          <button type="button" class="city-tab" data-city="mumbai">
+            <span class="city-tab-name">Mumbai</span>
+            <span class="city-tab-meta">Coastal watch</span>
+          </button>
+          <button type="button" class="city-tab" data-city="sikkim">
+            <span class="city-tab-name">Sikkim</span>
+            <span class="city-tab-meta">Teesta basin</span>
+          </button>
         </div>
+        <label class="city-switcher" aria-label="City selector">
+          <span class="city-switcher-label">City</span>
+          <select id="citySelect" class="city-switcher-select">
+            <option value="delhi">Delhi</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="sikkim">Sikkim</option>
+          </select>
+        </label>
       </div>
     </div>
+
     <div class="topbar-right">
-      <label class="city-switcher">
-        <span class="city-switcher-label">City</span>
-        <select id="citySelect" class="city-switcher-select">
-          <option value="delhi">Delhi</option>
-          <option value="mumbai">Mumbai</option>
-          <option value="sikkim">Sikkim</option>
-        </select>
-      </label>
-      <div class="live-badge"><div class="live-dot"></div>SYSTEM LIVE</div>
-      <div class="monsoon-badge" id="cityModeBadge">MODEL LINKED</div>
-      <div class="clock" id="clockEl">00:00:00</div>
+      <div class="topbar-meta">
+        <div class="live-badge">
+          <div class="live-dot-wrap">
+            <div class="live-dot"></div>
+            <div class="live-sonar"></div>
+          </div>
+          <span id="cityModeBadge">LIVE DATA</span>
+        </div>
+        <div class="clock" id="clockEl">IST 00:00:00</div>
+        <div class="user-badge">Admin</div>
+      </div>
     </div>
   </header>
 
-  <div class="alert-strip">
-    <div class="alert-icon">⚠️</div>
-    <div class="alert-label">PRIORITY ALERT</div>
-    <div class="alert-divider"></div>
-    <div class="alert-msg">
-      <div class="alert-msg-inner" id="live-alert-strip-main">
-        Fetching model-backed alerts...
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="sidebar-head">
+        <div class="sidebar-kicker">Navigation</div>
       </div>
+      <nav class="nav" id="mainNav">
+        <div class="ntab on" data-page="dashboard">
+          <span class="ntab-icon">D</span>
+          <span class="ntab-label">Dashboard</span>
+        </div>
+        <div class="ntab" data-page="hotspots">
+          <span class="ntab-icon">L</span>
+          <span class="ntab-label">Locations</span>
+        </div>
+        <div class="ntab" data-page="simulator">
+          <span class="ntab-icon">P</span>
+          <span class="ntab-label">Predictions</span>
+        </div>
+        <div class="ntab" data-page="alerts">
+          <span class="ntab-icon">!</span>
+          <span class="ntab-label">Alerts</span>
+        </div>
+        <div class="ntab" data-page="wards">
+          <span class="ntab-icon">#</span>
+          <span class="ntab-label">Data Overview</span>
+        </div>
+        <div class="ntab" data-page="yamuna">
+          <span class="ntab-icon">W</span>
+          <span class="ntab-label">Water Levels</span>
+        </div>
+        <div class="ntab" data-page="routes">
+          <span class="ntab-icon">R</span>
+          <span class="ntab-label">Route Optimizer</span>
+        </div>
+        <div class="ntab" data-page="features">
+          <span class="ntab-icon">F</span>
+          <span class="ntab-label">Features</span>
+        </div>
+      </nav>
+    </aside>
+
+    <div class="content-shell">
+      <div class="alert-strip">
+        <div class="alert-label"><span class="alert-caret">▶</span>Priority Alert</div>
+        <div class="alert-msg">
+          <div class="alert-ripple" aria-hidden="true"></div>
+          <div class="alert-msg-inner" id="live-alert-strip-main">Fetching model-backed alerts...</div>
+        </div>
+      </div>
+
+      <section class="ticker-panel" aria-label="Live situation summary">
+        <div class="ticker-live-rail">LIVE</div>
+        <div class="ticker-panel-body">
+          <div class="ticker-panel-label">Live Situation Summary</div>
+          <div class="ticker-panel-value" id="tickerText">Loading live flood intelligence...</div>
+        </div>
+      </section>
+
+      <main class="main" id="mainContent"></main>
+
+      <footer class="footer">
+        <div class="footer-l" id="footerBrand">Drishti - Multi-city flood intelligence dashboard</div>
+        <div class="footer-r">
+          <span class="footer-live">
+            <span class="status-dot-wrap">
+              <span class="status-dot"></span>
+              <span class="status-sonar"></span>
+            </span>
+            LIVE
+          </span>
+          <span id="footerSource">Open-Meteo - Flood API - Model inference</span>
+          <span id="footerTime">-</span>
+        </div>
+      </footer>
     </div>
   </div>
 
-  <nav class="nav" id="mainNav">
-    <div class="ntab on" data-page="dashboard">🗺️ Dashboard</div>
-    <div class="ntab" data-page="hotspots">📍 Hotspots</div>
-    <div class="ntab" data-page="wards">📊 Readiness</div>
-    <div class="ntab" data-page="yamuna">💧 Water Levels</div>
-    <div class="ntab" data-page="simulator">🌧️ Scenario Sim</div>
-    <div class="ntab" data-page="alerts">📢 Send Alerts</div>
-    <div class="ntab" data-page="routes">🗺️ Route Optimizer</div>
-    <div class="ntab" data-page="assistant">🤖 GenAI Assistant</div>
-    <div class="ntab" data-page="features">🚀 Features</div>
-  </nav>
-
-  <main class="main" id="mainContent"></main>
-
-  <footer class="footer">
-    <div class="footer-l" id="footerBrand">Dhristi · Multi-city flood intelligence dashboard</div>
-    <div class="footer-r">
-      <span><span class="status-dot"></span>LIVE</span>
-      <span id="footerSource">Open-Meteo · Flood API · Model inference</span>
-      <span id="footerTime">-</span>
+  <button class="chatbot-toggle" id="chatbotToggle" type="button" aria-controls="chatbotPanel" aria-expanded="false">
+    Chat
+  </button>
+  <section class="chatbot-panel" id="chatbotPanel" aria-label="Assistant chat panel" hidden>
+    <div class="chatbot-head">
+      <div>
+        <div class="chatbot-title">Drishti Assistant</div>
+        <div class="chatbot-subtitle" id="assistantHorizon">Next 24 hours</div>
+      </div>
+      <button class="chatbot-close" id="chatbotClose" type="button" aria-label="Close assistant">X</button>
     </div>
-  </footer>
+    <div class="assistant-thread" id="assistantThread"></div>
+    <div class="assistant-composer chatbot-composer">
+      <textarea id="assistantInput" placeholder="Ask for the 24-hour prediction, top risk areas, response steps, or evacuation guidance..." rows="3"></textarea>
+      <div class="assistant-actions">
+        <div class="assistant-note" id="assistantStatus">Grounding from live city data</div>
+        <button class="assistant-send" id="assistantSendBtn" type="button">Send</button>
+      </div>
+    </div>
+  </section>
 
   <script src="js/data.js"></script>
   <script src="js/utils.js"></script>

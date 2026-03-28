@@ -62,7 +62,7 @@
 .ward-stat-value {
   font-family: var(--font-display);
   font-size: 40px;
-  font-weight: 800;
+  font-weight: 100;
   line-height: 1;
   margin-bottom: 10px;
 }
@@ -105,7 +105,7 @@
 .ward-dim-value {
   font-family: var(--font-display);
   font-size: 34px;
-  font-weight: 800;
+  font-weight: 100;
   color: var(--accent);
   line-height: 0.95;
   text-align: left;

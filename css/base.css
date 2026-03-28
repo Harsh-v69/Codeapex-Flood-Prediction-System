@@ -1,39 +1,40 @@
 /* ============================================================
-   DFIS — Delhi Flood Intelligence System
-   css/base.css — Variables, Reset, Typography, Background
-   [LIGHT THEME - White Background]
+   Drishti Vision
+   css/base.css - Tokens, reset, typography
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500;700&family=Outfit:wght@300;400;500;600&display=swap');
-
-/* ── CSS Variables (LIGHT THEME) ── */
 :root {
-  /* Background: White to Light Gray */
-  --void:     #ffffff;      /* White background */
-  --abyss:    #f8fafb;      /* Very light gray */
-  --surface:  #f0f3f7;      /* Card backgrounds */
-  --raised:   #e8ecf1;      /* Elevated elements */
-  --rim:      #d0d7e0;      /* Borders */
-  --dim:      #b8c1ce;      /* Muted highlights */
-  --muted:    #6b7280;      /* Secondary text */
-  --text:     #1f2937;      /* Primary text (dark) */
+  --void: #070c18;
+  --abyss: #0d1520;
+  --surface: #111d2e;
+  --raised: #18283f;
+  --rim: rgba(255, 255, 255, 0.08);
+  --dim: rgba(201, 220, 242, 0.44);
+  --muted: #91a4bd;
+  --text: #e9f2ff;
 
-  /* Accent palette: Cyan/Blue primary */
-  --accent:   #0891b2;      /* Teal/Cyan */
-  --accent2:  #0e7490;      /* Darker Cyan */
-  --danger:   #dc2626;      /* Red */
-  --warn:     #ea580c;      /* Orange */
-  --safe:     #16a34a;      /* Green */
-  --info:     #0284c7;      /* Blue */
-  --yamuna:   #0369a1;      /* Deep Blue */
-  --purple:   #7c3aed;      /* Purple */
+  --accent: #00c9b1;
+  --accent2: #0bc4e3;
+  --danger: #ff4d6d;
+  --warn: #f5a623;
+  --safe: #3dffa0;
+  --info: #64b5ff;
+  --yamuna: #00c9b1;
+  --purple: #8fa7ff;
 
-  /* Fonts */
-  --font-display: 'Syne', sans-serif;
-  --font-mono:    'JetBrains Mono', monospace;
-  --font-body:    'Outfit', sans-serif;
+  --city-bg: #0d1b2a;
+  --city-accent: #00c9b1;
+  --city-danger: #f5a623;
+  --city-secondary: #0bc4e3;
+  --city-glow: rgba(0, 201, 177, 0.16);
 
-  /* Spacing scale */
+  --water-shimmer: linear-gradient(135deg, #00c9b1, #0bc4e3, #3dffa0);
+
+  --font-display: "Inter", "Segoe UI", sans-serif;
+  --font-mono: "Source Sans 3", "Segoe UI", sans-serif;
+  --font-alert: "Inter", "Segoe UI", sans-serif;
+  --font-body: "Source Sans 3", "Segoe UI", sans-serif;
+
   --sp-1: 4px;
   --sp-2: 8px;
   --sp-3: 12px;
@@ -43,117 +44,227 @@
   --sp-8: 32px;
   --sp-10: 40px;
 
-  /* Border radius */
-  --r-sm: 4px;
-  --r-md: 8px;
-  --r-lg: 10px;
-  --r-xl: 12px;
+  --r-sm: 8px;
+  --r-md: 12px;
+  --r-lg: 16px;
+  --r-xl: 22px;
 }
 
-/* ── Reset ── */
+body[data-city="delhi"] {
+  --city-bg: #0d1b2a;
+  --city-accent: #00c9b1;
+  --city-danger: #f5a623;
+  --city-secondary: #4de2d1;
+  --city-glow: rgba(0, 201, 177, 0.18);
+}
+
+body[data-city="mumbai"] {
+  --city-bg: #060d1f;
+  --city-accent: #0bc4e3;
+  --city-danger: #ff4d6d;
+  --city-secondary: #59cfff;
+  --city-glow: rgba(11, 196, 227, 0.18);
+}
+
+body[data-city="sikkim"] {
+  --city-bg: #0a1a14;
+  --city-accent: #3dffa0;
+  --city-danger: #e8fff5;
+  --city-secondary: #7effc2;
+  --city-glow: rgba(61, 255, 160, 0.14);
+}
+
 *, *::before, *::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
-  background: var(--void);
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at 20% 0%, rgba(11, 196, 227, 0.06), transparent 35%),
+    radial-gradient(circle at 82% 12%, var(--city-glow), transparent 26%),
+    linear-gradient(180deg, #08101d 0%, #070c18 100%);
   color: var(--text);
   font-family: var(--font-body);
-  font-size: 13px;
-  min-height: 100vh;
-  overflow-x: hidden;
-  line-height: 1.5;
+  font-size: 15px;
+  line-height: 1.6;
+  transition: background 0.5s ease, color 0.5s ease;
 }
 
-/* ── Scrollbar ── */
-::-webkit-scrollbar { width: 4px; height: 4px; }
-::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: var(--rim); border-radius: 2px; }
-
-/* ── Animated Background ── */
-.bg-layer {
+.war-room-noise,
+.war-room-vignette,
+.topographic-overlay {
   position: fixed;
   inset: 0;
-  z-index: 0;
   pointer-events: none;
 }
 
-.bg-grid {
-  position: absolute;
-  inset: 0;
+.war-room-noise {
+  z-index: 0;
+  opacity: 0.04;
   background-image:
-    linear-gradient(rgba(8,145,178,0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(8,145,178,0.05) 1px, transparent 1px);
-  background-size: 60px 60px;
+    radial-gradient(circle at 25% 25%, rgba(255,255,255,0.36) 0 1px, transparent 1px),
+    radial-gradient(circle at 75% 75%, rgba(255,255,255,0.18) 0 1px, transparent 1px);
+  background-size: 10px 10px, 12px 12px;
 }
 
-.bg-glow {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(120px);
-  pointer-events: none;
-}
-.glow1 { width: 600px; height: 400px; top: -100px; right: -100px; background: rgba(8,145,178,0.08); }
-.glow2 { width: 500px; height: 400px; bottom: -100px; left: -100px; background: rgba(2,132,199,0.08); }
-
-/* ── Rain Animation ── */
-.rain-container {
-  position: fixed;
-  inset: 0;
+.war-room-vignette {
   z-index: 0;
-  pointer-events: none;
-  overflow: hidden;
-}
-.rdrop {
-  position: absolute;
-  width: 1px;
-  background: linear-gradient(to bottom, transparent, rgba(8,145,178,0.15));
-  animation: rfall linear infinite;
-}
-@keyframes rfall {
-  0%   { transform: translateY(-150px) rotate(10deg); opacity: 0; }
-  10%  { opacity: 1; }
-  90%  { opacity: 0.5; }
-  100% { transform: translateY(110vh) rotate(10deg); opacity: 0; }
+  background: radial-gradient(circle at center, transparent 55%, rgba(2, 6, 12, 0.52) 100%);
 }
 
-/* ── Keyframe Animations ── */
+.topographic-overlay {
+  z-index: 0;
+  opacity: 0.035;
+  background-image:
+    radial-gradient(circle at 18% 26%, transparent 0 26px, rgba(255,255,255,0.5) 27px 28px, transparent 29px),
+    radial-gradient(circle at 76% 34%, transparent 0 34px, rgba(255,255,255,0.45) 35px 36px, transparent 37px),
+    radial-gradient(circle at 44% 74%, transparent 0 48px, rgba(255,255,255,0.32) 49px 50px, transparent 51px);
+  background-size: 300px 300px, 360px 360px, 420px 420px;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  color: inherit;
+}
+
+select {
+  appearance: none;
+}
+
+::selection {
+  background: rgba(11, 196, 227, 0.24);
+  color: #ffffff;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b1320;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(11, 196, 227, 0.55), rgba(61, 255, 160, 0.55));
+  border-radius: 999px;
+}
+
 @keyframes blink {
   0%, 100% { opacity: 1; }
-  50%       { opacity: 0.2; }
-}
-@keyframes ticker {
-  from { transform: translateX(100%); }
-  to   { transform: translateX(-200%); }
-}
-@keyframes shake {
-  0%, 100% { transform: rotate(0); }
-  20%      { transform: rotate(-8deg); }
-  40%      { transform: rotate(8deg); }
-  60%      { transform: rotate(-4deg); }
-  80%      { transform: rotate(4deg); }
-}
-@keyframes hotspot-pulse {
-  0%, 100% { opacity: 1; }
-  50%      { opacity: 0.45; }
-}
-@keyframes yamuna-flow {
-  from { stroke-dashoffset: 0; }
-  to   { stroke-dashoffset: -48; }
+  50% { opacity: 0.35; }
 }
 
-/* ── Typography Helpers ── */
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  60% { transform: scale(1.8); opacity: 0; }
+  100% { transform: scale(1.8); opacity: 0; }
+}
+
+@keyframes sonar-ring {
+  0% { transform: scale(0.8); opacity: 0.7; }
+  100% { transform: scale(2.1); opacity: 0; }
+}
+
+@keyframes shimmer {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
 .font-display { font-family: var(--font-display); }
-.font-mono    { font-family: var(--font-mono); }
+.font-mono { font-family: var(--font-mono); }
 
-.text-danger  { color: var(--danger); }
-.text-warn    { color: var(--warn); }
-.text-safe    { color: var(--safe); }
-.text-info    { color: var(--info); }
-.text-accent  { color: var(--accent); }
-.text-muted   { color: var(--muted); }
-.text-white   { color: #1f2937; }
+.text-danger { color: var(--danger); }
+.text-warn { color: var(--warn); }
+.text-safe { color: var(--safe); }
+.text-info { color: var(--info); }
+.text-accent { color: var(--city-accent); }
+.text-muted { color: var(--muted); }
+
+/* ============================================================
+   Professional Light Theme Reset
+   ============================================================ */
+
+:root {
+  --void: #eef3f8;
+  --abyss: #f6f9fc;
+  --surface: #ffffff;
+  --raised: #edf3f8;
+  --rim: #d7e0ea;
+  --dim: #7f8fa3;
+  --muted: #5d6b7c;
+  --text: #182433;
+
+  --accent: #1f5f8b;
+  --accent2: #338fc2;
+  --danger: #d9534f;
+  --warn: #d99a18;
+  --safe: #2f8f62;
+  --info: #2f78b7;
+  --yamuna: #2a9d8f;
+
+  --city-bg: #eaf2f8;
+  --city-accent: #1aa8a1;
+  --city-danger: #f0b63f;
+  --city-secondary: #5bbec5;
+  --city-glow: rgba(26, 168, 161, 0.12);
+  --water-shimmer: linear-gradient(135deg, #1aa8a1, #4caed9, #74c69d);
+}
+
+body[data-city="delhi"] {
+  --city-accent: #1aa8a1;
+  --city-danger: #f0b63f;
+  --city-secondary: #53bfc0;
+  --city-glow: rgba(26, 168, 161, 0.12);
+}
+
+body[data-city="mumbai"] {
+  --city-accent: #2f8fd6;
+  --city-danger: #ef6b7b;
+  --city-secondary: #64c8e7;
+  --city-glow: rgba(47, 143, 214, 0.12);
+}
+
+body[data-city="sikkim"] {
+  --city-accent: #2f9c68;
+  --city-danger: #9dd9bc;
+  --city-secondary: #63c98e;
+  --city-glow: rgba(47, 156, 104, 0.12);
+}
+
+body {
+  background:
+    radial-gradient(circle at top right, rgba(47, 143, 214, 0.08), transparent 24%),
+    radial-gradient(circle at 15% 12%, var(--city-glow), transparent 20%),
+    linear-gradient(180deg, #f6f9fc 0%, #eef3f8 100%);
+  color: var(--text);
+}
+
+.war-room-noise,
+.war-room-vignette,
+.topographic-overlay {
+  display: none;
+}
+
+::-webkit-scrollbar-track {
+  background: #e5edf4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(47, 143, 214, 0.45), rgba(47, 156, 104, 0.45));
+}

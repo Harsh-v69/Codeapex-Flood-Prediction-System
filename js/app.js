@@ -11,9 +11,14 @@ DFIS.app = {
     DFIS.app.initRain();
     DFIS.app.initClock();
     DFIS.app.initNav();
+    DFIS.app.initCityTabs();
+    DFIS.app.initChatbot();
     DFIS.app.showPage(DFIS.app._loadSavedPage());
     if (DFIS.live && typeof DFIS.live.start === 'function') {
       DFIS.live.start();
+    }
+    if (DFIS.assistant && typeof DFIS.assistant.init === 'function') {
+      DFIS.assistant.init();
     }
   },
   initRain() {
@@ -48,9 +53,44 @@ DFIS.app = {
       });
     });
   },
+  initCityTabs() {
+    document.querySelectorAll('.city-tab').forEach((tab) => {
+      if (tab.dataset.boundCityTab) return;
+      tab.addEventListener('click', () => {
+        const city = tab.getAttribute('data-city');
+        const select = document.getElementById('citySelect');
+        if (!city || !select) return;
+        select.value = city;
+        select.dispatchEvent(new Event('change', { bubbles: true }));
+      });
+      tab.dataset.boundCityTab = 'true';
+    });
+  },
+  syncCityTabs(city) {
+    document.body?.setAttribute('data-city', city || 'delhi');
+    document.querySelectorAll('.city-tab').forEach((tab) => {
+      tab.classList.toggle('active', tab.getAttribute('data-city') === city);
+    });
+  },
+  initChatbot() {
+    const panel = document.getElementById('chatbotPanel');
+    const toggle = document.getElementById('chatbotToggle');
+    const close = document.getElementById('chatbotClose');
+    if (!panel || !toggle) return;
+    const setOpen = (open) => {
+      panel.hidden = !open;
+      panel.classList.toggle('open', !!open);
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      document.body.classList.toggle('chatbot-open', !!open);
+    };
+    toggle.onclick = () => setOpen(panel.hidden);
+    if (close) close.onclick = () => setOpen(false);
+  },
   showPage(id) {
-    const nextPage = DFIS.pages && DFIS.pages[id] ? id : 'dashboard';
+    const requested = id === 'assistant' ? 'dashboard' : id;
+    const nextPage = DFIS.pages && DFIS.pages[requested] ? requested : 'dashboard';
     DFIS.app.currentPage = nextPage;
+    document.body?.setAttribute('data-page', nextPage);
     DFIS.app._savePage(nextPage);
     document.querySelectorAll('.ntab').forEach(t => {
       t.classList.toggle('on', t.getAttribute('data-page') === nextPage);
@@ -69,6 +109,9 @@ DFIS.app = {
     } catch(e) { console.warn('[DFIS] pageHook error:', e); }
     try {
       if (DFIS.live && DFIS.live._cache) DFIS.live._updateDOM(DFIS.live._cache);
+    } catch(e) {}
+    try {
+      DFIS.app.normalizeSeverityUI?.();
     } catch(e) {}
   },
   _loadSavedPage() {
@@ -320,4 +363,50 @@ DFIS.app = {
     ).join('');
   },
 };
+
+DFIS.app.normalizeSeverityUI = function() {
+  const cleanPrefix = (text) => text
+    .replace(/^\[(?:!|\^|~|OK|i)\]\s*/i, '')
+    .replace(/^(?:!|OK|i|\^|~)\s+/i, '')
+    .replace(/^[^A-Za-z0-9]+/, '')
+    .trim();
+  const classify = (text) => {
+    const t = text.toLowerCase();
+    if (t.includes('critical') || t.includes('danger') || t.includes('severe') || t.includes('evacuate')) return '⛔';
+    if (t.includes('high') || t.includes('elevated') || t.includes('alert')) return '⚠';
+    if (t.includes('medium') || t.includes('moderate') || t.includes('watch')) return '●';
+    if (t.includes('low') || t.includes('prepared') || t.includes('safe') || t.includes('normal')) return '✓';
+    if (t.includes('advisory') || t.includes('info')) return 'ℹ';
+    return '';
+  };
+
+  document.querySelectorAll('.badge, .rpill, .chip, .alerts-sev').forEach((el) => {
+    const raw = (el.textContent || '').trim();
+    const base = cleanPrefix(raw);
+    const marker = classify(base);
+    if (!marker) return;
+    el.textContent = marker + ' ' + base;
+  });
+
+  document.querySelectorAll('.scard').forEach((card) => {
+    const icon = card.querySelector('.scard-icon');
+    if (!icon) return;
+    if (card.classList.contains('s-danger')) icon.textContent = '⛔';
+    else if (card.classList.contains('s-accent')) icon.textContent = '✓';
+    else if (card.classList.contains('s-warn')) icon.textContent = '⚠';
+    else if (card.classList.contains('s-safe')) icon.textContent = '✓';
+    else if (card.classList.contains('s-info')) icon.textContent = '☔';
+    else if (card.classList.contains('s-yamuna')) icon.textContent = '≈';
+  });
+
+  document.querySelectorAll('.alerts-stat').forEach((card) => {
+    const icon = card.querySelector('.alerts-stat-icon');
+    if (!icon) return;
+    if (card.classList.contains('alerts-stat-danger')) icon.textContent = '⛔';
+    else if (card.classList.contains('alerts-stat-accent')) icon.textContent = '✦';
+    else if (card.classList.contains('alerts-stat-info')) icon.textContent = 'ℹ';
+    else if (card.classList.contains('alerts-stat-safe')) icon.textContent = '✓';
+  });
+};
+
 document.addEventListener('DOMContentLoaded', () => DFIS.app.init());

@@ -1,110 +1,110 @@
 location,district,lat,lon,elevation_m,risk_type,local_rainfall_mm,local_water_level_m,local_soil_moisture,risk_score,risk_class,flood_predicted,probability,teesta_prox,glof_risk,flood_eta_hours,lead_time_confidence,advice
-Tarpin,South,27.2,88.3,490,river_flood,2.5,3.79,42.2,2.3,low,False,0.0234,1.0,0.85,,low,LOW RISK — Standard monsoon precautions.
-Teesta Barrage,East,27.22,88.51,340,infrastructure,3.4,4.9,43.9,2.1,low,False,0.0211,1.0,0.85,,low,LOW RISK — Standard monsoon precautions.
-2023 GLOF — Lower Teesta,East,27.18,88.52,330,river_flood,3.4,3.0,46.4,2.0,low,False,0.02,0.781,0.85,,low,LOW RISK — Standard monsoon precautions.
-Singtam Bridge,East,27.23,88.51,360,infrastructure,3.6,3.51,47.3,2.0,low,False,0.02,0.758,0.85,,low,LOW RISK — Standard monsoon precautions.
-2023 GLOF — Rongpo Khola,East,27.22,88.5,350,river_flood,3.4,3.13,49.6,2.0,low,False,0.02,0.781,0.85,,low,LOW RISK — Standard monsoon precautions.
-Singtam,East,27.23,88.5,350,river_flood,3.4,3.01,50.6,1.4,low,False,0.0138,0.69,0.85,,low,LOW RISK — Standard monsoon precautions.
-Tsomgo Lake,East,27.37,88.77,3780,glof_source,4.0,0.62,25.4,1.4,low,False,0.0141,0.002,0.05,,low,LOW RISK — Standard monsoon precautions.
-Zero Point,North,27.82,88.77,4428,glof_source,3.5,0.5,17.4,1.4,low,False,0.0141,0.0,0.5,,low,LOW RISK — Standard monsoon precautions.
-South Lhonak,North,27.9,88.4,5200,glof_source,2.9,0.5,19.7,1.3,low,False,0.0128,0.0,0.9,,low,LOW RISK — Standard monsoon precautions.
-Gurudongmar Lake,North,27.95,88.73,5183,glof_source,3.1,0.5,19.1,1.3,low,False,0.0128,0.0,0.9,,low,LOW RISK — Standard monsoon precautions.
-Chho Lhamu,North,27.98,88.67,5330,glof_source,3.1,0.5,21.1,1.3,low,False,0.0128,0.0,0.9,,low,LOW RISK — Standard monsoon precautions.
-Lacchen Nala,North,27.75,88.57,3000,glof_risk,3.0,0.85,28.9,1.1,low,False,0.0114,0.009,0.05,,low,LOW RISK — Standard monsoon precautions.
-Yumthang,North,27.78,88.72,3564,glof_risk,3.6,0.71,26.3,1.1,low,False,0.0114,0.0,0.05,,low,LOW RISK — Standard monsoon precautions.
-Lachen,North,27.73,88.55,2750,glof_risk,2.8,0.8,28.2,1.1,low,False,0.0114,0.018,0.15,,low,LOW RISK — Standard monsoon precautions.
-Thangu,North,27.85,88.6,3960,glof_risk,3.0,0.56,25.3,1.1,low,False,0.0114,0.001,0.05,,low,LOW RISK — Standard monsoon precautions.
-Lachung,North,27.68,88.74,2900,glof_risk,3.6,0.5,27.7,1.1,low,False,0.0114,0.001,0.15,,low,LOW RISK — Standard monsoon precautions.
-Shipgyar,North,27.72,88.5,2400,glof_risk,2.9,1.34,27.2,1.1,low,False,0.0114,0.035,0.15,,low,LOW RISK — Standard monsoon precautions.
-Kupup,East,27.33,88.78,3870,glof_risk,3.8,0.5,30.2,1.1,low,False,0.0114,0.002,0.05,,low,LOW RISK — Standard monsoon precautions.
-Gnathang,East,27.27,88.75,3450,glof_risk,4.1,0.5,30.7,1.1,low,False,0.0114,0.003,0.05,,low,LOW RISK — Standard monsoon precautions.
-Teesta-Rangit Confluence,South,27.13,88.31,370,river_flood,2.8,3.09,50.3,0.5,low,False,0.0053,0.574,0.85,,low,LOW RISK — Standard monsoon precautions.
-Rangpo,East,27.17,88.53,320,river_flood,3.4,2.63,46.0,0.5,low,False,0.0055,0.568,0.85,,low,LOW RISK — Standard monsoon precautions.
-2023 GLOF — Tanak,East,27.28,88.52,620,river_flood,3.6,2.47,43.1,0.4,low,False,0.0037,0.574,0.65,,low,LOW RISK — Standard monsoon precautions.
-Penlong,East,27.45,88.54,1100,river_flood,3.1,2.27,40.7,0.3,low,False,0.0026,0.611,0.65,,low,LOW RISK — Standard monsoon precautions.
-Melli Bridge,South,27.15,88.28,370,infrastructure,2.4,2.96,41.9,0.3,low,False,0.0025,0.477,0.85,,low,LOW RISK — Standard monsoon precautions.
-Teesta Stage-VI Dam,East,27.32,88.52,500,infrastructure,3.3,2.69,42.1,0.3,low,False,0.0028,0.574,0.85,,low,LOW RISK — Standard monsoon precautions.
-2023 GLOF — Pachey,East,27.24,88.52,430,river_flood,3.2,2.71,43.5,0.3,low,False,0.0031,0.545,0.85,,low,LOW RISK — Standard monsoon precautions.
-2023 GLOF — Ghurpisey,East,27.25,88.51,490,river_flood,3.2,2.76,42.8,0.2,low,False,0.0022,0.435,0.85,,low,LOW RISK — Standard monsoon precautions.
-Sirwani,East,27.32,88.54,500,river_flood,3.3,2.23,44.9,0.2,low,False,0.0022,0.476,0.85,,low,LOW RISK — Standard monsoon precautions.
-Teesta-Lachen Confluence,North,27.62,88.48,1750,glof_landslide,3.1,1.79,33.4,0.1,low,False,0.0007,0.574,0.35,,low,LOW RISK — Standard monsoon precautions.
-Rathong Valley,West,27.35,88.15,1400,river_flood,2.5,1.33,43.2,0.1,low,False,0.0008,0.004,0.35,,low,LOW RISK — Standard monsoon precautions.
-Sadam,South,27.08,88.3,350,river_flood,3.5,3.1,50.7,0.1,low,False,0.0008,0.141,0.85,,low,LOW RISK — Standard monsoon precautions.
-2023 GLOF — Bardang,East,27.26,88.53,550,river_flood,3.4,1.9,45.1,0.1,low,False,0.0008,0.321,0.85,,low,LOW RISK — Standard monsoon precautions.
-Sakyong,East,27.43,88.53,850,river_flood,3.1,1.9,44.0,0.1,low,False,0.0014,0.545,0.65,,low,LOW RISK — Standard monsoon precautions.
-Mangalbaria,West,27.12,88.23,600,river_flood,3.6,2.1,45.9,0.1,low,False,0.0008,0.117,0.65,,low,LOW RISK — Standard monsoon precautions.
-Lower Sombaria,South,27.08,88.18,400,river_flood,3.3,3.44,43.8,0.1,low,False,0.0008,0.023,0.85,,low,LOW RISK — Standard monsoon precautions.
-Chungthang Dam (NHPC),North,27.61,88.47,1750,infrastructure,3.2,2.79,38.7,0.1,low,False,0.0008,0.69,0.35,,low,LOW RISK — Standard monsoon precautions.
-Dikchu,East,27.37,88.52,420,river_flood,3.2,3.37,43.9,0.1,low,False,0.0008,0.143,0.85,,low,LOW RISK — Standard monsoon precautions.
-Makha,East,27.25,88.55,600,river_flood,3.6,2.17,43.9,0.1,low,False,0.0008,0.275,0.65,,low,LOW RISK — Standard monsoon precautions.
-Rangit Valley (W),West,27.2,88.25,500,river_flood,2.4,2.03,42.2,0.1,low,False,0.0008,0.291,0.85,,low,LOW RISK — Standard monsoon precautions.
-Nayabazar,South,27.13,88.34,450,river_flood,2.5,2.54,46.8,0.1,low,False,0.0008,0.396,0.85,,low,LOW RISK — Standard monsoon precautions.
-Legship,South,27.23,88.32,720,river_flood,2.6,1.93,42.6,0.1,low,False,0.0008,0.38,0.65,,low,LOW RISK — Standard monsoon precautions.
-Jorethang,South,27.1,88.32,400,river_flood,3.2,3.01,46.0,0.1,low,False,0.0008,0.244,0.85,,low,LOW RISK — Standard monsoon precautions.
-Melli,South,27.17,88.28,380,river_flood,2.4,2.97,50.2,0.1,low,False,0.0013,0.396,0.85,,low,LOW RISK — Standard monsoon precautions.
-Sombaria,South,27.1,88.2,480,river_flood,3.5,3.75,44.4,0.1,low,False,0.0008,0.047,0.85,,low,LOW RISK — Standard monsoon precautions.
-Namin,East,27.4,88.57,700,river_flood,3.1,1.89,43.9,0.1,low,False,0.0008,0.156,0.65,,low,LOW RISK — Standard monsoon precautions.
-Zoom,West,27.27,88.3,800,river_flood,2.4,2.12,43.8,0.1,low,False,0.0008,0.143,0.65,,low,LOW RISK — Standard monsoon precautions.
-Chungthang,North,27.62,88.47,1770,glof_landslide,3.0,1.93,34.8,0.1,low,False,0.0007,0.545,0.35,,low,LOW RISK — Standard monsoon precautions.
-Upper Dzongu,North,27.6,88.5,1900,glof_landslide,3.1,2.21,34.9,0.1,low,False,0.0007,0.611,0.35,,low,LOW RISK — Standard monsoon precautions.
-Okhrey,West,27.43,88.17,2000,landslide_flood,2.7,1.25,34.3,0.0,low,False,0.0001,0.001,0.15,,low,LOW RISK — Standard monsoon precautions.
-Khecheopalri,West,27.37,88.2,1830,landslide_flood,2.4,1.26,33.7,0.0,low,False,0.0001,0.005,0.35,,low,LOW RISK — Standard monsoon precautions.
-Yuksom,West,27.4,88.22,1780,landslide_flood,2.9,1.22,34.2,0.0,low,False,0.0001,0.003,0.35,,low,LOW RISK — Standard monsoon precautions.
-Rimbi,West,27.25,88.2,1000,landslide_flood,2.4,1.9,36.2,0.0,low,False,0.0001,0.059,0.65,,low,LOW RISK — Standard monsoon precautions.
-Kaluk,West,27.27,88.22,1600,landslide_flood,2.5,1.28,32.8,0.0,low,False,0.0001,0.063,0.35,,low,LOW RISK — Standard monsoon precautions.
-Pelling,West,27.3,88.2,2150,landslide_flood,2.5,0.88,35.5,0.0,low,False,0.0001,0.024,0.15,,low,LOW RISK — Standard monsoon precautions.
-Gyalshing,West,27.28,88.27,1780,landslide_flood,2.6,1.2,32.6,0.0,low,False,0.0001,0.096,0.35,,low,LOW RISK — Standard monsoon precautions.
-Dentam,West,27.32,88.16,1700,landslide_flood,2.4,1.4,35.0,0.0,low,False,0.0001,0.008,0.35,,low,LOW RISK — Standard monsoon precautions.
-Soreng,West,27.18,88.12,900,landslide_flood,2.7,1.94,39.1,0.0,low,False,0.0001,0.011,0.65,,low,LOW RISK — Standard monsoon precautions.
-Namchi-Singtam Road,South,27.2,88.44,1000,landslide_flood,3.3,2.08,35.7,0.0,low,False,0.0001,0.163,0.65,,low,LOW RISK — Standard monsoon precautions.
-Damthang,South,27.28,88.44,1800,landslide_flood,3.4,1.29,31.9,0.0,low,False,0.0001,0.129,0.35,,low,LOW RISK — Standard monsoon precautions.
-Uttarey,West,27.4,88.1,2200,landslide_flood,2.6,1.36,33.0,0.0,low,False,0.0001,0.001,0.15,,low,LOW RISK — Standard monsoon precautions.
-Tashiding,West,27.33,88.22,1700,landslide_flood,2.6,1.36,37.3,0.0,low,False,0.0001,0.016,0.35,,low,LOW RISK — Standard monsoon precautions.
-Gangtok Market,East,27.335,88.615,1600,landslide_flood,3.4,1.4,34.7,0.0,low,False,0.0001,0.079,0.35,,low,LOW RISK — Standard monsoon precautions.
-Namchi,South,27.17,88.37,1370,landslide_flood,2.5,1.25,39.1,0.0,low,False,0.0001,0.206,0.35,,low,LOW RISK — Standard monsoon precautions.
-Upper Dzongu (E),East,27.55,88.6,1800,glof_landslide,3.3,0.9,35.1,0.0,low,False,0.0001,0.038,0.35,,low,LOW RISK — Standard monsoon precautions.
-Wok,South,27.12,88.42,1100,landslide_flood,4.1,2.21,39.5,0.0,low,False,0.0001,0.062,0.65,,low,LOW RISK — Standard monsoon precautions.
-Yangang,South,27.25,88.43,1900,landslide_flood,3.5,0.83,36.1,0.0,low,False,0.0001,0.117,0.35,,low,LOW RISK — Standard monsoon precautions.
-Temi Tea Garden,South,27.22,88.45,1500,landslide_flood,3.4,1.14,33.0,0.0,low,False,0.0001,0.227,0.35,,low,LOW RISK — Standard monsoon precautions.
-Ravangla,South,27.3,88.37,2150,landslide_flood,2.6,1.13,35.5,0.0,low,False,0.0001,0.038,0.15,,low,LOW RISK — Standard monsoon precautions.
-Aritar,East,27.11,88.72,1500,landslide_flood,4.2,1.08,35.4,0.0,low,False,0.0001,0.004,0.35,,low,LOW RISK — Standard monsoon precautions.
-Nathula Pass Road,East,27.38,88.73,3200,landslide_flood,3.3,0.5,30.0,0.0,low,False,0.0001,0.004,0.05,,low,LOW RISK — Standard monsoon precautions.
-Gangtok,East,27.33,88.62,1650,landslide_flood,3.4,1.33,32.2,0.0,low,False,0.0001,0.074,0.35,,low,LOW RISK — Standard monsoon precautions.
-Ranipool,East,27.29,88.6,900,landslide_flood,3.2,2.14,34.2,0.0,low,False,0.0001,0.136,0.65,,low,LOW RISK — Standard monsoon precautions.
-Pakyong,East,27.21,88.61,1370,landslide_flood,3.3,1.25,37.6,0.0,low,False,0.0001,0.083,0.35,,low,LOW RISK — Standard monsoon precautions.
-Temi,East,27.23,88.45,1500,landslide_flood,3.5,1.03,34.8,0.0,low,False,0.0001,0.222,0.35,,low,LOW RISK — Standard monsoon precautions.
-Rongli,East,27.22,88.82,900,landslide_flood,3.8,2.17,36.8,0.0,low,False,0.0001,0.0,0.65,,low,LOW RISK — Standard monsoon precautions.
-Borong,South,27.25,88.48,1700,landslide_flood,3.4,0.99,34.7,0.0,low,False,0.0001,0.328,0.35,,low,LOW RISK — Standard monsoon precautions.
-Sikip,South,27.18,88.38,1200,landslide_flood,3.6,1.37,38.0,0.0,low,False,0.0001,0.147,0.35,,low,LOW RISK — Standard monsoon precautions.
-Hee-Gaon,West,27.22,88.18,900,landslide_flood,2.8,1.84,36.8,0.0,low,False,0.0001,0.049,0.65,,low,LOW RISK — Standard monsoon precautions.
-Rangit Dam,West,27.32,88.39,1000,infrastructure,3.4,2.31,41.2,0.0,low,False,0.0001,0.039,0.65,,low,LOW RISK — Standard monsoon precautions.
-Legship Bridge,West,27.23,88.33,750,infrastructure,2.7,2.05,43.6,0.0,low,False,0.0001,0.328,0.65,,low,LOW RISK — Standard monsoon precautions.
-Dikchu Bridge,East,27.37,88.51,430,infrastructure,3.5,2.99,44.6,0.0,low,False,0.0001,0.141,0.85,,low,LOW RISK — Standard monsoon precautions.
-Zema,North,27.7,88.58,2200,glof_landslide,2.8,1.12,34.6,0.0,low,False,0.0001,0.025,0.15,,low,LOW RISK — Standard monsoon precautions.
-Mangan-Chungthang Road,North,27.58,88.5,1500,glof_landslide,3.2,1.7,29.5,0.0,low,False,0.0001,0.476,0.35,,low,LOW RISK — Standard monsoon precautions.
-Teesta Stage-V Dam,East,27.38,88.53,450,infrastructure,3.0,3.23,40.0,0.0,low,False,0.0001,0.141,0.85,,low,LOW RISK — Standard monsoon precautions.
-Phodong,North,27.47,88.58,1350,glof_landslide,3.2,1.18,34.2,0.0,low,False,0.0001,0.206,0.35,,low,LOW RISK — Standard monsoon precautions.
-Mangan,North,27.52,88.52,1260,glof_landslide,2.9,1.24,32.2,0.0,low,False,0.0001,0.143,0.35,,low,LOW RISK — Standard monsoon precautions.
-Darap,West,27.27,88.18,1450,landslide_flood,2.4,0.96,36.0,0.0,low,False,0.0001,0.029,0.35,,low,LOW RISK — Standard monsoon precautions.
-Toong,North,27.65,88.52,2000,glof_landslide,3.0,1.11,33.2,0.0,low,False,0.0001,0.183,0.15,,low,LOW RISK — Standard monsoon precautions.
-Phensang,North,27.55,88.6,1480,glof_landslide,3.3,0.97,37.4,0.0,low,False,0.0001,0.038,0.35,,low,LOW RISK — Standard monsoon precautions.
-Singhik,North,27.57,88.52,1400,glof_landslide,3.0,0.88,34.1,0.0,low,False,0.0001,0.276,0.35,,low,LOW RISK — Standard monsoon precautions.
-Tung,North,27.58,88.6,1600,glof_landslide,3.1,1.15,33.1,0.0,low,False,0.0001,0.05,0.35,,low,LOW RISK — Standard monsoon precautions.
-Kabi,North,27.47,88.57,1770,glof_landslide,2.9,0.95,34.8,0.0,low,False,0.0001,0.259,0.35,,low,LOW RISK — Standard monsoon precautions.
-Lingi,North,27.55,88.45,1400,glof_landslide,3.4,1.39,37.2,0.0,low,False,0.0001,0.208,0.35,,low,LOW RISK — Standard monsoon precautions.
-Assam Linzey,East,27.37,88.6,1100,landslide_flood,3.3,2.21,38.9,0.0,low,False,0.0001,0.063,0.65,,low,LOW RISK — Standard monsoon precautions.
-Sang,East,27.33,88.57,1300,landslide_flood,3.5,1.3,38.5,0.0,low,False,0.0001,0.226,0.35,,low,LOW RISK — Standard monsoon precautions.
-Rhenock,East,27.18,88.67,1600,landslide_flood,4.1,1.05,36.5,0.0,low,False,0.0001,0.019,0.35,,low,LOW RISK — Standard monsoon precautions.
-Passingdong,North,27.5,88.48,1700,glof_landslide,3.0,1.25,32.9,0.0,low,False,0.0001,0.182,0.35,,low,LOW RISK — Standard monsoon precautions.
-Barnyak,West,27.38,88.19,2100,landslide_flood,2.7,1.31,36.0,0.0,low,False,0.0001,0.003,0.15,,low,LOW RISK — Standard monsoon precautions.
-Maneybung,West,27.35,88.23,1500,landslide_flood,2.7,1.17,37.1,0.0,low,False,0.0001,0.011,0.35,,low,LOW RISK — Standard monsoon precautions.
-Sechey,West,27.25,88.28,1100,landslide_flood,2.4,2.19,35.5,0.0,low,False,0.0001,0.229,0.65,,low,LOW RISK — Standard monsoon precautions.
-Naga,East,27.27,88.44,1800,landslide_flood,3.4,0.91,33.1,0.0,low,False,0.0001,0.117,0.35,,low,LOW RISK — Standard monsoon precautions.
-Buriakhop,West,27.3,88.25,1300,landslide_flood,2.6,1.3,36.2,0.0,low,False,0.0001,0.048,0.35,,low,LOW RISK — Standard monsoon precautions.
-Kewzing,South,27.22,88.47,1800,landslide_flood,3.6,1.25,33.6,0.0,low,False,0.0001,0.373,0.35,,low,LOW RISK — Standard monsoon precautions.
-Kitam,South,27.15,88.38,800,landslide_flood,3.2,1.68,39.7,0.0,low,False,0.0001,0.178,0.65,,low,LOW RISK — Standard monsoon precautions.
-Ralong,South,27.28,88.45,2000,landslide_flood,3.4,0.84,32.6,0.0,low,False,0.0001,0.163,0.15,,low,LOW RISK — Standard monsoon precautions.
-Sikkip,South,27.18,88.4,1100,landslide_flood,3.5,2.32,38.5,0.0,low,False,0.0001,0.093,0.65,,low,LOW RISK — Standard monsoon precautions.
-Hee-Yangthang,West,27.3,88.13,1500,landslide_flood,2.4,1.32,37.1,0.0,low,False,0.0001,0.007,0.35,,low,LOW RISK — Standard monsoon precautions.
-Rinchenpong,West,27.28,88.15,1600,landslide_flood,2.4,1.05,36.5,0.0,low,False,0.0001,0.013,0.35,,low,LOW RISK — Standard monsoon precautions.
-Chakung,West,27.22,88.2,1100,landslide_flood,2.5,2.02,35.9,0.0,low,False,0.0001,0.08,0.65,,low,LOW RISK — Standard monsoon precautions.
+Tarpin,South,27.2,88.3,490,river_flood,2.3,3.79,42.2,2.3,low,False,0.0234,1.0,0.85,,low,LOW RISK — Standard monsoon precautions.
+Teesta Barrage,East,27.22,88.51,340,infrastructure,3.2,4.9,43.9,2.1,low,False,0.0211,1.0,0.85,,low,LOW RISK — Standard monsoon precautions.
+2023 GLOF — Lower Teesta,East,27.18,88.52,330,river_flood,3.2,3.0,46.4,2.0,low,False,0.02,0.781,0.85,,low,LOW RISK — Standard monsoon precautions.
+Singtam Bridge,East,27.23,88.51,360,infrastructure,3.3,3.51,47.3,2.0,low,False,0.02,0.758,0.85,,low,LOW RISK — Standard monsoon precautions.
+2023 GLOF — Rongpo Khola,East,27.22,88.5,350,river_flood,3.2,3.13,49.6,2.0,low,False,0.02,0.781,0.85,,low,LOW RISK — Standard monsoon precautions.
+Singtam,East,27.23,88.5,350,river_flood,3.2,3.01,50.6,1.4,low,False,0.0138,0.69,0.85,,low,LOW RISK — Standard monsoon precautions.
+Tsomgo Lake,East,27.37,88.77,3780,glof_source,3.7,0.62,25.4,1.4,low,False,0.0141,0.002,0.05,,low,LOW RISK — Standard monsoon precautions.
+Zero Point,North,27.82,88.77,4428,glof_source,3.3,0.5,17.4,1.4,low,False,0.0141,0.0,0.5,,low,LOW RISK — Standard monsoon precautions.
+South Lhonak,North,27.9,88.4,5200,glof_source,2.7,0.5,19.7,1.3,low,False,0.0128,0.0,0.9,,low,LOW RISK — Standard monsoon precautions.
+Gurudongmar Lake,North,27.95,88.73,5183,glof_source,2.8,0.5,19.1,1.3,low,False,0.0128,0.0,0.9,,low,LOW RISK — Standard monsoon precautions.
+Chho Lhamu,North,27.98,88.67,5330,glof_source,2.9,0.5,21.1,1.3,low,False,0.0128,0.0,0.9,,low,LOW RISK — Standard monsoon precautions.
+Lacchen Nala,North,27.75,88.57,3000,glof_risk,2.8,0.85,28.9,1.1,low,False,0.0114,0.009,0.05,,low,LOW RISK — Standard monsoon precautions.
+Yumthang,North,27.78,88.72,3564,glof_risk,3.3,0.71,26.3,1.1,low,False,0.0114,0.0,0.05,,low,LOW RISK — Standard monsoon precautions.
+Lachen,North,27.73,88.55,2750,glof_risk,2.6,0.8,28.2,1.1,low,False,0.0114,0.018,0.15,,low,LOW RISK — Standard monsoon precautions.
+Thangu,North,27.85,88.6,3960,glof_risk,2.8,0.56,25.3,1.1,low,False,0.0114,0.001,0.05,,low,LOW RISK — Standard monsoon precautions.
+Lachung,North,27.68,88.74,2900,glof_risk,3.4,0.5,27.7,1.1,low,False,0.0114,0.001,0.15,,low,LOW RISK — Standard monsoon precautions.
+Shipgyar,North,27.72,88.5,2400,glof_risk,2.7,1.34,27.2,1.1,low,False,0.0114,0.035,0.15,,low,LOW RISK — Standard monsoon precautions.
+Kupup,East,27.33,88.78,3870,glof_risk,3.5,0.5,30.2,1.1,low,False,0.0114,0.002,0.05,,low,LOW RISK — Standard monsoon precautions.
+Gnathang,East,27.27,88.75,3450,glof_risk,3.8,0.5,30.7,1.1,low,False,0.0114,0.003,0.05,,low,LOW RISK — Standard monsoon precautions.
+Teesta-Rangit Confluence,South,27.13,88.31,370,river_flood,2.5,3.09,50.3,0.5,low,False,0.0053,0.574,0.85,,low,LOW RISK — Standard monsoon precautions.
+Rangpo,East,27.17,88.53,320,river_flood,3.2,2.63,46.0,0.5,low,False,0.0055,0.568,0.85,,low,LOW RISK — Standard monsoon precautions.
+2023 GLOF — Tanak,East,27.28,88.52,620,river_flood,3.3,2.47,43.1,0.4,low,False,0.0037,0.574,0.65,,low,LOW RISK — Standard monsoon precautions.
+Penlong,East,27.45,88.54,1100,river_flood,2.8,2.27,40.7,0.3,low,False,0.0026,0.611,0.65,,low,LOW RISK — Standard monsoon precautions.
+Melli Bridge,South,27.15,88.28,370,infrastructure,2.2,2.96,41.9,0.3,low,False,0.0025,0.477,0.85,,low,LOW RISK — Standard monsoon precautions.
+Teesta Stage-VI Dam,East,27.32,88.52,500,infrastructure,3.0,2.69,42.1,0.3,low,False,0.0028,0.574,0.85,,low,LOW RISK — Standard monsoon precautions.
+2023 GLOF — Pachey,East,27.24,88.52,430,river_flood,3.0,2.71,43.5,0.3,low,False,0.0031,0.545,0.85,,low,LOW RISK — Standard monsoon precautions.
+2023 GLOF — Ghurpisey,East,27.25,88.51,490,river_flood,3.0,2.76,42.8,0.2,low,False,0.0022,0.435,0.85,,low,LOW RISK — Standard monsoon precautions.
+Sirwani,East,27.32,88.54,500,river_flood,3.1,2.23,44.9,0.2,low,False,0.0022,0.476,0.85,,low,LOW RISK — Standard monsoon precautions.
+Teesta-Lachen Confluence,North,27.62,88.48,1750,glof_landslide,2.8,1.79,33.4,0.1,low,False,0.0007,0.574,0.35,,low,LOW RISK — Standard monsoon precautions.
+Rathong Valley,West,27.35,88.15,1400,river_flood,2.3,1.33,43.2,0.1,low,False,0.0008,0.004,0.35,,low,LOW RISK — Standard monsoon precautions.
+Sadam,South,27.08,88.3,350,river_flood,3.2,3.1,50.7,0.1,low,False,0.0008,0.141,0.85,,low,LOW RISK — Standard monsoon precautions.
+2023 GLOF — Bardang,East,27.26,88.53,550,river_flood,3.1,1.9,45.1,0.1,low,False,0.0008,0.321,0.85,,low,LOW RISK — Standard monsoon precautions.
+Sakyong,East,27.43,88.53,850,river_flood,2.9,1.9,44.0,0.1,low,False,0.0014,0.545,0.65,,low,LOW RISK — Standard monsoon precautions.
+Mangalbaria,West,27.12,88.23,600,river_flood,3.3,2.1,45.9,0.1,low,False,0.0008,0.117,0.65,,low,LOW RISK — Standard monsoon precautions.
+Lower Sombaria,South,27.08,88.18,400,river_flood,3.0,3.44,43.8,0.1,low,False,0.0008,0.023,0.85,,low,LOW RISK — Standard monsoon precautions.
+Chungthang Dam (NHPC),North,27.61,88.47,1750,infrastructure,2.9,2.79,38.7,0.1,low,False,0.0008,0.69,0.35,,low,LOW RISK — Standard monsoon precautions.
+Dikchu,East,27.37,88.52,420,river_flood,2.9,3.37,43.9,0.1,low,False,0.0008,0.143,0.85,,low,LOW RISK — Standard monsoon precautions.
+Makha,East,27.25,88.55,600,river_flood,3.3,2.17,43.9,0.1,low,False,0.0008,0.275,0.65,,low,LOW RISK — Standard monsoon precautions.
+Rangit Valley (W),West,27.2,88.25,500,river_flood,2.2,2.03,42.2,0.1,low,False,0.0008,0.291,0.85,,low,LOW RISK — Standard monsoon precautions.
+Nayabazar,South,27.13,88.34,450,river_flood,2.3,2.54,46.8,0.1,low,False,0.0008,0.396,0.85,,low,LOW RISK — Standard monsoon precautions.
+Legship,South,27.23,88.32,720,river_flood,2.4,1.93,42.6,0.1,low,False,0.0008,0.38,0.65,,low,LOW RISK — Standard monsoon precautions.
+Jorethang,South,27.1,88.32,400,river_flood,3.0,3.01,46.0,0.1,low,False,0.0008,0.244,0.85,,low,LOW RISK — Standard monsoon precautions.
+Melli,South,27.17,88.28,380,river_flood,2.2,2.97,50.2,0.1,low,False,0.0013,0.396,0.85,,low,LOW RISK — Standard monsoon precautions.
+Sombaria,South,27.1,88.2,480,river_flood,3.2,3.75,44.4,0.1,low,False,0.0008,0.047,0.85,,low,LOW RISK — Standard monsoon precautions.
+Namin,East,27.4,88.57,700,river_flood,2.9,1.89,43.9,0.1,low,False,0.0008,0.156,0.65,,low,LOW RISK — Standard monsoon precautions.
+Zoom,West,27.27,88.3,800,river_flood,2.2,2.12,43.8,0.1,low,False,0.0008,0.143,0.65,,low,LOW RISK — Standard monsoon precautions.
+Chungthang,North,27.62,88.47,1770,glof_landslide,2.8,1.93,34.8,0.1,low,False,0.0007,0.545,0.35,,low,LOW RISK — Standard monsoon precautions.
+Upper Dzongu,North,27.6,88.5,1900,glof_landslide,2.8,2.21,34.9,0.1,low,False,0.0007,0.611,0.35,,low,LOW RISK — Standard monsoon precautions.
+Okhrey,West,27.43,88.17,2000,landslide_flood,2.5,1.25,34.3,0.0,low,False,0.0001,0.001,0.15,,low,LOW RISK — Standard monsoon precautions.
+Khecheopalri,West,27.37,88.2,1830,landslide_flood,2.2,1.26,33.7,0.0,low,False,0.0001,0.005,0.35,,low,LOW RISK — Standard monsoon precautions.
+Yuksom,West,27.4,88.22,1780,landslide_flood,2.7,1.22,34.2,0.0,low,False,0.0001,0.003,0.35,,low,LOW RISK — Standard monsoon precautions.
+Rimbi,West,27.25,88.2,1000,landslide_flood,2.2,1.9,36.2,0.0,low,False,0.0001,0.059,0.65,,low,LOW RISK — Standard monsoon precautions.
+Kaluk,West,27.27,88.22,1600,landslide_flood,2.3,1.28,32.8,0.0,low,False,0.0001,0.063,0.35,,low,LOW RISK — Standard monsoon precautions.
+Pelling,West,27.3,88.2,2150,landslide_flood,2.3,0.88,35.5,0.0,low,False,0.0001,0.024,0.15,,low,LOW RISK — Standard monsoon precautions.
+Gyalshing,West,27.28,88.27,1780,landslide_flood,2.4,1.2,32.6,0.0,low,False,0.0001,0.096,0.35,,low,LOW RISK — Standard monsoon precautions.
+Dentam,West,27.32,88.16,1700,landslide_flood,2.2,1.4,35.0,0.0,low,False,0.0001,0.008,0.35,,low,LOW RISK — Standard monsoon precautions.
+Soreng,West,27.18,88.12,900,landslide_flood,2.5,1.94,39.1,0.0,low,False,0.0001,0.011,0.65,,low,LOW RISK — Standard monsoon precautions.
+Namchi-Singtam Road,South,27.2,88.44,1000,landslide_flood,3.0,2.08,35.7,0.0,low,False,0.0001,0.163,0.65,,low,LOW RISK — Standard monsoon precautions.
+Damthang,South,27.28,88.44,1800,landslide_flood,3.2,1.29,31.9,0.0,low,False,0.0001,0.129,0.35,,low,LOW RISK — Standard monsoon precautions.
+Uttarey,West,27.4,88.1,2200,landslide_flood,2.4,1.36,33.0,0.0,low,False,0.0001,0.001,0.15,,low,LOW RISK — Standard monsoon precautions.
+Tashiding,West,27.33,88.22,1700,landslide_flood,2.4,1.36,37.3,0.0,low,False,0.0001,0.016,0.35,,low,LOW RISK — Standard monsoon precautions.
+Gangtok Market,East,27.335,88.615,1600,landslide_flood,3.1,1.4,34.7,0.0,low,False,0.0001,0.079,0.35,,low,LOW RISK — Standard monsoon precautions.
+Namchi,South,27.17,88.37,1370,landslide_flood,2.3,1.25,39.1,0.0,low,False,0.0001,0.206,0.35,,low,LOW RISK — Standard monsoon precautions.
+Upper Dzongu (E),East,27.55,88.6,1800,glof_landslide,3.0,0.9,35.1,0.0,low,False,0.0001,0.038,0.35,,low,LOW RISK — Standard monsoon precautions.
+Wok,South,27.12,88.42,1100,landslide_flood,3.8,2.21,39.5,0.0,low,False,0.0001,0.062,0.65,,low,LOW RISK — Standard monsoon precautions.
+Yangang,South,27.25,88.43,1900,landslide_flood,3.2,0.83,36.1,0.0,low,False,0.0001,0.117,0.35,,low,LOW RISK — Standard monsoon precautions.
+Temi Tea Garden,South,27.22,88.45,1500,landslide_flood,3.1,1.14,33.0,0.0,low,False,0.0001,0.227,0.35,,low,LOW RISK — Standard monsoon precautions.
+Ravangla,South,27.3,88.37,2150,landslide_flood,2.4,1.13,35.5,0.0,low,False,0.0001,0.038,0.15,,low,LOW RISK — Standard monsoon precautions.
+Aritar,East,27.11,88.72,1500,landslide_flood,3.9,1.08,35.4,0.0,low,False,0.0001,0.004,0.35,,low,LOW RISK — Standard monsoon precautions.
+Nathula Pass Road,East,27.38,88.73,3200,landslide_flood,3.1,0.5,30.0,0.0,low,False,0.0001,0.004,0.05,,low,LOW RISK — Standard monsoon precautions.
+Gangtok,East,27.33,88.62,1650,landslide_flood,3.1,1.33,32.2,0.0,low,False,0.0001,0.074,0.35,,low,LOW RISK — Standard monsoon precautions.
+Ranipool,East,27.29,88.6,900,landslide_flood,2.9,2.14,34.2,0.0,low,False,0.0001,0.136,0.65,,low,LOW RISK — Standard monsoon precautions.
+Pakyong,East,27.21,88.61,1370,landslide_flood,3.1,1.25,37.6,0.0,low,False,0.0001,0.083,0.35,,low,LOW RISK — Standard monsoon precautions.
+Temi,East,27.23,88.45,1500,landslide_flood,3.2,1.03,34.8,0.0,low,False,0.0001,0.222,0.35,,low,LOW RISK — Standard monsoon precautions.
+Rongli,East,27.22,88.82,900,landslide_flood,3.5,2.17,36.8,0.0,low,False,0.0001,0.0,0.65,,low,LOW RISK — Standard monsoon precautions.
+Borong,South,27.25,88.48,1700,landslide_flood,3.2,0.99,34.7,0.0,low,False,0.0001,0.328,0.35,,low,LOW RISK — Standard monsoon precautions.
+Sikip,South,27.18,88.38,1200,landslide_flood,3.3,1.37,38.0,0.0,low,False,0.0001,0.147,0.35,,low,LOW RISK — Standard monsoon precautions.
+Hee-Gaon,West,27.22,88.18,900,landslide_flood,2.6,1.84,36.8,0.0,low,False,0.0001,0.049,0.65,,low,LOW RISK — Standard monsoon precautions.
+Rangit Dam,West,27.32,88.39,1000,infrastructure,3.2,2.31,41.2,0.0,low,False,0.0001,0.039,0.65,,low,LOW RISK — Standard monsoon precautions.
+Legship Bridge,West,27.23,88.33,750,infrastructure,2.5,2.05,43.6,0.0,low,False,0.0001,0.328,0.65,,low,LOW RISK — Standard monsoon precautions.
+Dikchu Bridge,East,27.37,88.51,430,infrastructure,3.3,2.99,44.6,0.0,low,False,0.0001,0.141,0.85,,low,LOW RISK — Standard monsoon precautions.
+Zema,North,27.7,88.58,2200,glof_landslide,2.6,1.12,34.6,0.0,low,False,0.0001,0.025,0.15,,low,LOW RISK — Standard monsoon precautions.
+Mangan-Chungthang Road,North,27.58,88.5,1500,glof_landslide,2.9,1.7,29.5,0.0,low,False,0.0001,0.476,0.35,,low,LOW RISK — Standard monsoon precautions.
+Teesta Stage-V Dam,East,27.38,88.53,450,infrastructure,2.8,3.23,40.0,0.0,low,False,0.0001,0.141,0.85,,low,LOW RISK — Standard monsoon precautions.
+Phodong,North,27.47,88.58,1350,glof_landslide,3.0,1.18,34.2,0.0,low,False,0.0001,0.206,0.35,,low,LOW RISK — Standard monsoon precautions.
+Mangan,North,27.52,88.52,1260,glof_landslide,2.7,1.24,32.2,0.0,low,False,0.0001,0.143,0.35,,low,LOW RISK — Standard monsoon precautions.
+Darap,West,27.27,88.18,1450,landslide_flood,2.2,0.96,36.0,0.0,low,False,0.0001,0.029,0.35,,low,LOW RISK — Standard monsoon precautions.
+Toong,North,27.65,88.52,2000,glof_landslide,2.8,1.11,33.2,0.0,low,False,0.0001,0.183,0.15,,low,LOW RISK — Standard monsoon precautions.
+Phensang,North,27.55,88.6,1480,glof_landslide,3.0,0.97,37.4,0.0,low,False,0.0001,0.038,0.35,,low,LOW RISK — Standard monsoon precautions.
+Singhik,North,27.57,88.52,1400,glof_landslide,2.8,0.88,34.1,0.0,low,False,0.0001,0.276,0.35,,low,LOW RISK — Standard monsoon precautions.
+Tung,North,27.58,88.6,1600,glof_landslide,2.9,1.15,33.1,0.0,low,False,0.0001,0.05,0.35,,low,LOW RISK — Standard monsoon precautions.
+Kabi,North,27.47,88.57,1770,glof_landslide,2.7,0.95,34.8,0.0,low,False,0.0001,0.259,0.35,,low,LOW RISK — Standard monsoon precautions.
+Lingi,North,27.55,88.45,1400,glof_landslide,3.1,1.39,37.2,0.0,low,False,0.0001,0.208,0.35,,low,LOW RISK — Standard monsoon precautions.
+Assam Linzey,East,27.37,88.6,1100,landslide_flood,3.1,2.21,38.9,0.0,low,False,0.0001,0.063,0.65,,low,LOW RISK — Standard monsoon precautions.
+Sang,East,27.33,88.57,1300,landslide_flood,3.2,1.3,38.5,0.0,low,False,0.0001,0.226,0.35,,low,LOW RISK — Standard monsoon precautions.
+Rhenock,East,27.18,88.67,1600,landslide_flood,3.8,1.05,36.5,0.0,low,False,0.0001,0.019,0.35,,low,LOW RISK — Standard monsoon precautions.
+Passingdong,North,27.5,88.48,1700,glof_landslide,2.8,1.25,32.9,0.0,low,False,0.0001,0.182,0.35,,low,LOW RISK — Standard monsoon precautions.
+Barnyak,West,27.38,88.19,2100,landslide_flood,2.5,1.31,36.0,0.0,low,False,0.0001,0.003,0.15,,low,LOW RISK — Standard monsoon precautions.
+Maneybung,West,27.35,88.23,1500,landslide_flood,2.5,1.17,37.1,0.0,low,False,0.0001,0.011,0.35,,low,LOW RISK — Standard monsoon precautions.
+Sechey,West,27.25,88.28,1100,landslide_flood,2.3,2.19,35.5,0.0,low,False,0.0001,0.229,0.65,,low,LOW RISK — Standard monsoon precautions.
+Naga,East,27.27,88.44,1800,landslide_flood,3.2,0.91,33.1,0.0,low,False,0.0001,0.117,0.35,,low,LOW RISK — Standard monsoon precautions.
+Buriakhop,West,27.3,88.25,1300,landslide_flood,2.4,1.3,36.2,0.0,low,False,0.0001,0.048,0.35,,low,LOW RISK — Standard monsoon precautions.
+Kewzing,South,27.22,88.47,1800,landslide_flood,3.3,1.25,33.6,0.0,low,False,0.0001,0.373,0.35,,low,LOW RISK — Standard monsoon precautions.
+Kitam,South,27.15,88.38,800,landslide_flood,2.9,1.68,39.7,0.0,low,False,0.0001,0.178,0.65,,low,LOW RISK — Standard monsoon precautions.
+Ralong,South,27.28,88.45,2000,landslide_flood,3.2,0.84,32.6,0.0,low,False,0.0001,0.163,0.15,,low,LOW RISK — Standard monsoon precautions.
+Sikkip,South,27.18,88.4,1100,landslide_flood,3.2,2.32,38.5,0.0,low,False,0.0001,0.093,0.65,,low,LOW RISK — Standard monsoon precautions.
+Hee-Yangthang,West,27.3,88.13,1500,landslide_flood,2.2,1.32,37.1,0.0,low,False,0.0001,0.007,0.35,,low,LOW RISK — Standard monsoon precautions.
+Rinchenpong,West,27.28,88.15,1600,landslide_flood,2.2,1.05,36.5,0.0,low,False,0.0001,0.013,0.35,,low,LOW RISK — Standard monsoon precautions.
+Chakung,West,27.22,88.2,1100,landslide_flood,2.3,2.02,35.9,0.0,low,False,0.0001,0.08,0.65,,low,LOW RISK — Standard monsoon precautions.

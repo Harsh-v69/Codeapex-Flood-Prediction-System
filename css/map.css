@@ -87,19 +87,52 @@
 .map-toolbar {
   position: absolute;
   top: 14px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
+  right: 14px;
+  z-index: 450;
+}
+.map-toolbar[open] {
+  z-index: 460;
+}
+.map-toolbar summary {
+  list-style: none;
+}
+.map-toolbar summary::-webkit-details-marker {
+  display: none;
+}
+.map-legend-toggle {
+  display: inline-flex;
   align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--rim);
+  background: rgba(248,250,251,0.96);
+  color: var(--text);
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+.map-legend-toggle::before {
+  content: "≡";
+  font-size: 16px;
+  color: var(--accent);
+}
+.map-toolbar-popup {
+  margin-top: 10px;
+  min-width: 320px;
+  display: flex;
   gap: 10px;
   flex-wrap: wrap;
-  background: rgba(248,250,251,0.95);
+  justify-content: flex-start;
+  background: rgba(248,250,251,0.98);
   border: 1px solid var(--rim);
   border-radius: var(--r-md);
   padding: 12px 14px;
   backdrop-filter: blur(8px);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-  z-index: 450;
+  box-shadow: 0 8px 24px rgba(18, 38, 55, 0.12);
 }
 .map-filter-chip { display: inline-flex; align-items: center; gap: 6px; padding: 10px 16px; border-radius: 999px; border: 1px solid var(--rim); background: var(--surface); color: var(--text); font-family: var(--font-display); font-size: 12px; font-weight: 700; cursor: pointer; }
 .map-filter-chip span { font-family: var(--font-mono); }
@@ -112,7 +145,7 @@
 /* ── Map Info Panel ── */
 .map-info-panel {
   position: absolute;
-  top: 14px;
+  top: 74px;
   right: 14px;
   background: rgba(248,250,251,0.95);
   border: 1px solid var(--rim);
@@ -130,16 +163,22 @@
 
 @media (max-width: 900px) {
   .map-toolbar {
-    left: 14px;
     right: 14px;
-    transform: none;
-    justify-content: center;
+    left: 14px;
   }
 
-  .map-filter-chip,
+  .map-toolbar-popup {
+    min-width: 0;
+    width: 100%;
+  }
+
   .map-filter-chip {
     font-size: 10px;
     padding: 8px 12px;
+  }
+
+  .map-info-panel {
+    top: 84px;
   }
 }
 

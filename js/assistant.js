@@ -141,6 +141,9 @@ DFIS.assistant = {
         'What should officers do first in the top hotspot?',
         'Explain the current flood risk for this city.',
         'Do we need evacuation or only field deployment?',
+        'Which ward or locality needs pumps first?',
+        'Give me a short officer briefing for the next 6 hours.',
+        'Which roads or routes are most likely to be affected?',
       ],
       sources: [
         'FastAPI assistant route: /assistant/chat',
@@ -203,6 +206,8 @@ DFIS.assistant = {
           'Which localities should be evacuated first?',
           'What should field teams do in the next 2 hours?',
           'Give me a short officer briefing for this area.',
+          'Which shelters should be kept on standby?',
+          'What should traffic police prepare for first?',
         ],
       };
     }
@@ -224,6 +229,8 @@ DFIS.assistant = {
           'Do we need evacuation or only field deployment?',
           'Which hotspot should get pumps first?',
           'Summarize the flood risk in simple words.',
+          'Which teams should move in the next 2 hours?',
+          'Where should route diversions be prepared?',
         ],
       };
     }
@@ -246,6 +253,8 @@ DFIS.assistant = {
           'Explain the risk for my area.',
           'What should officers do first?',
           'Should we activate shelters?',
+          'Which hotspots are most critical right now?',
+          'How serious is the next 24-hour rainfall window?',
         ],
       };
     }
@@ -269,6 +278,8 @@ DFIS.assistant = {
           'Which ward is least prepared right now?',
           'Where should pumps be deployed first?',
           'Give me a deployment checklist.',
+          'Which road links need backup planning?',
+          'What support should be staged before peak rain?',
         ],
       };
     }
@@ -288,6 +299,9 @@ DFIS.assistant = {
         'What should officers do first?',
         'Explain flood risk for this city.',
         'Do we need evacuation or only deployment?',
+        'Which hotspot needs immediate attention?',
+        'Which teams should be placed on standby?',
+        'Give me a quick city control-room briefing.',
       ],
     };
   },
@@ -486,6 +500,9 @@ DFIS.assistant = {
       'How should we prepare ' + weakWard + ' for the next 24 hours?',
       'Do we need evacuation or only field deployment?',
       'Explain the current flood risk for ' + city.fullName + '.',
+      'Which hotspot should get pumps first in ' + city.fullName + '?',
+      'Give me a short control-room briefing for ' + city.fullName + '.',
+      'Which roads or low-lying areas should be watched first?',
     ];
   },
 

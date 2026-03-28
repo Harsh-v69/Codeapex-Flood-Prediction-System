@@ -87,6 +87,7 @@ DFIS.live = {
         citySelect.dataset.boundLiveCity = 'true';
       }
     }
+    DFIS.app?.syncCityTabs?.(DFIS.live.currentCity);
 
     DFIS.live._updateShell();
     if (DFIS.live._cache) {
@@ -152,6 +153,7 @@ DFIS.live = {
     DFIS.live._cache = DFIS.live._cityCache[normalised] || null;
     const citySelect = document.getElementById('citySelect');
     if (citySelect && citySelect.value !== normalised) citySelect.value = normalised;
+    DFIS.app?.syncCityTabs?.(normalised);
     DFIS.live._updateShell();
     if (DFIS.live._cache) {
       DFIS.live._applyToGlobalData(DFIS.live._cache);
@@ -609,12 +611,18 @@ DFIS.live = {
       if (el) el.textContent = text;
     };
 
-    set('brandTitle', 'Dhristi (Vision)');
+    set('brandTitle', 'Drishti');
     set('brandSub', city.fullName + ' · Multi-City Flood Intelligence · GIS · Hydrology · AI');
-    set('cityModeBadge', city.label.toUpperCase() + ' MODE');
+    set('cityModeBadge', 'LIVE DATA');
+    set('brandSub', city.fullName + ' flood monitoring and prediction dashboard');
+    set('footerBrand', 'Drishti - ' + city.fullName + ' flood intelligence dashboard');
+    set('footerSource', 'Live weather - Flood API - 24-hour prediction');
+    document.title = 'Drishti - ' + city.label + ' Flood Intelligence';
     set('footerBrand', 'Dhristi (Vision) · ' + city.fullName + ' flood intelligence dashboard');
     set('footerSource', 'Live weather · Flood API · Next 24h model inference');
-    document.title = 'Dhristi (Vision) - ' + city.label + ' Flood Intelligence';
+    document.title = 'Drishti - ' + city.label + ' Flood Intelligence';
+    set('footerBrand', 'Drishti - ' + city.fullName + ' flood intelligence dashboard');
+    set('footerSource', 'Live weather - Flood API - 24-hour prediction');
   },
 
   _updateDOM(d) {
@@ -661,8 +669,14 @@ DFIS.live = {
         'SOIL: ' + d.soil.pct + '%' + predStr;
     }
 
+    if (ticker) {
+      const shortPrediction = d.prediction ? d.prediction.risk_level + ' (' + Math.round(d.prediction.flood_probability * 100) + '%)' : 'Loading';
+      ticker.textContent = '24-hour prediction: ' + shortPrediction + ' | Rainfall: ' + next24Rain + 'mm | Water peak: ' + forecastPeakLevel + 'm | Status: ' + liveStatus;
+    }
+
     const stripMain = document.getElementById('live-alert-strip-main');
     if (stripMain && alertList.length) stripMain.textContent = alertList.map((a) => a.msg).join(' · ');
+    if (stripMain && alertList.length) stripMain.textContent = alertList[0].msg;
     const stripPage = document.getElementById('live-alert-strip');
     if (stripPage && alertList.length) stripPage.textContent = alertList[0].msg;
 
@@ -679,6 +693,7 @@ DFIS.live = {
 
     DFIS.live._syncPageCopy(d);
     DFIS.live._updateSummaryCards(d);
+    DFIS.live._updateWeatherBackdrop(d);
 
     if (DFIS.app?.currentPage === 'dashboard') {
       DFIS.charts?.renderRainfallBar('rainfallBar');
@@ -850,4 +865,212 @@ DFIS.live = {
       el.style.color = 'var(--warn)';
     }
   },
+  _updateWeatherBackdrop(d) {
+    const body = document.body;
+    if (!body) return;
+    body.classList.remove('weather-clear', 'weather-rain');
+    const currentRain = +(d?.modelRainfall?.current_mm_hr ?? d?.rainfall?.currentMmHr ?? 0);
+    const nextRain = +(d?.modelRainfall?.next_24h_total_mm ?? d?.rainfall?.next24Mm ?? 0);
+    if (currentRain > 0.2 || nextRain > 15) body.classList.add('weather-rain');
+    else body.classList.add('weather-clear');
+  },
+};
+
+DFIS.live._updateDOM = function(d) {
+  const city = DFIS.live.getCurrentCityConfig();
+  const set = (id, value) => {
+    const el = document.getElementById(id);
+    if (el) el.textContent = String(value);
+  };
+
+  const liveLevel = d.modelYamuna?.current_level_m ?? d.yamuna.level;
+  const forecastPeakLevel = d.modelYamuna?.forecast_peak_level_24h_m ?? d.yamuna.forecastPeakLevel;
+  const liveStatus = d.modelYamuna?.status ?? d.yamuna.status;
+  const liveRainfallNow = d.modelRainfall?.current_mm_hr ?? d.rainfall.currentMmHr;
+  const next24Rain = d.modelRainfall?.next_24h_total_mm ?? d.rainfall.next24Mm;
+  const next24PeakRain = d.modelRainfall?.forecast_peak_mm_hr ?? d.rainfall.next24PeakMmHr;
+  const alertList = DFIS.live._getAlertList(d);
+
+  const rainfallValue = liveRainfallNow + 'mm/hr';
+  const rainfallSub = '24h total ' + next24Rain + 'mm · Peak ' + next24PeakRain + 'mm/hr';
+  const rainfallCat = d.rainfall.intensity.label + ' · ' + d.rainfall.rainProb + '% chance';
+  const waterValue = liveLevel + 'm';
+  const waterTrend = liveStatus + ' · Peak ' + forecastPeakLevel + 'm';
+  const tempValue = d.weather.tempC != null ? d.weather.tempC + '°C' : '-';
+  const humidityValue = d.weather.humidity != null ? d.weather.humidity + '%' : '-';
+  const windValue = d.weather.windKmh != null ? d.weather.windKmh + 'km/h' : '-';
+
+  set('live-rainfall-val', rainfallValue);
+  set('dashboardRainfallVal', rainfallValue);
+  set('live-rainfall-sub', rainfallSub);
+  set('dashboardRainfallSub', rainfallSub);
+  set('live-rainfall-cat', rainfallCat);
+  set('dashboardRainfallCat', rainfallCat);
+  set('live-yamuna-val', waterValue);
+  set('dashboardWaterLevel', waterValue);
+  set('live-yamuna-trend', waterTrend);
+  set('dashboardWaterTrend', waterTrend);
+  set('live-yamuna-level-big', waterValue);
+  set('live-yamuna-status', waterTrend);
+  set('live-temp', tempValue);
+  set('dashboardLiveTemp', tempValue);
+  set('live-humidity', humidityValue);
+  set('dashboardLiveHumidity', humidityValue);
+  set('live-wind', windValue);
+  set('dashboardLiveWind', windValue);
+
+  const readinessValue = d.prediction
+    ? (Math.max(10, 100 - Math.round(d.prediction.flood_probability * 100)) + '/100')
+    : (d.readiness + '/100');
+  set('live-readiness-val', readinessValue);
+  set('dashboardReadinessVal', readinessValue);
+
+  const shortPrediction = d.prediction
+    ? d.prediction.risk_level + ' (' + Math.round(d.prediction.flood_probability * 100) + '%)'
+    : 'Loading';
+  const summaryText = '24-hour prediction: ' + shortPrediction + ' | Rainfall: ' + next24Rain + 'mm | Water peak: ' + forecastPeakLevel + 'm | Status: ' + liveStatus;
+  const dashboardSummaryText = 'Prediction: ' + shortPrediction + ' | Rainfall: ' + next24Rain + 'mm | Water peak: ' + forecastPeakLevel + 'm | Status: ' + liveStatus;
+
+  const ticker = document.getElementById('tickerText');
+  if (ticker) ticker.textContent = summaryText;
+  set('dashboard24HourSummary', dashboardSummaryText);
+
+  const firstAlert = alertList.length ? alertList[0].msg : 'Model monitoring active.';
+  const stripMain = document.getElementById('live-alert-strip-main');
+  if (stripMain) stripMain.textContent = firstAlert;
+  const stripPage = document.getElementById('live-alert-strip');
+  if (stripPage) stripPage.textContent = firstAlert;
+  const dashboardStrip = document.getElementById('dashboardAlertStrip');
+  if (dashboardStrip) dashboardStrip.textContent = firstAlert;
+
+  const panel = document.getElementById('live-alerts-panel');
+  if (panel) {
+    const col = { CRITICAL: 'var(--danger)', HIGH: 'var(--accent)', MEDIUM: 'var(--warn)', LOW: 'var(--safe)' };
+    panel.innerHTML = alertList.map((a) =>
+      '<div style="display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px solid rgba(23,35,56,0.12)">' +
+      '<span style="font-family:var(--font-body);font-size:11px;font-weight:700;padding:2px 7px;border-radius:999px;background:' + col[a.sev] + '22;color:' + col[a.sev] + ';border:1px solid ' + col[a.sev] + '44;flex-shrink:0;white-space:nowrap">' + a.sev + '</span>' +
+      '<span style="font-size:14px;color:var(--text);line-height:1.5">' + a.msg + '</span>' +
+      '</div>'
+    ).join('');
+  }
+
+  DFIS.live._syncPageCopy(d);
+  DFIS.live._updateSummaryCards(d);
+  DFIS.live._updateWeatherBackdrop(d);
+
+  if (DFIS.app?.currentPage === 'dashboard') {
+    DFIS.charts?.renderRainfallBar('rainfallBar');
+    DFIS.charts?.renderTopRisks('topRiskList');
+    DFIS.map?.renderHotspots();
+  }
+  if (DFIS.app?.currentPage === 'hotspots') {
+    DFIS.charts?.renderDistrictBars('districtBars');
+    const tbody = document.getElementById('hotspotTbody');
+    if (tbody) tbody.innerHTML = '';
+    DFIS.app?._renderHotspotTable?.('hotspotTbody');
+  }
+  if (DFIS.app?.currentPage === 'wards') DFIS.wards?.render(DFIS.wards.currentFilter);
+  if (DFIS.app?.currentPage === 'yamuna') DFIS.charts?.renderYamunaChart('yamunaChartWrap');
+  if (DFIS.app?.currentPage === 'simulator') DFIS.simulator?.configureForCity?.();
+  if (DFIS.app?.currentPage === 'routes') {
+    DFIS.routes?.refreshLocations?.();
+    DFIS.routes?.calculateRoute?.();
+  }
+  if (DFIS.app?.currentPage === 'assistant') {
+    DFIS.assistant?.refreshContext?.(true);
+  }
+  DFIS.app?.normalizeSeverityUI?.();
+};
+
+DFIS.live._updateSummaryCards = function(d) {
+  const dashboard = document.getElementById('page-dashboard');
+  if (dashboard && d.summary) {
+    const critical = d.summary.critical ?? 0;
+    const medium = d.summary.medium ?? 0;
+    const low = d.summary.low ?? 0;
+    const wards = d.summary.wards ?? 0;
+
+    const badges = dashboard.querySelectorAll('.overview-status .badge');
+    if (badges.length >= 3) {
+      badges[0].textContent = '[!] ' + critical + ' Critical';
+      badges[1].textContent = '[^] ' + medium + ' Elevated';
+      badges[2].textContent = '[OK] ' + low + ' Low Risk';
+    }
+
+    const cards = dashboard.querySelectorAll('.overview-kpis .scard');
+    if (cards.length >= 6) {
+      const writeCard = (card, value, sub, delta) => {
+        const val = card.querySelector('.scard-val');
+        const subEl = card.querySelector('.scard-sub');
+        const deltaEl = card.querySelector('.scard-delta');
+        if (val) val.textContent = value;
+        if (subEl) subEl.textContent = sub;
+        if (deltaEl) deltaEl.textContent = delta;
+      };
+      writeCard(cards[0], critical, 'Priority action areas', 'Immediate attention');
+      writeCard(cards[1], medium, 'Watch and response areas', 'Monitor closely');
+      writeCard(cards[2], low, 'Routine monitoring areas', 'Lower immediate concern');
+      writeCard(cards[5], document.getElementById('dashboardReadinessVal')?.textContent || '0/100', wards + ' readiness units tracked', d.backend?.online ? 'Model and backend connected' : 'Weather-only fallback');
+    }
+
+    const statusNote = document.getElementById('dashboardReadinessNote');
+    if (statusNote) {
+      statusNote.textContent = d.backend?.online ? 'Model and backend connected' : 'Weather-only fallback';
+    }
+  }
+
+  const mapPanel = document.querySelector('.map-info-panel');
+  if (mapPanel) {
+    const vals = mapPanel.querySelectorAll('.mip-val');
+    if (vals.length >= 5) {
+      vals[0].textContent = (DFIS.CITY.hotspots || 0).toLocaleString();
+      vals[1].textContent = d.summary?.critical ?? 0;
+      vals[2].textContent = (d.modelYamuna?.forecast_peak_level_24h_m ?? d.yamuna.forecastPeakLevel) + 'm';
+      vals[3].textContent = (d.modelRainfall?.next_24h_total_mm ?? d.rainfall.next24Mm) + 'mm';
+      vals[4].textContent = '~' + Math.max(1, Math.round(((d.summary?.critical ?? 0) + (d.summary?.medium ?? 0)) * 0.12 * 10) / 10) + 'L';
+    }
+  }
+};
+
+DFIS.live._updateStatus = function(state, date) {
+  const targets = ['liveDataStatus', 'dashboardLiveDataStatus'];
+  targets.forEach((id) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    if (state === 'loading') {
+      el.textContent = 'Loading model data...';
+      el.style.color = 'var(--muted)';
+    } else if (state === 'live') {
+      el.textContent = 'Next 24h model · ' + (date ? date.toTimeString().slice(0, 8) : '') + ' IST';
+      el.style.color = 'var(--safe)';
+    } else {
+      el.textContent = 'Backend offline · showing fallback weather data';
+      el.style.color = 'var(--warn)';
+    }
+  });
+};
+
+const __dfisOriginalSyncPageCopy = DFIS.live._syncPageCopy;
+DFIS.live._syncPageCopy = function(d) {
+  if (typeof __dfisOriginalSyncPageCopy === 'function') {
+    __dfisOriginalSyncPageCopy.call(DFIS.live, d);
+  }
+
+  const city = DFIS.live.getCurrentCityConfig();
+  const dashboard = document.getElementById('page-dashboard');
+  if (!dashboard) return;
+
+  const hotspotCount = d?.summary?.total ?? DFIS.CITY.hotspots;
+  const overview = dashboard.querySelector('.dashboard-overview');
+  if (!overview) return;
+
+  const eyebrow = overview.querySelector('.pg-eyebrow');
+  const title = overview.querySelector('.pg-title');
+  const desc = overview.querySelector('.pg-desc');
+
+  if (eyebrow) eyebrow.textContent = city.fullName + ' · Next 24-Hour Flood Outlook';
+  if (title) title.textContent = 'Flood Intelligence Dashboard';
+  if (desc) {
+    desc.textContent = 'Monitoring ' + hotspotCount + ' forecast hotspots across ' + DFIS.CITY.wards + ' readiness units.';
+  }
 };

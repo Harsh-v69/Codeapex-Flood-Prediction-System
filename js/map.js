@@ -161,12 +161,15 @@ DFIS.map = {
 
   buildToolbar() {
     return `
-      <div class="map-toolbar">
-        <button class="map-filter-chip active" id="mapFilter-all" onclick="DFIS.map.setFilter('all')">All <span id="mapFilterAllCount">0</span></button>
-        <button class="map-filter-chip critical" id="mapFilter-critical" onclick="DFIS.map.setFilter('critical')">Critical <span id="mapFilterCriticalCount">0</span></button>
-        <button class="map-filter-chip high" id="mapFilter-high" onclick="DFIS.map.setFilter('high')">High <span id="mapFilterHighCount">0</span></button>
-        <button class="map-filter-chip medium" id="mapFilter-medium" onclick="DFIS.map.setFilter('medium')">Medium <span id="mapFilterMediumCount">0</span></button>
-        <button class="map-filter-chip low" id="mapFilter-low" onclick="DFIS.map.setFilter('low')">Low <span id="mapFilterLowCount">0</span></button>
-      </div>`;
+      <details class="map-toolbar">
+        <summary class="map-legend-toggle">Legend</summary>
+        <div class="map-toolbar-popup">
+          <button class="map-filter-chip active" id="mapFilter-all" onclick="DFIS.map.setFilter('all')">All <span id="mapFilterAllCount">0</span></button>
+          <button class="map-filter-chip critical" id="mapFilter-critical" onclick="DFIS.map.setFilter('critical')">&#9940; Critical <span id="mapFilterCriticalCount">0</span></button>
+          <button class="map-filter-chip high" id="mapFilter-high" onclick="DFIS.map.setFilter('high')">&#9888; High <span id="mapFilterHighCount">0</span></button>
+          <button class="map-filter-chip medium" id="mapFilter-medium" onclick="DFIS.map.setFilter('medium')">&#9679; Medium <span id="mapFilterMediumCount">0</span></button>
+          <button class="map-filter-chip low" id="mapFilter-low" onclick="DFIS.map.setFilter('low')">&#10003; Low <span id="mapFilterLowCount">0</span></button>
+        </div>
+      </details>`;
   },
 };
